@@ -1,0 +1,4048 @@
+"COMBAT POSTURE"
+
+Usage:  combat posture <posture>
+
+The combat posture influences what kind of moves the player prefers in combat.
+A player going all-out on their attack will not even attempt to defend
+themselves; they will devote all their energy to offense, and get double the
+normal number of attacks.  On the other hand, a player with an evasive posture
+will not attempt an attack, but focus solely on avoiding harm to their person.
+
+A normal posture focuses equally on offense and defense, so the postures may
+be thought of in this context:
+
+  DEFENSE  <-  evasive defensive normal offensive all-out  ->  OFFENSE
+
+Choose your posture according to your character's style and circumstance.
+
+See also:  COMBAT, COMBAT PROFILE, COMBAT SYSTEM, DAMAGE
+#0
+CONSIDER
+
+Usage : consider <monster>
+This command will compare your Level with the <monsters> level. You will then
+receive a rough estimate, which is by no means exact. Consider does not take
+hitpoints/special attacks/damage into accout.
+
+> consider fido
+#0
+Misc Miscellaneous Truth Stuff
+Miscellaneous truths, quotes, and stuff by the SFN Administration
+
+Cole slaw is truly the spam of the vegetable food group.
+#0
+FLEE
+
+If you are in a fight and things are beginning to get a little uncomfortable
+(maybe you are dying), just type 'flee', and presto! you are out of harm's way
+- that is, IF there is a suitable exit nearby, and IF that exit doesn't simply
+bring you from the ashes to the fire... but then, who wants to live forever?
+#0
+KILL HIT
+
+A good way to start a fight.  It's usually not a good idea to hit other players.
+#0
+MURDER
+
+Kill command to hit another player.  To avoid accidental flagging (i.e.
+trying to type "kiss redferne" but accidentally typing "kill redferne")
+Note that it is dangerous to kill other players.  The consequences, as they
+take their revenge, may be harsh...
+
+See also:  FLAGS
+#0
+WIELD
+
+When you get tired of bashing monsters with your fists, you might consider
+wielding a weapon.  You can specify which hand you would like to wield a
+weapon in by putting 'right' of 'left' after the item name.  The default
+hand things are wielded in is the right.
+
+> wield sword
+> wield dagger left
+
+See also: EQUIPMENT, REMOVE EQUIPMENT
+#0
+WIMP WIMPY
+
+Use the WIMP command to automatically wimp out of a fight.
+
+WIMP 35 will make your character automatically flee a fight if he/she has
+	less than 35 hit points.
+WIMP 0  will turn off wimpy mode.
+WIMP    will show you your current wimp status.
+
+See also:  TOGGLE
+#0
+FEINT
+
+Usage:  Set in combat profile.
+
+A feint is a diversionary attack, an attempt to "fake out" the opponent,
+putting them off-guard and allowing better chances for the actual attack. 
+If the feint succeeds, the attacker performs an actual attack with a +2 to
+succeed, and the target loses 2 points of speed in their defense because of
+their distraction.
+
+See also:  COMBAT, COMBAT PROFILE, CIRCLE
+#0
+SHOOT
+
+Usage:  shoot [ <person> <direction> ]
+
+See also:  AIM, RELOAD, THROW
+#0
+THROW
+
+Usage:  throw <object> [ <person> <direction> ]
+
+See also:  AIM, RELOAD, SHOOT
+#0
+RELOAD
+
+Usage:  reload <weapon> <ammunition>
+
+See also:  AIM, SHOOT, THROW
+#0
+"COMBAT COMMAND"
+
+Usage:  combat <slot> <move>
+        combat
+	
+Examples:  combat 1 right parry		<- Sets slot 1 to right parry
+           combat 4 punch               <- Sets slot 4 to punch
+	   combat 2 none		<- Clears slot 2
+	   combat 4			<- Displays available moves for slot 4
+	   combat posture defensive	<- Adopts a defensive posture
+	   combat			<- Displays status of the profile
+
+The combat command manages the combat profile, which determines the player's
+behavior in combat.  The combat profile 
+
+See also:  COMBAT SYSTEM, COMBAT PROFILE, COMBAT POSTURE, DAMAGE
+#0
+"COMBAT SYSTEM"
+
+The clashing of swords, the dueling reflexes; combat training is essential for
+survival in the world of Ramas.  Combat takes place on a round-by-round basis;
+each combatant gets a number of combat moves based on their dexterity,
+encumbrance (hence also strength), and weapon.  Choice of weapons is dictated
+by the style of combat and the nature of the foe.  Targets with little or no
+armor may be felled with a well-placed dagger, whereas one will require a 
+heavy weapon to deal with a well-armored foe.
+
+An attack in combat is performed in the following sequence:
+
+Whether by explicit command or by an automatic move from the &cWcombat profile&c0,
+someone attacks their chosen foe.  They roll against their skill on three
+six-sided dice; if they succeed, this means that the attack will indeed strike
+the foe if not stopped.  
+
+There are multiple layers of defense for the foe:
+
+1)  Active Defense.  This involves dodging, blocking, parrying, etc.  The foe
+may actively defend a set number of times per round, determined by their speed
+and posture.  However, this defense may be exhausted by heated combat or even
+neglected voluntarily - a skilled warrior  may block several sword thrusts, but
+if greatly outnumbered, only their armor may save them.  If the active defense
+fails, the attack strikes a specific location of the target's body, where armor
+can offer further defense.
+
+2)  Passive Defense.  This is the ability of armor to deflect  damage
+harmlessly off its surface, without even absorbing the force of the blow.
+
+3)  Damage Resistance.  This is the last line of defense, relying on the 
+strength of armor or even the toughness of one's own body.  
+
+Any damage that gets past these three defenses is dealt to the target.  Turns
+are granted to each of the combatants, based on their agility and numerous
+other factors.
+
+See also:  COMBAT, COMBAT PROFILE, COMBAT POSTURE, DAMAGE.
+#0
+"COMBAT POSTURE"
+
+Usage:  combat posture <posture>
+
+The combat posture influences what kind of moves the player prefers in combat.
+A player going all-out on their attack will not even attempt to defend
+themselves; they will devote all their energy to offense, and get double the
+normal number of attacks.  On the other hand, a player with an evasive posture
+will not attempt an attack, but focus solely on avoiding harm to their person.
+
+A normal posture focuses equally on offense and defense, so the postures may
+be thought of in this context:
+
+  DEFENSE  <-  defensive evasive normal offensive all-out  ->  OFFENSE
+
+Choose your posture according to your character's style and circumstance.
+
+See also:  COMBAT, COMBAT PROFILE, COMBAT SYSTEM, DAMAGE
+#0
+"COMBAT PROFILE"
+
+The combat profile is a list of moves in combat that are automatically
+performed by the player.  The moves may be offensive or defensive in nature;
+they are executed as needed from the top down.  The combat profile may be
+overridden by manual commands; manually performed moves will drain off speed
+points from the profile, meaning that fewer, if any moves will then be
+performed automatically.
+
+For example, here's how the following profile will perform:
+
+&cR1&cr)&cW  right swing&c0          Combat begins.  The player performs an offensive
+&cR2&cr)&cY  right parry&c0          move; the profile starts at the top of the list, and
+&cR3&cr)&cY  dodge&c0                finds an offensive move there.  The player swings 
+&cR4&cr)&cW  left thrust&c0          whatever weapon they may have in their right hand.
+&cR5&cr)&cL  none&c0
+&cR6&cr)&cL  none&c0                 The foe gets their turn.  They successfully attack
+&cR7&cr)&cL  none&c0                 and the player must defend.  The combat profile 
+&cR8&cr)&cL  none&c0                 starts at the top looking for defenses, and finds one
+                         in slot two.  The player attempts to parry with 
+whatever weapon they may have in their right hand.  Another enemy jumps in,
+and the player needs to defend again; this time they execute their third move,
+and attempt to dodge aside.
+
+The round ends, the next begins.  We'll say that the player, due to agility,
+gets two attacks this round.  They left off with their right swing last round,
+so the profile searches from that point and finds a left thrust in slot four.
+The player swings whatever weapon they have there... oops!  No weapon!  They
+wound up punching.
+
+The player gets their second attack.  Searching down, the profile finds no
+further moves, so it starts back up at the top.  It's another right swing.
+
+We'll say that the player's foes are similarly charged, and the player faces
+two swings from one and a thrust from the other.  The player will attempt a
+right parry, dodge, and another right parry, in that order.
+
+See also:  COMBAT, COMBAT POSTURE, COMBAT SYSTEM, DAMAGE
+#0
+DAMAGE
+
+There are three basic types of damage:  basic, slashing, and piercing. They
+differ in how much they harm the target, once armor is penetrated; slashing
+damage does half again the normal damage, and piercing damage does double
+because of the shock value.
+
+This makes choice of weapons significant.  A mace and a dagger represent
+opposite ends of the spectrum; a swing with a mace does large amounts of basic
+damage, giving it greater chances to penetrate armor, while a thrust with a
+dagger does less damage, but whatever damage gets through the armor is
+doubled.
+
+Choose axes, maces, and polearms, and similar when dealing with heavily
+armored targets, and shortswords and daggers when dealing with light ones.  A
+long sword represents an attractive middle point between these two opposites.
+
+See also:  COMBAT, COMBAT POSTURE, COMBAT PROFILE, COMBAT SYSTEM
+#0
+DISARM
+
+Usage:  disarm <target>
+
+This difficult move will, if successful, deprive an opponent of their weapon.
+The attacker's skill in the disarm move is rolled in a contest with the
+target's combat technique to determine the outcome.
+#0
+CAMOFLAUGE
+
+This is the skill of the greatest of rangers, the most skilled woodsmen. It
+offers the player a chance to blend in with their surroundings. If camoflauged,
+the player can only be "sensed" by the "sense life" spell.  You can move while
+camoflauged, although each movement risks breaking  the cover.
+#0
+CAST
+
+For "magical" people. If you want to throw a spell at someone or something.
+Note that the name of the spell must be enclosed by "'"s.
+
+Example: cast 'burning hands' <player>
+
+See also:  PRAY, INDIVIDUAL SPELLS, 
+For example:
+    > help magic miss
+    > help ventri
+    > help energy drain
+#0
+PRAY
+
+For the clerically ordained, this offers a way to appeal to the deities for
+aid.  Prayers do not drain mana; rather, they draw off of the skill in the
+sphere from which they are derived, which can be shown on the "spells" screen.
+When drained, the gifts of power over these spheres may restored to full
+strength at the shrine of a deity or through a holy object, provided that the
+player maintains their alignment with their deity.
+
+Example: cast 'bless' <player>
+
+See also: CAST, INDIVIDUAL PRAYERS, 
+For example:
+    > help cure ligh
+    > help bless
+    > help prot from evil
+#0
+CONCENTRATE
+
+Usage:  concentrate	           <- Status display
+        concentrate break portal   <- Breaks a portal spell in effect
+
+Some spells stay in effect, requiring the continued attention of the caster
+and continuously draining their mana.  The concentrate command allows the mage
+to manage the spells they have in effect.
+#0
+AIM
+
+Usage:  aim <target's name> [ <direction> ]
+        aim <target's name>
+
+Aiming is the first step in typical ranged combat.  The command is issued in
+the following format:
+
+  aim <name> <direction>
+
+...Thus, i.e.  "aim guard north" would target a guard to the north.  The target
+is typically found using the "scan" or "look <direction>" commands, although 
+aim can be used upon someone present in the same room as the player using the
+format:
+
+  aim <name>
+  
+After a brief wait, the target is acquired and objects may be thrown or shot
+at the target.  If the target moves out of range, the player must pursue
+in order to attack their acquired target.
+
+See also:  SHOOT, THROW, RELOAD
+#0
+BACKSTAB
+
+Backstab is a way to sneak up on a person and attempt to place your dagger
+in his back, at exactly the point where it does most damage.  The chance and
+success of a backstab are dependent upon the extent of your practice of the
+skill at your guild.  You can always backstab sleeping people.
+
+See also:  "SKILLINFO BACKSTAB", 
+#0
+BANDAGE
+
+Required skill:  First Aid
+
+This allows the player to assist others incapacitated by their wounds.  If the
+roll in the first aid skill succeeds, a certain measure of health is restored
+to the patient, allowing them to regain consciousness.
+#0
+BASH
+
+Usage:  bash [target] or set in combat profile
+
+Speed: 10
+
+A bashing attack attempts to knock the target over.  Success is affected by
+the weight of the attacker and target, and the heavier of the two will have an
+advantage.  If the attack succeeds, the victim will be knocked to the ground;
+otherwise, the attacker will themselves tumble to the ground and be unable to
+attack.
+
+A shield may be worn and used for the "shield bash", which enhances both the 
+chance of success and the damage of a bashing attack.
+
+While in combat, the target is assumed to be the character's opponent if not 
+specified.
+
+See also:  SHIELDBASH
+#0
+SHIELDBASH, "SHIELD BASH"
+
+Speed: 10
+
+Usage:  shieldbash [target] or set in combat profile
+
+This attack is similar to the regular bash, but employs a shield in its usage,
+enhancing both the  chance of success and the damage of a bashing attack. The
+shield skill is rolled to determine success.
+
+While in combat, the target is assumed to be the character's opponent if not 
+specified.
+
+See also:  BASH, COMBAT PROFILE
+#0
+BLADESONG
+
+Elves only
+
+Bladesong is a special fighting form used by the greatest of elven warriors.
+It is the very infusion of elven essence into the warrior's fighting
+technique; the weapons sing with magic and the warrior is quickened, fighting
+like a tornado.
+
+Bladesong requires ten points of mana for each usage, and effectively grants
+another round's worth of combat moves, up to the limit of four combat moves per
+round.  It can be invoked either from the command line or from the combat profile.
+
+See also:  COMBAT, COMBAT PROFILE, ELVEN LORE
+#0
+COMMUNICATION
+Communication commands list
+
+SAY GSAY OOC         : Talk.  Chatter.  Ramble on.
+SHOUT HOLLER         : For those wishing to be noisy.
+ASK TELL WHISPER     : Direct what you say at a particular person.
+MAIL RECEIVE CHECK   : Managing your mail on the MUD
+GOSSIP GRATS AUCTION : Out of character (OOC) communication channels
+
+Also see:  PREF
+#0
+BOARDS
+
+Bulletin boards are the forum of interplayer communication on the MUD.
+There are different bulletin boards for different purposes -- for example,
+a standard mortal board, a board for immortals, a board for fun "social"
+messages, etc.  Naturally, not all players may be allowed to read all
+types of boards.
+
+Type "LOOK BOARD" to see the messages already posted on a board.  Type
+"WRITE <subject>" to post a message to a board; terminate a message with
+a '@' as the first character on a line.  Type "READ <number>" to read a
+post.  Type "REMOVE <number>" to remove your own messages.
+
+> look at board
+> write Am I using these boards correctly?
+[writes the message; terminates with a '/s']
+> look at board
+> read 6
+> remove 6
+#0
+BUG TYPO IDEA
+For making useful suggestions to the powers that be.
+
+{bug | typo | idea} <text>
+
+> bug the entire game crashes when I type 'put bag in bag'
+> idea make a restaurant in Midgaard
+> typo 'sence' should be spelled 'sense'
+#0
+GSAY GTELL
+
+Tell something to all the members of your group, even if they're not in the
+room.
+#0
+MAIL CHECK RECEIVE
+
+The commands used by the mail system are MAIL, CHECK, and RECEIVE.  These
+commands can only be used while in a post office.
+
+To write mail to Quifael:
+> mail quifael
+
+To check and see if you have any mail waiting:
+> check
+
+To ask the Postmaser to give you your mail, if you have any waiting:
+> receive
+
+Stamps cost 150 coins.
+#0
+QSAY
+
+To tell something to everyone on the current Quest.
+
+See also: QUEST
+#0
+SAY TELL ASK WHISPER SHOUT YELL HOLLER '
+
+If you consider communicating with other beings, you might be understood
+better if you start your sentences with either say, tell, whisper or shout.
+
+<say | shout | holler> <string>
+<tell | whisper | ask> <player> <string>
+
+> say Hey, does anyone know how to get to Oz?
+> tell uncle hi, how are you?
+
+You can use ' as a shorthand for say, as in: ' hello there.
+
+Shout broadcasts your message to everyone is your geographic zone.  Holler
+broadcasts to everyone in the game but costs 20 movement points.  You must
+be level 2 before you can use shout and yell.
+
+See also: AUCTION GSAY NOREPEAT QSAY
+#0
+READ
+
+When you want to read something.
+
+READ is also used to read messages on bulletin boards; type HELP BOARDS
+for more information.
+
+> read note
+
+See also: BOARDS
+#0
+DEITIES
+
+Here are the spheres that each deity has an emphasis in.  Also listed are
+spells that a cleric of that given deity will be able to cast at any time based
+on a skillroll to ordination.  Note that the listed spheres show emphasis, but
+do not exclude others.  You could have a cleric of Vaadh or Shestu receive
+healing spells - but rarely, and only at the proper shrine.  On the other
+hand,  Pelendra will have major emphasis on healing.
+&cC
+&cY
+TAL-VINDAS&c0
+Alignment:      Lawful Good
+Spheres:        War, Protection, Heavens
+Innate spells:  dispel evil -3, protection from evil, sanctuary -7, holy word -9
+&cG
+PELENDRA&c0
+Alignment:      Neutral Good
+Spheres:        Healing, Nature, Protection
+Innate Spells:  protection from evil -2, group heal -7, 
+&cC
+DYMORDIAN&c0
+Alignment:      Chaotic Neutral/Good
+Spheres:        Creation, Heavens, Divination
+Innate Spells:  detect magic, magic missile -3, identify -4
+&cy
+KHARSUS&c0
+Alignment:      Lawful Neutral
+Spheres:        Creation, Healing
+Innate Spells:  strengthen -4
+&cW
+NYMRIS&c0
+Alignment:      True Neutral
+Spheres:        Divination, Protection, 
+Innate Spells:  sleep -2, sense life -1, identify -2 
+&cL
+VAADH&c0
+Alignment:      Lawful Evil
+Spheres:        Heavens, War, Necromancy
+Innate Spells:  shocking grasp -1, animate dead -4, dispel good -5, 
+                phantom fist -5,
+&cr
+SHESTU&c0
+Alignment:      Chaotic Evil
+Spheres:        War
+Innate Spells:  ventriloquate -2, dispel good -3, cause light,
+                vampiric regeneration -8
+#0
+"COLOR CODES"
+
+You can change the color of your text inline in says, gossip, titles,
+descriptions, and just about anywhere else with a simple color code.  The
+codes are used as follows:
+
+Type &^cX where X is a letter from the following table, as per the given
+color:
+
+   &cL&^cL  Dark Grey                      &cB&^cB  Blue
+   &cR&^cR  Red                            &cM&^cM  Magenta
+   &cG&^cG  Green                          &cC&^cC  Cyan
+   &cY&^cY  Brown                          &cW&^cW  Light Grey
+
+&c0To use boldface, simply capitalize the color letter, as in &^cC for
+&cCBright Cyan.&c0  Background colors can be altered by using a &^bX
+sequence.  And better yet:
+
+   &^co  Foreground color off           &^b0  Background color off
+   &cv&^cv  Reverse video  &c0                &cf&^cf  Flashing text&c0
+   &^c0  All color off
+
+The most common use for this, of course, is custom colors for communication.
+A good example for this is the following command:  "alias ' '&^cG$*".
+
+Finally, if you wish to echo a "&^c" to the screen, type "&^^c".
+#0
+PRACTICE PRACTISE
+
+Usage: practice [skill or spell name]
+
+Practice is the way you improve your spells and skills.  You can only do
+so in your guild, where your guildmaster can help you train.  Type
+"practice <skill>" to improve your abilities while in your guild.  You can
+only practice a certain amount for each level you gain.  Unused practice
+sessions will accumulate for use in future levels.
+
+If you type practice anywhere other than in your guild, you will get a list
+of all of the spells and skills you know and your level of proficiency at
+each.
+
+#0
+GUILD GUILDS
+
+The Guildhouse is the place where mortals may go to escape the troubles and
+perils of a cruel world.  Each guild is heavily guarded, so that only members
+may enter the building.  Guilds are also the places where people come to
+learn and practice the skills of their trade.
+
+The skills a character is able to learn is influenced by rank in the
+guild.  Characters may join several guilds and ascend in their ranks by
+finding the appropriate guild and training in its discipline.
+
+See also:  TRAIN
+#0
+CAMOFLAGUE
+
+When you type camoflague there is a chance you can blend in with your
+surroundings. If camoflagued you can only be "sensed" by the "sense life"
+spell.  Even if sensed your identity will remain hidden.  Camoflague is
+broken by pressing return, regardless of whether you typed a command or
+not.
+#0
+AIM
+
+Usage:  aim <target's name> [ <direction> ]
+        aim <target's name>
+
+Aiming is the first step in typical ranged combat.  The command is issued in
+the following format:
+
+  aim <name> <direction>
+
+...Thus, i.e.  "aim guard north" would target a guard to the north.  The target
+is typically found using the "scan" or "look <direction>" commands, although 
+aim can be used upon someone present in the same room as the player using the
+format:
+
+  aim <name>
+  
+After a brief wait, the target is acquired and objects may be thrown or shot
+at the target.  If the target moves out of range, the player must pursue
+in order to attack their acquired target.
+
+See also:  SHOOT, THROW, RELOAD
+#0
+BACKSTAB
+
+Backstab is a way to sneak up on a person and attempt to place your dagger
+in his back, at exactly the point where it does most damage.  The chance and
+success of a backstab are dependent upon the extent of your practice of the
+skill at your guild.  You can always backstab sleeping people.
+
+See also:  "SKILLINFO BACKSTAB", 
+#0
+BANDAGE
+
+Required skill:  First Aid
+
+This allows the player to assist others incapacitated by their wounds.  If the
+roll in the first aid skill succeeds, a certain measure of health is restored
+to the patient, allowing them to regain consciousness.
+#0
+BASH, 
+
+Usage:  bash [target] or set in combat profile
+
+Speed: 10
+
+A bashing attack attempts to knock the target over.  Success is affected by
+the weight of the attacker and target, and the heavier of the two will have an
+advantage.  If the attack succeeds, the victim will be knocked to the ground;
+otherwise, the attacker will themselves tumble to the ground and be unable to
+attack.
+
+A shield may be worn and used for the "shield bash", which enhances both the 
+chance of success and the damage of a bashing attack.
+
+While in combat, the target is assumed to be the character's opponent if not 
+specified.
+
+See also:  SHIELDBASH
+#0
+SHIELDBASH, "SHIELD BASH"
+
+Speed: 10
+
+Usage:  shieldbash [target] or set in combat profile
+
+This attack is similar to the regular bash, but employs a shield in its usage,
+enhancing both the  chance of success and the damage of a bashing attack. The
+shield skill is rolled to determine success.
+
+While in combat, the target is assumed to be the character's opponent if not 
+specified.
+
+See also:  BASH, COMBAT PROFILE
+#0
+BLADESONG
+
+Elves only
+
+Bladesong is a special fighting form used by the greatest of elven warriors.
+It is the very infusion of elven essence into the warrior's fighting
+technique; the weapons sing with magic and the warrior is quickened, fighting
+like a tornado.
+
+Bladesong requires ten points of mana for each usage, and effectively grants
+another round's worth of combat moves, up to the limit of four combat moves per
+round.  It can be invoked either from the command line or from the combat profile.
+
+See also:  COMBAT, COMBAT PROFILE, ELVEN LORE
+#0
+CAMOFLAUGE
+
+This is the skill of the greatest of rangers, the most skilled woodsmen. It
+offers the player a chance to blend in with their surroundings. If camoflauged,
+the player can only be "sensed" by the "sense life" spell.  You can move while
+camoflauged, although each movement risks breaking  the cover.
+#0
+CAST
+
+For "magical" people. If you want to throw a spell at someone or something.
+Note that the name of the spell must be enclosed by "'"s.
+
+Example: cast 'burning hands' <player>
+
+See also:  PRAY, INDIVIDUAL SPELLS, 
+For example:
+    > help magic miss
+    > help ventri
+    > help energy drain
+#0
+PRAY
+
+For the clerically ordained, this offers a way to appeal to the deities for
+aid.  Prayers do not drain mana; rather, they draw off of the skill in the
+sphere from which they are derived, which can be shown on the "spells" screen.
+When drained, the gifts of power over these spheres may restored to full
+strength at the shrine of a deity or through a holy object, provided that the
+player maintains their alignment with their deity.
+
+Example: cast 'bless' <player>
+
+See also: CAST, INDIVIDUAL PRAYERS, 
+For example:
+    > help cure ligh
+    > help bless
+    > help prot from evil
+#0
+CIRCLE
+
+Speed:  8
+
+The circle maneuver, if successful, allows one to flank their opponent and
+catch them off-guard.  This gives the player the chance to attack their
+opponent and deny them the chance to actively defend themselves, leaving only
+armor in the way of doing the foe bodily harm.
+#0
+"COMBAT COMMAND"
+
+Usage:  combat <slot> <move>
+        combat
+	
+Examples:  combat 1 right parry		<- Sets slot 1 to right parry
+           combat 4 punch               <- Sets slot 4 to punch
+	   combat 2 none		<- Clears slot 2
+	   combat 4			<- Displays available moves for slot 4
+	   combat posture defensive	<- Adopts a defensive posture
+	   combat			<- Displays status of the profile
+
+The combat command manages the combat profile, which determines the player's
+behavior in combat.  The combat profile 
+
+See also:  COMBAT SYSTEM, COMBAT PROFILE, COMBAT POSTURE, DAMAGE
+#0
+"COMBAT SYSTEM"
+
+The clashing of swords, the dueling reflexes; combat training is essential for
+survival in the world of Ramas.  Combat takes place on a round-by-round basis;
+each combatant gets a number of combat moves based on their dexterity,
+encumbrance (hence also strength), and weapon.  Choice of weapons is dictated
+by the style of combat and the nature of the foe.  Targets with little or no
+armor may be felled with a well-placed dagger, whereas one will require a 
+heavy weapon to deal with a well-armored foe.
+
+An attack in combat is performed in the following sequence:
+
+Whether by explicit command or by an automatic move from the &cWcombat profile&c0,
+someone attacks their chosen foe.  They roll against their skill on three
+six-sided dice; if they succeed, this means that the attack will indeed strike
+the foe if not stopped.  
+
+There are multiple layers of defense for the foe:
+
+1)  Active Defense.  This involves dodging, blocking, parrying, etc.  The foe
+may actively defend a set number of times per round, determined by their speed
+and posture.  However, this defense may be exhausted by heated combat or even
+neglected voluntarily - a skilled warrior  may block several sword thrusts, but
+if greatly outnumbered, only their armor may save them.  If the active defense
+fails, the attack strikes a specific location of the target's body, where armor
+can offer further defense.
+
+2)  Passive Defense.  This is the ability of armor to deflect  damage
+harmlessly off its surface, without even absorbing the force of the blow.
+
+3)  Damage Resistance.  This is the last line of defense, relying on the 
+strength of armor or even the toughness of one's own body.  
+
+Any damage that gets past these three defenses is dealt to the target.  Turns
+are granted to each of the combatants, based on their agility and numerous
+other factors.
+
+See also:  COMBAT, COMBAT PROFILE, COMBAT POSTURE, DAMAGE.
+#0
+"COMBAT POSTURE"
+
+Usage:  combat posture <posture>
+
+The combat posture influences what kind of moves the player prefers in combat.
+A player going all-out on their attack will not even attempt to defend
+themselves; they will devote all their energy to offense, and get double the
+normal number of attacks.  On the other hand, a player with an evasive posture
+will not attempt an attack, but focus solely on avoiding harm to their person.
+
+A normal posture focuses equally on offense and defense, so the postures may
+be thought of in this context:
+
+  DEFENSE  <-  evasive defensive normal offensive all-out  ->  OFFENSE
+
+Choose your posture according to your character's style and circumstance.
+
+See also:  COMBAT, COMBAT PROFILE, COMBAT SYSTEM, DAMAGE
+#0
+"COMBAT PROFILE"
+
+The combat profile is a list of moves in combat that are automatically
+performed by the player.  The moves may be offensive or defensive in nature;
+they are executed as needed from the top down.  The combat profile may be
+overridden by manual commands; manually performed moves will drain off speed
+points from the profile, meaning that fewer, if any moves will then be
+performed automatically.
+
+For example, here's how the following profile will perform:
+
+&cR1&cr)&cW  right swing&c0          Combat begins.  The player performs an offensive
+&cR2&cr)&cY  right parry&c0          move; the profile starts at the top of the list, and
+&cR3&cr)&cY  dodge&c0                finds an offensive move there.  The player swings 
+&cR4&cr)&cW  left thrust&c0          whatever weapon they may have in their right hand.
+&cR5&cr)&cL  none&c0
+&cR6&cr)&cL  none&c0                 The foe gets their turn.  They successfully attack
+&cR7&cr)&cL  none&c0                 and the player must defend.  The combat profile 
+&cR8&cr)&cL  none&c0                 starts at the top looking for defenses, and finds one
+                         in slot two.  The player attempts to parry with 
+whatever weapon they may have in their right hand.  Another enemy jumps in,
+and the player needs to defend again; this time they execute their third move,
+and attempt to dodge aside.
+
+The round ends, the next begins.  We'll say that the player, due to agility,
+gets two attacks this round.  They left off with their right swing last round,
+so the profile searches from that point and finds a left thrust in slot four.
+The player swings whatever weapon they have there... oops!  No weapon!  They
+wound up punching.
+
+The player gets their second attack.  Searching down, the profile finds no
+further moves, so it starts back up at the top.  It's another right swing.
+
+We'll say that the player's foes are similarly charged, and the player faces
+two swings from one and a thrust from the other.  The player will attempt a
+right parry, dodge, and another right parry, in that order.
+
+See also:  COMBAT, COMBAT POSTURE, COMBAT SYSTEM, DAMAGE
+#0
+DAMAGE
+
+There are three basic types of damage:  basic, slashing, and piercing. They
+differ in how much they harm the target, once armor is penetrated; slashing
+damage does half again the normal damage, and piercing damage does double
+because of the shock value.
+
+This makes choice of weapons significant.  A mace and a dagger represent
+opposite ends of the spectrum; a swing with a mace does large amounts of basic
+damage, giving it greater chances to penetrate armor, while a thrust with a
+dagger does less damage, but whatever damage gets through the armor is
+doubled.
+
+Choose axes, maces, and polearms, and similar when dealing with heavily
+armored targets, and shortswords and daggers when dealing with light ones.  A
+long sword represents an attractive middle point between these two opposites.
+
+See also:  COMBAT, COMBAT POSTURE, COMBAT PROFILE, COMBAT SYSTEM
+#0
+CONCENTRATE
+
+Usage:  concentrate	           <- Status display
+        concentrate break portal   <- Breaks a portal spell in effect
+
+Some spells stay in effect, requiring the continued attention of the caster
+and continuously draining their mana.  The concentrate command allows the mage
+to manage the spells they have in effect.
+#0
+CONSIDER
+
+Usage:  consider <target>
+
+A wise warrior always carefully considers his or her foe before entering
+combat.  This command will compare your total point value with that of the
+target's. You will receive a rough estimate of their toughness in combat,
+which is by no means exact.  Point value may or may not be relevant to actual
+difficulty in combat.
+#0
+DISARM
+
+Usage:  disarm <target>
+
+This difficult move will, if successful, deprive an opponent of their weapon.
+The attacker's skill in the disarm move is rolled in a contest with the
+target's combat technique to determine the outcome.
+#0
+DISMOUNT
+
+Usage:  dismount
+
+This is used to get off steeds and objects, of course.
+
+See also:  MOUNT
+#0
+MOUNT
+
+Usage:  mount <target>
+
+You attempt to mount the target, if indeed it is a steed you can ride.  If so,
+you must pass a riding check - a roll versus your riding skill modified by the
+disposition of the mount.  Failure will leave you sitting on your posterior
+for a bit.
+#0
+DOUSE
+
+Usage:  douse <target>
+
+This provides a means of turning off a light source, which is a wise thing to
+do if the light source is unnecessary.  Many light sources have limited 
+lifespans, after which they burn out.
+#0
+DRAW
+
+Usage:  draw <target>
+        draw
+	
+If you have a weapon in a scabbard, this allows you to quickly draw it for
+use.  You can draw whatever may come to hand quickest (allowing the MUD to
+choose for you) or you may specify what you wish to draw.
+
+See also:  SHEATH
+#0
+EMOTE :
+
+Show people what you're feeling.  The shorthand is ":".
+
+"emote <string>" will display your name, then the string.  For example,
+if your name is "Quifael",
+
+> emote is feeling very sad today.
+
+will display:
+
+Quifael is feeling very sad today.
+
+See also:  SOCIALS, EMOTE CODES
+#0
+EMOTE CODES
+
+You can also tailor your emotes for more detail with ` codes, followed
+by the intended person's name, as follows:
+
+                     Target       Bystanders         
+Code     Example     sees         see
+------------------------------------------------
+`t       `tsomeone   you          someone 
+`z       `zsomeone   your	  someone's
+`r       `rsomeone   your         his/her/its
+`a       `asomeone   you are      someone is
+`s       `ssomeone   yours        his/hers/its
+`e       `esomeone   you          he/she/it
+`m       `esomeone   you          him/her/it
+
+Some examples:
+
+emote thinks `tMourn should give `zZhoern sword back to `mZhoern.
+
+Mourn sees:  Tuathra thinks you should give Zhoern's sword back to him.
+Zhoern sees:  Tuathra thinks Mourn should give your sword back to you.
+Bystanders see:  Tuathra thinks Mourn should give Zhoern's sword back to him.
+
+You can also refer to objects with # codes:
+
+                     Bystanders 	
+Code     Example     see
+-----------------------------------
+&c0#o	 #olantern   lantern
+&c0#p       #plantern   a brass lantern
+
+See also:  EMOTE, SOCIALS
+#0
+FLIP
+
+Usage:  flip <target>,
+        flip
+
+Speed: 10
+
+The flip move attempts to land a foe on their back on the ground.  It will
+stun them briefly, preventing them from fighting.  If it fails, the attacker
+will be vulnerable for nearly two rounds of combat.
+
+While in combat, the target is assumed to be the character's opponent if not 
+specified.
+#0
+FLY
+
+Usage:  fly
+
+If you happen to have wings, you can fly or walk to get to your destination.
+While flying, fewer movement points are consumed, allowing faster movement;
+however, because of the demands on your metabolism, your food requirements will 
+be much higher than usual.
+
+See also:  LAND
+#0
+GROUP
+
+Usage : GROUP [player]
+        GROUP all
+	GROUP front
+	GROUP back
+
+GROUP with no arguments shows the status of your group.  GROUP <player> adds
+or removes <player> from your group.  GROUP ALL adds everyone who is following
+you to your group.
+
+If you are a group member, then you will share experience points for killing
+monsters within the group.  Experience points will only be shared among group
+members that are in the same location, at the time of the killing blow. 
+Points are shared regardless of  participation in the fight, and are allocated
+according to the point values of the members, the more powerful members
+getting larger portions of the share.
+
+Group with no argument shows a list of people with whom you are grouped.
+"group all" groups all people who are following you.
+
+To make a group, a "leader" must be selected. All members of the group must
+then "follow" the leader using the follow command. The leader should NOT
+follow anyone at all! The leader can now toggle group membership for each
+player in the group, by using "group <player_name>". The leader should
+remember to include himself in the group.
+
+Once grouped, you can position yourself in the front or the back of the 
+group, using the "group front" or "group back" commands.  See the section
+on group positions for further details.
+
+Example:
+
+Quifael and Redferne wishes to group with Dragon.
+
+Quifael : "follow dragon"
+Redferne: "follow dragon"
+(Dragon should be following no one but himself)
+Dragon  : "group dragon"
+Dragon  : "group redferne"
+Dragon  : "group quifael"
+
+Later when Dragon get upset at Quifael (because he is sleeping all the time)
+he types : "Group Quifael" to kick Quifael out of the group.
+
+See also:  XP EXPERIENCE UNGROUP "GROUP POSITIONS"
+#0
+"GROUP POSITIONS"
+
+The choice of position within a group has many ramifications.  Those in the
+back are more protected, provided that someone is in the front.
+
+People in the front of the group may intercept melee attacks aimed at people
+in the back of the group, provided that they either are not fighting or are
+successful in a combat technique roll.
+
+However, due to their reach, ranged weapons, polearms, and many spells
+are not subject to interception, and will likely strike their target.  However,
+the groupmembers in the back may employ those same weapons to attack while
+taking cover behind the ranks in the front.
+
+Spellcasters, thieves, archers, and those with polearms may prefer the back
+ranks, whereas fencers and warriors are ideal for the front, especially if
+they have good armor.
+
+Note that polearms may not be used by someone in the back of one group to
+attack a target in the back of another group.  The range is too high.
+#0
+HEADBUTT
+
+Speed:  8
+
+When all else fails, use your head!  The headbutt move is an attempt to damage
+and stun the opponent by bashing one's skull against them.  Damage is enhanced
+by wearing a sturdy helmet, and enhanced further by spiked helms.
+
+However, should much damage be done with a headbutt, the target and victim
+will both have to make constitution rolls to avoid being stunned by the
+pounding headache that will ensue!  The rolls are modified by the damage
+resistance of armor and hides involved.
+#0
+HIDE
+
+When you type hide there is a chance that you hide in the room. If hidden
+you can only be "sensed" by the "sense life" spell. Even if sensed your
+identity will remain hidden. Hide is broken by pressing return, regardless
+of whether you typed a command or not.
+
+Hide can also be used to hide objects in rooms.  The object must start in
+your inventory, and must be able to be dropped.  The object can then only be
+found by someone who knows it's there or has found it by searching the room.
+
+Example:
+
+  > hide
+  Ok.
+  >  (you wait for ex. 5 mins and remain hidden for 5 mins)
+
+  >  (You pressed enter and no longer hide)
+
+or
+
+  > hide note
+#0
+IRONFIST, "IRON FIST"
+
+Speed:  4
+
+The iron fist is a punching move employed by the warrior monks.  The damage is
+greatly increased over the regular punch.
+
+Because it belongs to a barehanded fighting form, wielding a weapon greatly
+reduces the chance of success.  The higher the skill, the higher the damage
+done.
+#0
+PRACTICE PRACTISE
+
+Usage: practice [skill or spell name]
+
+Practice is the way you improve your spells and skills.  You can only do
+so in your guild, where your guildmaster can help you train.  Type
+"practice <skill>" to improve your abilities while in your guild.  You can
+only practice a certain amount for each level you gain.  Unused practice
+sessions will accumulate for use in future levels.
+
+If you type practice anywhere other than in your guild, you will get a list
+of all of the spells and skills you know and your level of proficiency at
+each.
+
+The practice screen displays skills in the format:
+
+&cWSkill                        Base             Pts Mod  Proficiency
+&cL-------------------------------------------------------------------
+&cckick                         &cB[STR DEX       ]&cG   2  -1 &cy[&cm********&cb--&cy]&c0
+
+This display, for example, shows that kick is rolled versus the average of the
+character's strength and dexterity, that the character has invested two
+practice sessions in the skill, that the skill roll has a modifier of -1
+(actually an improvement over the default of -3), and finally, the overall
+proficiency is rated by the bar graph.
+
+When a guildmaster is in the room, the bar graph does not appear; instead,
+your actual skill as it would be rolled on three six-sided dice and the cost
+in gold of further improvement are displayed instead.
+
+See also:  SKILLINFO, SPELLS
+#0
+SPELLS
+
+This command shows a list of the magical spells and clerical prayers that the
+character knows.  It is displayed in the following format:
+
+&cWSpell                        Base                    Mod  Proficiency
+&cL----------------------------------------------------------------------
+&ccburning hands                &cBfire                     &cG-1  &cy[&cm**********&cm]
+&cccharm                        &cBpsyche                   &cG-2  &cy[&cm********&cb--&cm]
+&ccchill touch                  &cBwater                    &cG-2  &cy[&cm********&cb--&cm]
+&ccportal                       &cBvim                      &cG-4  &cy[&cm********&cb--&cm]&c0
+
+The Base is the skill that is rolled for success, and the Mod is the modifier
+applied to reflect the difficulty of the spell.  The character's actual
+proficiency is rated on the bar graph.
+#0
+SKILLINFO
+
+Usage:  skillinfo <skill name>
+
+This command displays basic information on a given skill or spell.  The
+skill's prerequisites and defaults are displayed, along with a graph showing
+how proficiency will rise with practice.
+
+Example:  > skillinfo broadsword
+
+&ccSkill : '&cGbroadsword&cc'  Base: &cYDEX
+&ccDefault1: &cYdexterity   &ccMod: &cY-5
+&ccDefault2: &cYshortsword  &ccMod: &cY-2
+&ccDefault3: &cYbeamsword   &ccMod: &cY-3
+&ccCost  Modifier  Chance
+&cC    1       -2     11
+    2       -1     12
+    4        0     13
+    8	     1     14
+   16	     2     15
+   24	     3     16
+   32	     4     17
+   40	     5     18&c0
+
+The cost represents the total amount of practice points required to attain the
+level of proficiency, the modifier shows the adjustment to the base, and the
+chance shows the number that must be rolled at or under on three six-sided dice
+to succeed.
+
+See also:  SKILLS
+#0
+SKILLS
+
+Skills are the rating of what your character knows and is capable of.  Next to
+stats, they are the most important attribute of a character.  Both players and
+computer-controlled characters gain skills over time.
+
+To actually determine a character's success at a skill, three six-sided dice
+are rolled.  The character must roll a number at or under their level of
+proficiency, so higher numbers mean higher chances.
+
+Because Tower of the Lost Order does not rely on levels or classes to actually
+define the character's potential skills, skills are defined by their
+relationships to other skills instead.  A skill has several important
+attributes:  a base, a modifier, prerequisites, and defaults.  The definitions
+of these terms follow:
+
+&cWBase&c0:  Each skill rolls versus a character's statistic, or an average of
+several statistics.  Most combat skills are determined by dexterity, although
+the average of strength and dexterity is also common.  Most intellectual and
+magic skills have intelligence as their base.  Other skills rely on wisdom,
+constitution, or charisma, as appropriate.
+
+&cWModifier&c0:  The modifier is added to the base, determining the actual
+chance of success, and usually reflecting both the difficulty of the skill and
+the character's proficiency at it.
+
+&cWPrerequisites&c0:  Some skills require a certain level of mastery in other
+skills or possibly a certain score in statistic before they can be learned and
+used.  All prerequisites must be satisfied in order to use the skill.
+
+&cWDefaults&c0:  Once the skill's prerequisites are satisfied, the skill may
+be used.  Defaults represent related skills that may give some knowledge about
+the skill being rolled; i.e. knowing how to fight with a broadsword gives the
+player some idea of how to use a shortsword.  Defaults have an additional
+modifier, usually reflecting how much the default skill aids the present
+skill.  
+
+A typical roll would go like this:
+
+Jalastra has an intelligence score of 12, and wishes to search.  She has three
+practice points invested in her search skill, which gives her a modifier of -1.
+Hence, she must actually roll 11 or less on three six-sided dice to succeed.
+
+The character does not need to invest any points in the skill in order to
+take advantage of default rolls.  When the skill is rolled, the MUD picks
+the best case out of the possible rolls.  If one has 30 points invested in
+one's shortsword skill and only 2 in one's broadsword skill, the MUD will
+use their shortsword skill as a default when using a broadsword rather than
+the broadsword skill because of sheer aptitude, even after the -2 modifier
+is applied to the shortsword roll.
+#0
+SHEATH
+
+Usage:  sheath [weapon] [scabbard]
+
+Attempts to sheath a weapon in an appropriate empty scabbard.  If no weapon is
+specified, the first weapon found in hand is assumed as the object.  The
+equipment and inventory are then searched for the appropriate scabbard, wherein
+the weapon is placed.
+#0
+FEINT
+
+Usage:  Set in combat profile.
+
+A feint is a diversionary attack, an attempt to "fake out" the opponent,
+putting them off-guard and allowing better chances for the actual attack. 
+If the feint succeeds, the attacker performs an actual attack with a +2 to
+succeed, and the target loses 2 points of speed in their defense because of
+their distraction.
+
+See also:  COMBAT, COMBAT PROFILE, CIRCLE
+#0
+SHOOT
+
+Usage:  shoot [ <person> <direction> ]
+
+See also:  AIM, RELOAD, THROW
+#0
+THROW
+
+Usage:  throw <object> [ <person> <direction> ]
+
+See also:  AIM, RELOAD, SHOOT
+#0
+RELOAD
+
+Usage:  reload <weapon> <ammunition>
+
+See also:  AIM, SHOOT, THROW
+#0
+GROUP
+
+Usage : GROUP [player]
+        GROUP all
+	GROUP front
+	GROUP back
+
+GROUP with no arguments shows the status of your group.  GROUP <player> adds
+or removes <player> from your group.  GROUP ALL adds everyone who is following
+you to your group.
+
+If you are a group member, then you will share experience points for killing
+monsters within the group.  Experience points will only be shared among group
+members that are in the same location, at the time of the killing blow. 
+Points are shared regardless of  participation in the fight, and are allocated
+according to the point values of the members, the more powerful members
+getting larger portions of the share.
+
+Group with no argument shows a list of people with whom you are grouped.
+"group all" groups all people who are following you.
+
+To make a group, a "leader" must be selected. All members of the group must
+then "follow" the leader using the follow command. The leader should NOT
+follow anyone at all! The leader can now toggle group membership for each
+player in the group, by using "group <player_name>". The leader should
+remember to include himself in the group.
+
+Once grouped, you can position yourself in the front or the back of the 
+group, using the "group front" or "group back" commands.  See the section
+on group positions for further details.
+
+Example:
+
+Quifael and Redferne wishes to group with Dragon.
+
+Quifael : "follow dragon"
+Redferne: "follow dragon"
+(Dragon should be following no one but himself)
+Dragon  : "group dragon"
+Dragon  : "group redferne"
+Dragon  : "group quifael"
+
+Later when Dragon get upset at Quifael (because he is sleeping all the time)
+he types : "Group Quifael" to kick Quifael out of the group.
+
+See also:  XP EXPERIENCE UNGROUP "GROUP POSITIONS"
+#0
+"GROUP POSITIONS"
+
+The choice of position within a group has many ramifications.  Those in the
+back are more protected, provided that someone is in the front.
+
+People in the front of the group may intercept melee attacks aimed at people
+in the back of the group, provided that they either are not fighting or are
+successful in a combat technique roll.
+
+However, due to their reach, ranged weapons, polearms, and many spells
+are not subject to interception, and will likely strike their target.  However,
+the group members in the back may employ those same weapons to attack while
+taking cover behind the ranks in the front.
+
+Spellcasters, thieves, archers, and those with polearms may prefer the back
+ranks, whereas fencers and warriors are ideal for the front, especially if
+they have good armor.
+
+Note that polearms may not be used by someone in the back of one group to
+attack a target in the back of another group.  The range is too great.
+#0
+ORDER
+
+Used for ordering pets and charmed people to do your bidding.  You
+can order everyone under your command with "order followers".
+
+order <character> <command>
+order followers <command>
+
+> order puppy eat bread
+> order cityguard sleep
+
+See also:  CHARM
+#0
+REPORT
+
+This command sends a report of your current and max hp and mana to the room.
+You can use this command to let potential rescuers know how low your hps are
+without forcing them to use the "group" command.  It is designed as a
+convenience for groups with members who get lag or have slow modems.
+
+> report
+#0
+SPLIT
+
+Usage:  SPLIT <amount to split>
+
+SPLIT is used to split money among people in your group who are in the same
+room as you.  If you are in a group with 4 other people, all of whom are in
+the same room with you, and you type SPLIT 100, you will give each of the
+other 4 group members 20 coins each.  (100 coins is split 5 ways; you keep
+your share and give everyone else their share).
+
+See also: GROUP FOLLOW
+#0
+UNGROUP
+
+UNGROUP can be used by group leaders to disband the entire group, or
+to kick a specific group member out of the group (and stop him/her from
+following the leader).
+
+> ungroup
+> ungroup homer
+
+See also: GROUP
+#0
+GUILDS
+
+The Guildhouse is the place where mortals may go to escape the troubles and
+perils of a cruel world.  Guilds are also the places where people come to
+learn and practice the skills of their trade.
+
+See also: PRACTICE
+#0
+SNEAK
+
+Used for sneaking (moving in and out of rooms without anyone taking notice).
+When you type sneak, there is no way to know if you're actually sneaking.
+If you sucessfully sneak, then you'll continue to sneak for a little while.
+
+> sneak
+
+See Also : HIDE
+#0
+TRACK
+
+Used for finding the first step on the shortest route to a monster.
+
+> track fido
+#0
+HOUSE
+
+The HOUSE command is used to add or remove guests from your house's guest
+list.  You must be standing in your house to use this command.  Only the
+primary owner of a house (not guests) may change the guest list using the
+HOUSE command.
+
+Usage: house [<player name>]
+
+Typing 'house' with no arguments gives a list of the people currently on
+your house's guest list.  Typing 'house' with the name of a player will add
+that player to your guest list if the player is not on the list, or will
+remove the player from the guest list if the player is already on the list.
+The player specified must be in the player database for the MUD, although
+he or she does not necessarily have to be logged on at the time.
+
+Guests of your house will be able to enter your house until you remove them
+from the guest list.
+
+See also: HOUSES
+#0
+HOUSES
+
+Houses have been implemented as of CircleMUD 3.0.  A house entails two things:
+access control and crash protection.  Only you and your guests will be allowed
+to enter the house.  Your house will be crash-saved every five minutes.  You
+can force your house to save by typing 'save' while standing in your house.
+In the event of a crash, the objects in your house as of the last crash-save
+will be loaded back into your house when the MUD reboots.  Also, if you own
+a house, and quit from the game while standing in your house, you will be
+loaded into your house next time you enter the game.
+
+Guests of your house can be defined using the HOUSE command.  See HOUSE for
+more information.
+
+Houses are an alternative to renting.  You can simply enter your house and
+quit; your objects will drop to the ground and be crash-saved for when you
+return.  There is currently no limit to the number of objects which can be
+stored in your house.  Of course, players must expect to pay a much higher
+premium for the convenience of houses; contact your local Implementor for
+a fee schedule.
+
+See also: HOUSE
+#0
+INFORMATION
+
+Information Help Menu
+
+SCORE INFO WHO NEWS TIME WEATHER
+WHERE CONSIDER LEVELS WIZLIST IMMLIST
+CREDITS TOGGLE FLAGS WIZHELP
+#0
+DIAGNOSE
+
+diagnose
+diagnose <character>
+
+The DIAGNOSE command tells you how wounded a character looks.  If you are
+fighting someone, you can use DIAGNOSE with no arguments to diagnose the
+person you're fighting.
+
+> diagnose
+> diagnose rasmussen
+#0
+EXAMINE
+
+May give you some valuable information about an item.
+
+See also: LOOK
+#0
+EXITS
+
+Gives you a list of the obvious exits from your location. Of course, the less
+obvious ones won't show up here - you have to THINK in order to locate those.
+#0
+"WHO FLAGS"
+
+Players sometimes have FLAGS after their names in the WHO list.  These
+flags are always in parentheses, not brackets or braces.
+
+FLAG        MEANING
+----------- ---------------------------------------------------------
+(invis)     Player is invisible; you can see him/her because you are
+	    sensitive to the presence of invisible things.
+(writing)   Player is writing on the board; do not disturb.
+(mailing)   Player is writing mail; do not disturb.
+(deaf)	    Player has chosen not to hear shouts.
+(notell)    Player has chosen not to accept tells.
+(quest)     Player is participating in a quest currently being run by
+	    the Gods.
+
+See also:  STEAL VISIBLE NOSHOUT NOTELL QUEST
+#0
+HELP
+
+Following help is available:
+
+HELP help       - This text.
+HELP            - A list of some of the most useful commands.
+
+Help searches for a partial match of the entered word, including any
+spaces that may follow the word.
+
+Example:
+> 'help magic mis'
+    will find the help text for the magic missile spell.
+
+> 'help mag '
+   will not match anything.
+
+> 'help mag'
+   will match 'magic user' or 'magic missile' depending on first
+   occurence in the help file.
+
+See also:  COMMANDS
+#0
+IMPLEMENTOR
+
+1.  The most powerful being in existence.
+2.  A person who makes your life miserable by fixing all the bugs.
+#0
+INFO NEWS POLICY CREDITS VERSION
+
+These commands show you important information about CircleMUD.  It is a good
+idea to read them every once in a while.
+
+info     - useful information about the game for beginners
+news     - latest changes to the code and areas
+policy   - policies on topics like playerkilling
+credits  - the people who made CircleMUD possible!
+version  - displays the current CircleMUD version number
+#0
+LOOK
+
+For studying your surroundings. Examples:
+look                                      
+look AT the angel
+look IN the bag
+look to the south   (or just: look south)
+
+Note that if you LOOK AT CORPSE you will not see its inventory.
+To see what's inside a container (i.e. a corpse) use LOOK IN <OBJECT>.
+
+See also: EXAMINE, READ
+#0
+SCORE
+
+Whenever you want to check whether you're still alive and healthy
+or simply want to see how much money you have left.
+#0
+SEARCH
+
+Search allows a player to find out hidden information about something.  Search
+object will tell the searcher information about the object.  Search room, or
+just search by itself, will tell the searcher about secret doors, hidden
+objects, and hiding mobs in the room.  Everyone has some chance of success, but
+only thieves can improve in search.
+
+See also: HIDE
+#0
+WEATHER
+If you're uncertain whether the sun is shining or the rain is pouring down.
+#0
+WHO "WHOS ONLINE"
+Arg : who [<options>] [<name>]
+
+
+Lists the people currently in the game that you can see.  A name or the first
+characters in the name can be specified, and only characters which fit those
+names are listed.  You can also specify option to filter names, from the
+options listed below.
+
+ All options must begin with a "-"
+   h  = a more descriptive help
+   l  = lists all the users levels
+   c  = lists all the users class'
+   r  = lists all the users races
+   g  = lists all the immortals in the game.
+   q  = lists everyone on the quest.
+   z  = lists everyone in your zone.
+
+examples:
+> who -lcr
+lists everyone in the mud with their level, class, and race.
+> who -zcr
+lists everyone in your zone w/ their class and race.
+> who -q f
+lists everyone whos names starts with "f", and is in the quest.
+#0
+WIZLIST IMMLIST
+
+Lists the most powerful beings on the MUD.  Be nice to these people.  Some are
+known to bite.
+#0
+CIRCLEMUD CREDITS
+                    C  I  R  C  L  E  M  U  D     3  .  0
+
+CircleMUD was developed from DikuMUD (Gamma 0.0) by Jeremy "Ras" Elson at
+Johns Hopkins University's Department of Computer Science.  All code unique
+to CircleMUD is protected under a copyright by the Trustees of the Johns
+Hopkins University.
+
+Many, many people contributed to CircleMUD in one way or another throughout
+the course of its development.  Although it's impossible for me to remember
+them all, I'd like to extend special thanks to certain people:
+
+  -- Gekke Eekhoorn, Jeff Fink, Chris Epler, Eric Green, and Chris Herringshaw,
+     and Stefan Wasilewski for extensive beta-testing, bug reporting, and code
+     submissions for Circle 3.0.
+  -- Furry (Alex Fletcher), for single-handedly managing Circle's world files.
+  -- Jean-Jack Riethoven, for porting the code to the Amiga.
+  -- Fred Merkel, Ryan Watkins, Jay Levino, and Sharon Goza, for other
+     code and area submissions for Circle 2.x.
+  -- The DikuMUD folk, and the good old WhatMUD implementors Dave & Justin,
+     for starting the ball rolling.
+  -- Bryan Jolson, Steven Lacher, Cat Stanton, and Naved Surve, for being 
+     there in the very early days of Circle's development.
+  -- Bill Bogstad and Tim Stearns, for allowing Circle to exist at JHU CS.
+
+...plus everyone else in the Circle community who has submitted code, areas,
+utilities, suggestions, and otherwise supported CircleMUD in one way or
+another.  I absolutely couldn't (and wouldn't) do this if it wasn't for all
+of your help.  Thanks everyone!
+
+ Anonymous FTP:  ftp.cs.jhu.edu:/pub/CircleMUD
+Author's Email:  jelson@jhu.edu
+           URL:  http://www.cs.jhu.edu/~jelson/circle.html
+  Mailing List:  circle@pvv.unit.no
+
+Type 'credits' to see the DikuMUD credits.
+#0
+NEWHAVEN
+                                    NewHaven
+&crIMPORTANT ROOMS                           
+&cr1= Fountain                       &cL+-+-+
+&cr2= Salvation army box             &cL|&cr3&cL|&cWO&cL|&cy    O
+&cr3= Board room                     &cL|&cW|&cL|&cW|&cL+-+&cy  |
+&cr4= Post office                    &cL|&cr2&cW-&cr6&cW-&cr4&cL|&cr  5
+&cr5= Docks                          &cL+-+&cW|&cL+-+&cW  |
+&cr6= ATM                              &cL|&cWO&cL|&cW    O
+&ccSTORES                      &cL+--+    +&cW|&cL+&cW    |
+&cc1= General store            &cL|&cc2&cW-O-O-O-O-O-O-O&cg-O-O-&cG5&cg-O
+&cc2= Jewelry                  &cL+-+&cW|&cL  +-+&cW|&cL+-+&cW  |&cg | | | |
+&cc3= Weapons                     &cWO  &cL|&cWO-O-&cc1&cL|&cW  O&cg-O-&cG6&cg-O-O
+&cc4= Temple                 &cL+---+&cW|&cL+-+&cW|&cL+&cW|&cL+-+&cW  |&cg | | | |
+&cc5= Alchemist              &cL|&cWO-O&cL|&cWO-&cc3&cL|&cWO&cL|&cWO     O&cg O-O-O-O
+&cc6= Glumm's Food           &cL|&cW|&cL|&cW|&cL|&cW|&cL+-+-+&cW|     |
+&cc7= Leathery               &cL|&cG1&cL|&cWO&cL|&cWO   O-O-O   O
+&cc8= Library                &cL+-+&cW|&cL+&cW|   | | |   |
+&cc9= Armor                 &cWO-O-O-O-O-O-&cr1&cW-O-O-O-O
+&cc10= Smithy                &cL+&cW*&cL+&cW*&cL+&cW|   | | |   |&cL+-+
+&cGGUILDS                    &cL|&cWO*O&cL|&cWO   O-O-O   O-&cc8&cL|
+&cG1= Warrior                &cL+---+&cW|&cL+-+  &cW|&cL+-+ &cW |&cL+-+---+
+&cG2= Monk                   &cL|&cG2&cW-&cc4&cW-O-&cc5&cL|&cW  O-&cc7&cL|&cW  O-O-O-&cG4&cL|
+&cG3= Cleric                 &cL|&cW|&cL+-+&cW|&cL+-+-+&cW|&cL+-+-+&cW|&cL+-+&cW|&cL+-+                     
+&cG4= Mage                   &cL|&cG3&cL|  &cWO  &cL|&cc6&cL|&cWO&cL|&cc0&cL|&cc9&cL|&cWO&cL  |&cWO&cL|
+&cG5= Ranger                 &cL+-+  &cW|  &cL+&cW|&cL+&cW|&cL+&cW|&cL+&cW|&cL+&cW|&cL  +-+
+&cG6= Thief/assassin              &cWO-O-O-O-O-O-O
+                                &cL+&cW|&cL+-+&cW|
+                                &cL|&cWO*O&cL|&cWO
+                                &cL+---+&c0
+#0
+EXPERIENCE XP
+
+Whenever you kill a monster or a player, you earn experience points.  When
+enough experience points are earned, you raise a level.
+Things you should know about experience points:
+
+  * When damaging a monster, you get experience points.
+
+  * If you kill a monster of higher level than yourself, you get bonus
+    experience points.  If killing a monster of lower level you'll gain
+    less experience points
+
+See also: GROUP, SCORE
+#0
+FLAGS
+
+Players sometimes have FLAGS after their names in the WHO list.  These
+flags are always in parentheses, not brackets or braces.
+
+  FLAG        MEANING
+  ----------- ---------------------------------------------------------
+  (KILLER)    Player is trying to kill other players.  That means you
+              can try to kill him/her without being flagged.
+  (THIEF)     Player is trying to steal from other players.  Fire away.
+  (invis)     Player is invisible; you can see him/her because you are
+              sensitive to the presence of invisible things.
+  (writing)   Player is writing on the board; do not disturb.
+  (mailing)   Player is writing mail; do not disturb.
+  (deaf)      Player has chosen not to hear shouts.
+  (notell)    Player has chosen not to accept tells.
+  (quest)     Player is participating in a quest currently being run by
+              the Gods.
+#0
+"COLOR CODES"
+
+You can change the color of your text inline in says, gossip, titles,
+descriptions, and just about anywhere else with a simple color code.  The
+codes are used as follows:
+
+Type &^cX where X is a letter from the following table, as per the given
+color:
+
+   &cL&^cL  Dark Grey                      &cB&^cB  Blue
+   &cR&^cR  Red                            &cM&^cM  Magenta
+   &cG&^cG  Green                          &cC&^cC  Cyan
+   &cY&^cY  Brown                          &cW&^cW  Light Grey
+
+&c0To use boldface, simply capitalize the color letter, as in &^cC for
+&cCBright Cyan.&c0  Background colors can be altered by using a &^bX
+sequence.  And better yet:
+
+   &^co  Foreground color off           &^b0  Background color off
+   &cv&^cv  Reverse video  &c0                &cf&^cf  Flashing text&c0
+   &^c0  All color off
+
+The most common use for this, of course, is custom colors for communication.
+A good example for this is the following command:  "alias ' '&^cG$*".
+
+Finally, if you wish to echo a "&^c" to the screen, type "&^^c".
+#0
+PRACTICE PRACTISE
+
+Usage: practice [skill or spell name]
+
+Practice is the way you improve your spells and skills.  You can only do
+so in your guild, where your guildmaster can help you train.  Type
+"practice <skill>" to improve your abilities while in your guild.  You can
+only practice a certain amount for each level you gain.  Unused practice
+sessions will accumulate for use in future levels.
+
+If you type practice anywhere other than in your guild, you will get a list
+of all of the spells and skills you know and your level of proficiency at
+each.
+
+#0
+CONSIDER
+
+Usage:  consider <target>
+
+A wise warrior always carefully considers his or her foe before entering
+combat.  This command will compare your total point value with that of the
+target's. You will receive a rough estimate of their toughness in combat,
+which is by no means exact.  Point value may or may not be relevant to actual
+difficulty in combat.
+#0
+DISMOUNT
+
+Usage:  dismount
+
+This is used to get off steeds and objects, of course.
+
+See also:  MOUNT
+#0
+MOUNT
+
+Usage:  mount <target>
+
+You attempt to mount the target, if indeed it is a steed you can ride.  If so,
+you must pass a riding check - a roll versus your riding skill modified by the
+disposition of the mount.  Failure will leave you sitting on your posterior
+for a bit.
+#0
+DOUSE
+
+Usage:  douse <target>
+
+This provides a means of turning off a light source, which is a wise thing to
+do if the light source is unnecessary.  Many light sources have limited 
+lifespans, after which they burn out.
+#0
+DRAW
+
+Usage:  draw <target>
+        draw
+	
+If you have a weapon in a scabbard, this allows you to quickly draw it for
+use.  You can draw whatever may come to hand quickest (allowing the MUD to
+choose for you) or you may specify what you wish to draw.
+
+See also:  SHEATH
+#0
+"EXPERIENCE FORMULA"
+
+
+                /                                  \  2
+               |  victim points * (100 + modifier)  |
+               |  --------------------------------  |
+experience =   |           character points         |
+                \                                  /
+
+                ------------------------------------
+
+                                100
+#0
+INN INNS CRYOGENIC CRYO RECEPTION
+
+Inns are places where the weary traveler may rest while the innkeeper looks
+after his equipment and treasure.
+
+Specifically, the game will save your equipment while you are logged out.
+There is a daily cost for renting, based on your equipment.  Each item has
+a per diem charge.  The per diem charge is calculated to the nearest second,
+however -- if you rent at the rate of 2400 coins per day, and you come back
+39 hours later, you will be charged 3900 coins.
+
+A CRYOGENIC CENTER will store your items for a one-time charge of four
+days rent.
+
+Rent files are deleted if you run out of money to pay the per diem charges
+or after 30 days.  Cryogenic-rent files are deleted after 60 days.
+
+See also: OFFER RENT
+#0
+OFFER RENT
+
+For use in the receptions of inns.
+
+Offer makes the innkeeper tell you the cost of storing your belongings
+for one day.  Rent stores you belongings and exits you from the game.
+When you re-enter, you will start where you rented.
+
+There is a daily charge for rent.  You may store your things at the
+CRYOGENIC CENTER for a one-time charge of four days rent.  See INNS
+for details on the rent policy.
+
+> offer
+> rent
+
+See also: INNS
+#0
+Lore Help
+
+DEITIES : The powers that rule the world of Ramas
+MAGIC   : The arcane arts
+RACES   : The races that populate Ramas
+#0
+DEITIES
+
+Here are the spheres that each deity has an emphasis in.  Also listed are
+spells that a cleric of that given deity will be able to cast at any time based
+on a skillroll to ordination.  Note that the listed spheres show emphasis, but
+do not exclude others.  You could have a cleric of Vaadh or Shestu receive
+healing spells - but rarely, and only at the proper shrine.  On the other
+hand,  Pelendra will have major emphasis on healing.
+&cC
+&cY
+TAL-VINDAS&c0
+Alignment:      Lawful Good
+Spheres:        War, Protection, Heavens
+Innate spells:  dispel evil -3, protection from evil, sanctuary -7, holy word -9
+&cG
+PELENDRA&c0
+Alignment:      Neutral Good
+Spheres:        Healing, Nature, Protection
+Innate Spells:  protection from evil -2, group heal -7, 
+&cC
+DYMORDIAN&c0
+Alignment:      Chaotic Neutral/Good
+Spheres:        Creation, Heavens, Divination
+Innate Spells:  detect magic, magic missile -3, identify -4
+&cy
+KHARSUS&c0
+Alignment:      Lawful Neutral
+Spheres:        Creation, Healing
+Innate Spells:  strengthen -4
+&cW
+NYMRIS&c0
+Alignment:      True Neutral
+Spheres:        Divination, Protection, 
+Innate Spells:  sleep -2, sense life -1, identify -2 
+&cL
+VAADH&c0
+Alignment:      Lawful Evil
+Spheres:        Heavens, War, Necromancy
+Innate Spells:  shocking grasp -1, animate dead -4, dispel good -5, 
+                phantom fist -5,
+&cr
+SHESTU&c0
+Alignment:      Chaotic Evil
+Spheres:        War
+Innate Spells:  ventriloquate -2, dispel good -3, cause light,
+                vampiric regeneration -8
+#0
+MOVEMENT
+
+Movement commands list
+
+NORTH SOUTH EAST          : These commands move your character around in 
+WEST UP DOWN              : various directions.
+
+LOOK EXITS                : Bring up descriptions of your surroundings and
+                          : places you can go to from where you're at.
+
+SLEEP WAKE REST SIT STAND : Your character needs periodic rest, so use these.
+LOCK UNLOCK OPEN CLOSE    : Doors are a funny thing, no?
+ENTER LEAVE               : More for those who like loitering in doorways.
+#0
+ENTER
+
+If you type 'enter' while you are outdoors, you'll enter any nearby shelter.
+You can also follow 'enter' with an argument; for example, 'enter window'.
+#0
+FOLLOW
+
+Use FOLLOW to automatically follow someone else.
+
+> follow ras
+> follow self
+#0
+LEAVE
+
+If you feel claustrophobic, typing 'leave' will make you use the nearest
+obvious exit to the outside.
+#0
+WAKE SLEEPING REST SIT STAND
+
+For changing your position.  If you feel weary, it's probably a good idea
+to sit and rest for a while, or maybe even take a nap.
+#0
+OBJECTS
+Object commands list
+
+GET DROP               : Pick up and drop objects you find
+WEAR WIELD GRAB REMOVE : Wear clothing and armor, and use equipment
+LIGHT DOUSE            : Manipulate light sources
+INVENTORY EQUIPMENT    : See what's in your hands and on your body
+JUNK                   : Get rid of something for good
+DONATE                 : Give spare items to the needy
+PUT                    : Put an object in or on another object
+GIVE                   : Be generous with what you have
+EXAMINE                : Take a closer look at an object
+EAT DRINK TASTE SIP    : Eat, drink, and sample the goods
+POUR                   : Empty liquid from a container into ...
+#0
+DONATE
+
+This command takes an object that you no longer want and deposits it in the
+donation room of Newhaven to assist newbies in getting started.  There is
+a 75% chance objects donated will wind up in a donation room in Newhaven,
+and a 25% chance the item will be junked.
+
+donate <object>
+donate <number> coins
+
+> donate shield
+> donate all.bread
+> donate 500 coins
+
+See also: JUNK
+#0
+DROP
+
+If you lose interest in a carried item, you can drop it on the ground.
+
+drop <item>
+drop all.<item>
+drop all
+drop <number> coins
+
+> drop bottle
+> drop all.bread
+> drop all
+> drop 1000 coins
+
+See also: GET JUNK DONATE
+#0
+EAT DRINK SIP TASTE
+
+If you're hungry or thirsty, these commands are for you!
+
+> eat bread
+> taste bread
+> drink from cup
+> sip fountain
+#0
+EQUIPMENT
+
+Gives you a list of all the equipment you're wearing, holding, and wielding.
+
+See also: INVENTORY
+#0
+FILL
+
+If you want to fill a container you're holding with liquid from a fountain
+in the same room as you.
+
+> fill canteen fountain
+
+See also: POUR
+#0
+GET TAKE
+
+If you find something interesting on the ground, you may use 'get' to pick
+it up.  'get' can also be used to extract items from containers.
+
+> get sword corpse
+> get all corpse
+> get all all.bag
+> get all.bread all.bag
+
+See also: DROP PUT
+#0
+GIVE
+
+If you feel benevolent, you may give some stuff to someone in need.
+
+give <object> <victim>
+give <number> coins <victim>
+
+> give all ras
+> give bread onivel
+> give all.bronze romulus
+> give 400 coins aramina
+#0
+GRAB HOLD
+
+For getting a good grip on something; a torch, for example.  Anything that
+is to be carried in the hands must be grabbed or held, including shields.
+You can specify which hand you would like to hold something in by putting
+the hand after the name of the object.  The default hand things are held in
+is the right.
+
+> hold torch
+> grab stone
+> hold shield right
+
+See also: WEAR, WIELD, EQUIPMENT, REMOVE
+#0
+INVENTORY
+
+If you're uncertain about what you're carrying, or simply want to check
+that no thieves have got to your backpack.
+
+See also: EQUIPMENT
+#0
+JUNK
+
+Use JUNK instead of DROP if you want to keep the world a little cleaner.  If
+you JUNK something, it will disappear and you'll get a few coins or experience
+points, just as if you had dropped it in the dump.
+
+donate <object>
+donate <number> coins
+
+> junk cup
+> junk all.bronze
+> junk 500 coins
+
+See also: DROP DONATE
+#0
+OPEN CLOSE LOCK UNLOCK
+
+To open, close, lock, and unlock doors, of course.
+
+<open | close | lock | unlock> <door> [direction]
+
+> open portal
+> lock door
+> unlock door south
+> close gate
+#0
+POUR
+
+If you want to pour some liquid from one container to another.
+
+> pour canteen cup
+
+See also: FILL
+#0
+PUT
+
+For putting items into containers.
+
+> put bread bag
+> put all.bread bag
+> put all chest
+
+See also: GET
+#0
+QUAFF POTION POTIONS
+
+Use : Quaff <Potion>
+
+Quaff is used to "drink" a (magical) potion.
+#0
+RECITE SCROLL SCROLLS
+
+Use : Recite <Scroll> [Target]
+
+Is used to "read" a magical scroll. Target can be an object, character or
+nothing (which may be yourself).
+#0
+REMOVE
+
+If you tire of wearing some armor or wielding a weapon.
+
+> remove boots
+> remove 2.sword
+> remove sword
+> remove all
+> remove all.bronze
+
+See also: WEAR, WIELD
+#0
+USE WAND STAFF STAFFS WANDS
+
+Use : Use <Staff>
+      Use <Wand> <Target>
+
+Using staff's will automatically target everybody (or everything) in a
+room, execpt yourself. Therefore staff's are naturally very powerful, and
+yet may be very dangerous to use around other players.
+
+Using wands require that you point it at a target, which can be eihter a
+character or an object.
+
+Both staff's and wand's must be HELD in the hand prior to use! (Use the
+grab or hold commands). You must still supply the name of the staff or
+wand to avoid confusion.
+#0
+WEAR
+
+If you want to wear some clothes, armor or the likes.
+
+Also, to wear everything in your inventory (or at least try to, as wearing 
+things like loaves of bread is not a good way to win friends and influence
+people) you can type "wear all".
+
+Optionally, you can specify what part of your body to wear the equipment on.
+
+> wear boots
+> wear all.bronze
+> wear all
+> wear ring finger
+
+See also: EQUIPMENT, REMOVE EQUIPMENT
+#0
+WRITE
+
+In order to write a note, you need a piece of blank paper (or similar), and
+a pen of some sort. You can then type something like "write on the paper with
+the pen", whereupon you'll be asked to type in your note at the keyboard.
+
+WRITE is also used to post messages to bulletin boards.  Type HELP BOARDS
+for more information.
+
+See also: BOARDS
+#0
+DOUSE
+
+Usage:  douse <target>
+
+This provides a means of turning off a light source, which is a wise thing to
+do if the light source is unnecessary.  Many light sources have limited 
+lifespans, after which they burn out.
+#0
+SHEATH
+
+Usage:  sheath [weapon] [scabbard]
+
+Attempts to sheath a weapon in an appropriate empty scabbard.  If no weapon is
+specified, the first weapon found in hand is assumed as the object.  The
+equipment and inventory are then searched for the appropriate scabbard, wherein
+the weapon is placed.
+#0
+SHOPS
+
+Shops are places where the adventurer may purchase equipment for his quests,
+and where he may sell his treasure if he should manage to survive the perils
+with his life and sanity intact. Many shops trade only in a specific type of
+merchandise. Thus, a baker may well refuse to buy your armor, even if it is of
+high quality!
+   To some people, the prospect of obtaining the entire inventory of a shop by
+murdering the keeper may appear tempting - but beware: The shopkeepers are 
+often rugged, capable men; roughened by years of trading and, indeed, surviving
+in a world where the only safe prospect is death in the end.
+
+See also: BUY, SELL, LIST, VALUE
+#0
+BUY
+If you'd like to purchase an item from a shop and have the money, you can buy
+it.  Items can be bought by name, or by their number in the shop listing,
+and can be bought in quantity.
+ 
+Examples:
+ 
+> buy sword        (buy the first sword on the list)
+> buy #3           (buy the third item on the list)
+> buy 4.sword      (buy the fourth sword on the list)
+> buy 10 bread     (buy 10 pieces of bread)
+> buy 10 #2        (buy 10 of the second item on the list)
+ 
+See also: SHOPS SELL LIST VALUE
+#0
+LIST
+
+If you'd like to see what items a shop has for sale, take a look at the
+list.  The list contains all of the items currently for sale and in
+what quantity.  The price for each item is also listed.  If you are
+interested in a particular type of item, you can specify which items to
+list.
+ 
+Examples:
+ 
+> list             (list all items for sale)
+> list sword       (list all swords for sale)
+ 
+See also: SHOPS BUY SELL VALUE
+#0
+SELL
+
+If you'd like to sell an item to a shopkeeper, trying selling it to them.
+Most shops specialize in what they will buy, so you may have to look around
+to find a buyer for your items.
+ 
+Examples:
+ 
+> sell sword       (sell the first sword in your inventory)
+> sell 3 sword     (sell the first three swords in your inventory)
+ 
+See also: SHOPS BUY LIST VALUE
+#0
+VALUE
+
+Before selling an item to a shop, you can ask the shopkeeper how much
+he or she is willing to pay for it.
+ 
+Example:
+ 
+> value bread
+ 
+See also: SHOPS BUY SELL LIST
+#0
+ALCHEMIST ALCHEMISTS
+
+Alchemists study the physical aspects of spells and gain their powers
+through the combination of spell components. They are very secretive
+about the components needed to cast their special spells and no scrolls
+dealing with this are known to exist. It is known that every alchemist
+spell requires at least three objects. When one component is in the 
+alchemists inventory they will experience a certain physical effect, if
+two, another effect, if all three, the magical powers of the alchemist and
+his objects are released.
+
+ Since the alchemist uses physical objects to cast their spells, they
+require no mana, and are the most powerful of any type magics.
+
+You can improve your skills by using the practice command.
+
+See also: -
+#0
+ASSASSIN ASSASSINS
+
+Assassins are the shadows that dance in the night. Sudden death is the
+assassins moto. To this end they study the skills of dealing death in 
+a quick effiecient manner. They are able to use any weapon and can
+summon some very dangerous skills at higher levels. No one really ever
+trusts an Assassin.
+
+You can improve your skills by using the practice command.
+
+See also: STRANGLE, HIDE, PUNCH, SNEAK
+#0
+CLERIC CLERICS
+
+Clerics have an ancient belief in not carrying sharp weapons.  Hence, they can
+only wield bludgeoning weapons.  This class gives you the wisdom of peace,
+blessing and healing, though it is possible to learn more violent spells.
+
+You can improve your spells by using the practice command.
+
+See 'help spells' for a list of spells available.
+
+See also: PRACTICE, SPELLS
+#0
+DWARF DWARVES
+
+ The dwarven race is a stout robust lot who enjoy the caverns and caves 
+beneath the dirt. They to, like the elves, are one of the oldest races, and
+count theirs life spans in centuries. They tend to stay in their own groups
+but are often seen traveling with humans and gnomes. From centuries of 
+living underground dwarves have developed an acute sense of sight. They 
+are able to see in the dark with infravison.
+ 
+ Dwarves enjoy the following racial modifiers:
+  
+  + 1 Strength
+  - 1 Wisdom
+  + 1 Constitution
+#0
+ELF ELVES ELFS
+
+ The elven race is a shy secretive group who tend to shun large groups not
+of their race. Even though an elves life span is measured in centuries, 
+they are a dieing race. Their inability to adapt well to a changing 
+environment, and unwillingness to help others, in times of need, has served
+them poorly. Elves have an acute sense of sight. They are able to see in
+the dark with infravison.
+ 
+ Elves enjoy the following racial modifiers:
+  
+  - 1 Strength
+  + 1 Intelligence
+  + 1 Wisdom
+  - 1 Constitution
+  + 1 Charisma
+#0
+RANGER RANGERS
+
+Rangers are at peace with themselves and their knowlege of the woods. They
+excell at hunting and tracking. They enjoy the strength of fighters, if not
+the skills, yet retain their own special abilities. A Ranger is never
+truly lost. The Ranger class has gained the limited use of some spells.
+
+You can improve your skills and spells by using the practice command.
+
+See also: TRACK, CAMOFLAGUE, PUNCH, HEADBUTT, SANCTUARY, CALL LIGHTNING,
+          SKILLS, SECOUND ATTACK, THIRD ATTACK
+#0
+THIEF THIEVES
+
+Thieves are known to have very special qualities, that no other class offers.
+Their specialty tends to be in the darker, sneakier art.  Many of these
+qualities can come in handy in many situations, such as picking locks.
+
+You can improve you skills by using the practice command.
+
+Skills available to thieves:
+
+backstab, sneak, hide, steal, pick lock, punch.
+
+See the help on each skill for more information.
+
+See also: PRACTICE
+#0
+WARRIOR FIGHTER
+
+Warriors are known to have more strength than the average player.  This makes
+them better at hand-to-hand-combat, as they possess skills of violence and
+fighting unequaled by the members of any other class.  However, they lack the
+ability to use magic of any sort. Warriors also gain <with levels> the 
+ability to attack more than once during a fight.
+
+You can improve your skills by using the practice command.
+
+Skills available to warriors:
+
+rescue, bash, punch, headbutt, second attack, third attack.
+
+See also: PRACTICE
+#0
+BACKSTAB
+
+Backstab is a way to sneak up on a person and attempt to place your dagger
+in his back, at exactly the point where it does most damage.  The chance and
+success of a backstab are dependent upon the extent of your practice of the
+skill at your guild.  You can always backstab sleeping people.
+
+See also:  "skillinfo backstab", 
+#0
+BANDAGE
+
+Required skill:  First Aid
+
+This allows the player to assist others incapacitated by their wounds.  If the
+roll in the first aid skill succeeds, a certain measure of health is restored
+to the patient, allowing them to regain consciousness.
+#0
+BASH
+
+Usage:  bash [target] or set in combat profile
+
+Speed: 10
+
+A bashing attack attempts to knock the target over.  Success is affected by
+the weight of the attacker and target, and the heavier of the two will have an
+advantage.  If the attack succeeds, the victim will be knocked to the ground;
+otherwise, the attacker will themselves tumble to the ground and be unable to
+attack.
+
+A shield may be worn and used for the "shield bash", which enhances both the 
+chance of success and the damage of a bashing attack.
+
+While in combat, the target is assumed to be the character's opponent if not 
+specified.
+
+See also:  SHIELDBASH
+#0
+SHIELDBASH, "SHIELD BASH"
+
+Speed: 10
+
+Usage:  shieldbash [target] or set in combat profile
+
+This attack is similar to the regular bash, but employs a shield in its usage,
+enhancing both the  chance of success and the damage of a bashing attack. The
+shield skill is rolled to determine success.
+
+While in combat, the target is assumed to be the character's opponent if not 
+specified.
+
+See also:  BASH, COMBAT PROFILE
+#0
+BLADESONG
+
+Elves only
+
+Bladesong is a special fighting form used by the greatest of elven warriors.
+It is the very infusion of elven essence into the warrior's fighting
+technique; the weapons sing with magic and the warrior is quickened, fighting
+like a tornado.
+
+Bladesong requires ten points of mana for each usage, and effectively grants
+another round's worth of combat moves, up to the limit of four combat moves per
+round.  It can be invoked either from the command line or from the combat profile.
+
+See also:  COMBAT, COMBAT PROFILE, ELVEN LORE
+#0
+BERSERK
+In ancient times, warriors of some clans would go through extensive measures 
+before battles to create a frenzy like state where they would know no fear and
+do massive damage.  Be it through intense mental preperation, or with
+the aid of amphetamines and other such agents, the results of their berserker
+state were more than apparent on the battlefield.
+
+Berserk is a skill warriors have in which they must perform BEFORE a fight is
+in progress.  By using this skill, the warrior goes into a series of preper-
+atory steps in which they reach a frenzy like state.  There are a number of
+effects.
+
+1.  The warrior's ability to damage, his effective strength and hardiness are
+    significantly increased.
+2.  The warrior's intelligence and wisdom are likewise decreased.
+3.  The warrior is considerably resilient to effects which would disable the
+    opponnent through pain or fear.
+4.  The warrior is unable to flee or show similar acts of cowardice or mercy.
+
+The berserker rage induced by the warrior's actions has a limited duration of
+effect, which is determined by if the warrior is fighting, and how long the
+warrior has kept his berserker state.  After the berserk 'loses' his rage, his
+mental faculties will be restored, but his physical ones will be exhausted by
+his effort.
+
+#0
+CAST
+
+For "magical" people. If you want to throw a spell at someone or something.
+Note that the name of the spell must be enclosed by "'"s.
+
+Example: cast 'burning hands' <player>
+
+See also: pray, individual spells, for example:
+    > help magic miss
+    > help ventri
+    > help energy drain
+#0
+PRAY
+
+For the clerically ordained, this offers a way to appeal to the deities for
+aid.  Prayers do not drain mana; rather, they draw off of the skill in the
+sphere from which they are derived, which can be shown on the "spells" screen.
+When drained, the gifts of power over these spheres may restored to full
+strength at the shrine of a deity or through a holy object, provided that the
+player maintains their alignment with their deity.
+
+Example: cast 'bless' <player>
+
+See also: cast, individual prayers, for example:
+    > help cure ligh
+    > help bless
+    > help prot from evil
+#0
+CIRCLE
+
+Speed:  8
+
+The circle maneuver, if successful, allows one to flank their opponent and
+catch them off-guard.  This gives the player the chance to attack their
+opponent and deny them the chance to actively defend themselves, leaving only
+armor in the way of doing the foe bodily harm.
+#0
+"MAGIC USER" MAGE MAGICIAN ENCHANTER SORCEROR MARKRIDDEN
+
+The enchanter and magician classes focus on magic.  Magicians are human
+mages.  Their magic concentrates on life.  They learn how to interact with
+plants and animals to assist them.  Enchanters are elven mages.  Their
+speciality lies in inanimate objects, with the masters creating such works
+as dragon ships and intelligent weapons.
+
+Some magic is shared by both classes.  The outcomes are the same, but the
+means are different.
+
+You can improve your spells by using the practice command.
+
+See also: PRACTICE, SPELLS
+#0
+"PICK LOCKS"
+
+For picking locks.  Not all locks can be picked.
+
+pick <door>
+
+> pick door
+> pick safe
+
+See also : OPEN, CLOSE, LOCK, UNLOCK
+#0
+PRACTICE PRACTISE
+
+Practice is the way you improve your spells and skills. You must go to
+your guildmaster to let him/her help you improve.
+If you type practice, you will see which skills you can improve upon, and
+how good you already are at these.
+You can then use practice <skill>, to practice the appropriate skill.
+You can only practise a certain amount for each level you gain, and you
+do not have to save this, it can be accumulated.
+A guildmaster can only teach you so much this way.  After that, you can only
+improve by using your skills.
+#0
+RESCUE
+
+Fighters Only.
+
+This command is useful if you want to try and make an attacker hit you
+instead of your poor friend who is being pummeled.  You can only 'turn'
+one monster for each rescue attempt.  This is highly useful when playing
+in groups, of course.
+
+rescue <victim>
+
+> rescue quifael
+#0
+STEAL
+
+Thief Only.
+
+Use steal to steal gold or items from people. The chance of not getting
+caught depends on how well you have practiced steal, and if the person
+is asleep.
+
+Due to misuse of the steal command, it is now illegal to steal from other
+players.  Doing so will get you a flag for your trouble.
+
+Example:
+
+> steal gold drunk
+
+> steal sword mercenary
+  (only possible if he is sleeping)
+
+#0
+THIEF
+
+Thiefs are known to have very special qualities, that no other class offers.
+Many of these qualities can come in handy in many situations, such as picking
+locks.
+   You can improve you skills by using the practice command.
+
+See also: PRACTICE
+#0
+WARRIOR FIGHTER
+
+Warriors are known to have more strength than the average player. This makes
+them better at hand-to-hand-combat, as they posess skills of violence and
+fighting unequaled by the members of any other class. However, they lack the
+ability to use magic of any sort.
+   You can improve your skills by using the practice command.
+
+See also: PRACTICE
+#0
+CONSIDER
+
+Usage:  consider <target>
+
+A wise warrior always carefully considers his or her foe before entering
+combat.  This command will compare your total point value with that of the
+target's. You will receive a rough estimate of their toughness in combat,
+which is by no means exact.  Point value may or may not be relevant to actual
+difficulty in combat.
+#0
+DISARM
+
+Usage:  disarm <target>
+
+This difficult move will, if successful, deprive an opponent of their weapon.
+The attacker's skill in the disarm move is rolled in a contest with the
+target's combat technique to determine the outcome.
+#0
+DISMOUNT
+
+Usage:  dismount
+
+This is used to get off steeds and objects, of course.
+
+See also:  mount
+#0
+MOUNT
+
+Usage:  mount <target>
+
+You attempt to mount the target, if indeed it is a steed you can ride.  If so,
+you must pass a riding check - a roll versus your riding skill modified by the
+disposition of the mount.  Failure will leave you sitting on your posterior
+for a bit.
+#0
+"CIRCLE ATTACK"
+
+Speed:  8
+
+The circle maneuver, if successful, allows one to flank their opponent and
+catch them off-guard.  This gives the player the chance to attack their
+opponent and deny them the chance to actively defend themselves, leaving only
+armor in the way of doing the foe bodily harm.
+#0
+VISIBLE
+
+Use this command to break your spell of invisibility before it expires.
+#0
+"WORD OF RECALL"
+Usage       : cast 'word of recall' 
+Accumulative: -
+Duration    : Instantaneous
+
+The caster will be transferred back to his sanctuary (presently the 
+common square of Newhaven).
+
+See Also: -
+#0
+INFERNO
+
+Usage       : cast 'inferno'
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 24 Mage
+Save        : Versus spell for half damage.
+
+This spell creates a huge firestorm which scorches everyone in the room
+except the caster and his/her/its groupmembers, doing 5d<caster's level> +
+<caster's level> damage.  The ultimate in offensive invocation.
+#0
+STONESKIN
+Usage       : cast 'stoneskin'
+Duration    : 4 + (caster's level/3) hours.
+Level       : Level 15 Mage
+ 
+This makes the skin of the caster change into a stone-like material.  This 
+will greatly improve the armor class (-40 Armor Class) and make the caster
+more resistant to petrification (+3 Save vs Petrification).  This is a
+personal spell, it cannot be cast on others.
+#0
+HASTE
+
+Usage       : cast 'haste'
+Accumulative: Duration
+Duration    : 4 + (caster's level/3) hours.
+Level       :
+
+This spell magically enhances the metabolism and speed of the caster.  This
+improves the armor class (-10 Armor Class) and makes the caster more nimble
+(+5 Dex).  This is a personal spell, it cannot be cast on others.
+#0
+"ACID RAIN"
+
+Usage       : cast 'acid rain'
+Accumulative: -
+Duration    : Instantaneous
+Level       : Mage level 25.
+Save        : Versus spell for half damage.
+
+This spell will use the "force of nature" to make a cloud of acid rain
+strike everyone in thew room.  It is therefore only possible to call 
+acid rain outside, and it has to be raining (or worse).
+
+See also: "CONTROL WEATHER", WEATHER
+#0
+ARMOR
+
+Usage       : cast 'armor' [target]
+Accumulative: No
+Duration    : 24 Hours
+Level       : Mage level 13, Cleric level 2, Monk level 15.
+
+The Armor spell will improve your AC by 2.
+
+See also: AC
+#0
+BLESS
+
+Usage       : cast 'bless' <victim | object>
+Accumulative: No
+Duration    : 6 Hours, permanent for objects.
+Level       : Cleric level 6.
+
+Bless on a victim will improve the victims saving throw versus spells
+by 1, and furthermore improve the hitroll by 2.
+
+Bless on an item currently has no defined action.  It is only possible
+to bless non-evil items, and the object blessed may weigh no more
+than five pounds per level of caster. 
+#0
+BLINDNESS
+
+Usage       : cast 'blindness' <victim>
+Accumulative: No
+Duration    : 2 hours.
+Level       : Mage level 17, Cleric level 9.
+
+Blindness will blind a victim failing its saving throw.
+A blinded person will have -4 penalty to both hitroll and AC.
+
+See also: AC
+#0
+"BURNING HANDS"
+
+Usage       : cast 'burning hands' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Mage level 7.
+Save        : Versus spell for half damage.
+
+This spell is more powerful than the chill touch spell.
+
+See also: "CHILL TOUCH"
+#0
+"CALL LIGHTNING"
+
+Usage       : cast 'call lightning' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Cleric level 17, Ranger level 26.
+Save        : Versus spell for half damage.
+
+This spell will use the "force of nature" to make a lightning
+strike the victim.  It is therefore only possible to call lightning
+outside, and it has to be raining (or worse).
+
+See also: "CONTROL WEATHER", WEATHER
+#0
+CAST
+
+Usage: cast '<spell name>' [target]
+
+For "magical" people.  If you want to throw a spell at someone or something.
+
+Example:
+
+  > cast 'burning hands' <player>
+  Note that the name of the spell must be enclosed by "'"s.
+
+See also: help on each individual spell:
+
+Examples:
+
+  > help cure ligh
+  > help ventri
+  > help energy drain
+#0
+"CHARM PERSON"
+
+Usage       : cast 'charm person' <victim>
+Accumulative: No
+Duration    : (432/Intelligence points of person) hours
+Level       : Mage level 16.
+
+Is is not possible to charm anyone that is already charmed, if
+you're charmed yourself, or if the person is higher level than
+yourself.  The person will get a saving throw versus "paralysation".
+
+A charmed person will follow you, and not be able to attack you, you
+can order the charmed person using the order command.
+
+See also: FOLLOW, ORDER
+#0
+"CHILL TOUCH"
+
+Usage       : cast 'chill touch' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Mage level 5.
+Save        : Versus spell for half damage.
+
+This spell is more powerful than the magic missile spell.
+A victim failing its saving throw will get its strength
+reduced by one.
+
+See also: "MAGIC MISSILE"
+#0
+COLORSPRAY "COLOR SPRAY"
+
+Usage       : cast 'color spray' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Mage level 14.
+Save        : Versus spell for half damage.
+
+This spell is more powerful than the lightning bolt spell.
+
+See also: "LIGHTNING BOLT"
+
+For help on actual color, see:  ANSI
+#0
+"CONTROL WEATHER"
+
+Usage       : cast 'control weather' <'better' | 'worse'>
+Accumulative: Yes
+Duration    : -
+Level       : Cleric level 17.
+
+This spell will change the "course" of the current weather.
+
+Example:
+
+  > cast 'control wea' worse
+#0
+"CREATE FEAST"
+
+Usage       : cast 'create feast'
+Accumulative: -
+Duration    : Instantaneous
+Level       : Cleric level 23.
+
+This spell instantly creates a feast fit for a king!  The feast prepared
+will feed even the largest of appetites and fill them for many hours.
+
+See also: "CREATE FOOD, CREATE WATER"  
+#0
+"CREATE FOOD"
+
+Usage       : cast 'create food'
+Accumulative: -
+Duration    : Instantaneous
+Level       : Cleric level 3.
+
+This spell instantly creates a fresh waybread.  The waybread will be
+filling for the next (5+level) hours, up to a maximum of 24 hours.
+
+See also: "CREATE WATER"
+#0
+"CREATE WATER"
+
+Usage       : cast 'create water' <drink container>
+Accumulative: No
+Duration    : Instantaneous
+Level       : Cleric level 4.
+
+Expect disastrous results if cast upon a drink container which contains
+another liquid than water.  Empty or water containers will be filled
+depending on the level of the caster.
+
+Double amount of water will be created if it is raining (or worse).
+
+See also: "CREATE FOOD"
+#0
+"CURE BLIND"
+
+Usage       : cast 'cure blind' <victim>
+Accumulative: No
+Duration    : Instantaneous
+Level       : Cleric level 4.
+
+This spell will cure a person blinded by the "blindness" spell, it
+can not remove blindness caused by for example cursed items.
+#0
+"CURE CRITIC"
+
+Usage       : cast 'cure critic' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Cleric level 8.
+
+This spell cures 3d8+3 hitpoints of damage.
+#0
+"CURE LIGHT"
+
+Usage       : cast 'cure light' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Cleric level 1.
+
+Cures minor wounds and scratches.
+#0
+CURSE
+
+Usage       : cast 'curse' <victim | object>
+Accumulative: Yes
+Duration    : 7 Days, permanent on objects.
+Level       : Mage level 14.
+
+Curse cast on a person that fails the saving throw, will reduce their
+hitroll and damage roll both by one.  It will also reduce the saving
+throw versus paralysation by one. 
+
+When cast upon an object, the object will become undropable.
+#0
+"DETECT ALIGNMENT"
+
+Usage       : cast 'detect alignment'
+Accumulative: Yes (Duration)
+Duration    : 12 hours + level
+Level       : Cleric level 6.
+
+Allows the caster to detect the alignment of those around them.
+Evil will show as a red aura, good in a blue aura.
+
+See also: "DETECT INVISIBILITY"
+#0
+"DETECT INVISIBILITY"
+
+Usage       : cast 'detect invisibility' [self]
+Accumulative: Yes (Duration)
+Duration    : 12 hours + level/4
+Level       : Mage level 3, Cleric level 7.
+
+This spell enables you to see invisible items and players.
+#0
+"DETECT MAGIC"
+
+Usage       : cast 'detect magic' [self]
+Accumulative: Yes (Duration)
+Duration    : 12 hours + level
+Level       : Mage level 4.
+
+This spell will let you see the magical aura surrounding magical
+objects.
+#0
+"DETECT POISON"
+
+Usage       : cast 'detect poison' <victim | food | drink>
+Accumulative: No
+Duration    : Instantaneous
+Level       : Mage level 10, Cleric level 5.
+
+Cast on food or drinks (drink containers) you will be able to
+sense if it is poisoned.
+
+Cast on a person you will be able to see if that person is
+poisoned.
+#0
+"DISPEL EVIL"
+
+Usage       : cast 'dispel evil' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Cleric level 14.
+Save        : Special
+
+This spell will only affect evil creatures.  An evil person of level
+equal or less than caster will suffer 100 damage points.
+
+If the victim is higher level than caster, the spell will inflict
+(caster_level)d4 damage points, saving throw versus half damage.
+
+See also: DISPEL GOOD
+#0
+"DISPEL GOOD"
+
+Usage       : cast 'dispel good' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Cleric level 14.
+Save        : Special
+
+This spell will only affect good creatures.  A good person of level
+equal or less than caster will suffer 100 damage points.
+
+If the victim is higher level than caster, the spell will inflict
+(caster_level)d4 damage points, saving throw versus half damage.
+
+See also: DISPEL EVIL
+#0
+EARTHQUAKE
+
+Usage       : cast 'earthquake'
+Accumulative: -
+Duration    : Instantaneous
+Level       : Cleric level 12.
+Save        : -
+
+This spell will damage everybody except the caster by
+1d8+level_of_caster hitpoints.
+#0
+EARTHSPIKE
+Usage       : cast 'earths' [victim]
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 20 enchanter.
+Save        : -
+
+This spell will do (level)d3 points of damage to the victim.
+If no victim is specified, default is the person you are fighting.
+#0
+"ENCHANT WEAPON"
+
+Usage       : cast 'enchant weapon' <weapon>
+Accumulative: No
+Duration    : Permanent
+Level       : Mage level 26.
+
+This spell will enchant non-magical (non-modifying) weapons only.
+By non-modifying weapons we refer to weapons that might alter any
+ability such as for example damage.  The only way to know if a weapon
+is suitable for enchantment is to fully identify it.
+
+The enchantment will modify the weapon as:
+
+    Level    Hit Roll    Damage
+
+     0..17     +1         +1
+    18..19     +2         +1
+    20..20+    +2         +2
+#0
+"ENERGY DRAIN"
+
+Usage       : cast 'energy drain' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Mage level 20.
+Save        : Versus spell for half damage.
+
+This spell does not give much damage, but victims failing their
+saving throws will loose up to 40,000 XP points.  You will gain
+a quarter of this XP.
+
+Beware that this spell is evil.
+#0
+FIREBALL
+
+Usage       : cast 'fireball' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Mage level 18.
+Save        : Versus spell for half damage.
+
+This is one of the most powerful spells a magic user can cast.
+
+See also: "COLOR SPRAY"
+#0
+"GROUP ARMOR"
+
+Usage       : cast 'group armor'
+Accumulative: No
+Duration    : Instantaneous
+Level       : Cleric level 15.
+
+Group armor will cause everyone in the clerics group to drop -2 points of
+armor class.
+
+See also: "GROUP, AC"
+#0
+"FLIMFLAM"
+
+Usage       : cast 'flimflam' <victim>
+Accumulative: No
+Duration    : (432/Intelligence points of person) hours
+Level       : Thief level 16.
+
+Is is not possible to flimflam anyone that is already conned, if
+you're flimflammed yourself, or if the person is higher level than
+yourself.  The person will get a saving throw versus "paralysation".
+
+A flimflammed person will follow you, and not be able to attack you, you
+can order the flimflammed person using the order command.
+
+See also: FOLLOW, ORDER
+#0
+"GROUP HEAL"
+
+Usage       : cast 'group heal'
+Accumulative: No
+Duration    : Instantaneous
+Level       : Cleric level 25.
+
+Heal will heal all the hitpoints from all persons within your group, except
+1d4 points. A maximum of 100 points can be healed.  A victim who is blinded
+will also be cured by the group heal spell.
+
+See also: "GROUP, CURE BLINDNESS"
+#0
+"GROUP RECALL"
+
+Usage       : cast 'group recall'
+Accumulative: No
+Duration    : Instantaneous
+Level       : Cleric level 23.
+
+This spell will recall everyone in the clerics groups subject to their mana
+limits.
+
+See also: "GROUP, RECALL"
+#0
+HARM
+
+Usage       : cast 'harm' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Cleric level 21.
+Save        : Versus spell for half damage.
+
+This spell removes all but 1d4 hitpoints from the victim.  The
+maximum number of damage points are 200.  It is not possible to
+kill using this spell (but almost).
+#0
+HEAL
+
+Usage       : cast 'heal' <victim>
+Accumulative: No
+Duration    : Instantaneous
+Level       : Cleric level 16.
+
+Heal will heal all the hitpoints from a person, except 1d4 points.
+Maximum 100 points can be healed.  A victim who is blinded will also
+be cured by the heal spell.
+
+See also: "CURE BLINDNESS"
+#0
+"HOLY ARMOR"
+
+Usage       : cast 'holy armor' [target]
+Accumulative: No
+Duration    : 24 Hours
+Level       : Cleric level 27.
+
+The Holy Armor spell will improve your AC by 20. If the gods hear
+your prayers.
+
+See also: AC
+#0
+INFRAVISION
+
+Usage       : cast 'infravision'
+Accumulative: Yes (Duration)
+Duration    : 12 hours + level
+Level       : Mage level 7, Cleric level 7.
+
+Allows the caster to detect the heat given off by objects giving them
+the ability to have much better vision in dark conditions.
+
+See also: "DETECT INVISIBILITY"
+#0
+INVISIBILITY
+
+Usage       : cast 'invisibility' <victim | object>
+Accumulative: Yes (Duration)
+Duration    : 24 hours, permanent on objects.
+Level       : Mage level 8, Monk level 5.
+
+Makes the target of the spell invisible to everyone except those who have
+the "detect invisibility" spell.
+
+Attacking while invisible will immediately break the spell.
+
+See also: "DETECT INVISIBILITY"
+#0
+"LIGHTNING BOLT"
+
+Usage       : cast 'lightning bolt' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Mage level 13.
+Save        : Versus spell for half damage.
+
+This spell is more powerful than the shocking grasp spell.
+
+See also: "SHOCKING GRASP"
+#0
+"LOCATE OBJECT"
+
+Usage       : cast 'locate object' <object>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Mage level 12.
+
+If possible you will know exactly where an object is, or the
+name of the person using it.  If more than one object by the
+same name exists, you will get a listing of several objects.
+The maximum number of objects you can simultaneously locate is
+your level divided by 2.
+#0
+"MAGIC MISSILE"
+
+Usage       : cast 'magic missile' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Mage level 1.
+Save        : Versus spell for half damage.
+
+Causes a bolt of magical energy to be thrown from the casters hands at the
+victim.
+#0
+"PHANTOM FIST"
+
+Usage       : cast 'phantom fist' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Cleric level 30.
+Save        : Versus spell for half damage.
+
+This spell will summon the hand of god on its target.
+
+See also: -
+#0
+POISON
+
+Usage       : cast 'poison' <victim | food | drink>
+Accumulative: Yes on persons.
+Duration    : Level hours, or permanent on food and drinks.
+Level       : Cleric Level 10, Mage level 14.
+
+Casting poison on food or drink (containers) will poison it.  Eating
+poisoned food/drinks will poison the person eating or drinking.
+
+A person who is poisoned will suffer damage every hour, lose strength, and
+gain less points than usual.
+
+See also: "REMOVE POISON", "DETECT POISON"
+#0
+"PROTECTION FROM EVIL"
+
+Usage       : cast 'protection from evil' [self]
+Accumulative: Yes (Duration)
+Duration    : 24 hours
+Level       : Cleric level 10.
+
+ Once this spell is cast it makes it much harder for any evil aligned
+creature to hit you during an attack.
+#0
+"PSYCHIC ATTACK"
+
+Usage       : cast 'psychic attack' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Mage level 30.
+Save        : Versus spell for half damage.
+
+This disicipline focuses the sheer power of the casters mind against his
+victums. If successful it rips apart the very fabric of who, and what you 
+are, causing massive physical damage. 
+
+See also: -
+#0
+"REMOVE CURSE"
+
+Usage       : cast 'remove curse' <victim | object>
+Accumulative: No
+Duration    : Instantaneous
+Level       : Cleric level 26.
+
+Will remove a curse on carried objects or any persons in the room.
+#0
+"REMOVE POISON"
+
+Usage       : cast 'remove poison' <victim | food | drink> 
+Accumulative: No
+Duration    : Instantaneous
+Level       : Cleric level 8.
+
+Will remove the affects of poison from a victim or an object.
+
+See also: POISON
+#0
+SANCTUARY
+
+Usage       : cast 'sanctuary' [self]
+Accumulative: Yes (Duration)
+Duration    : 4 hours
+Level       : Cleric level 15, Ranger level 22.
+
+When protected by sanctuary you will only receive 1/2 the normal damage
+caused by a particular blow.
+
+See also: ARMOR, BLESS
+#0
+"SHOCKING GRASP"
+
+Usage       : cast 'shocking grasp' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Mage level 11.
+Save        : Versus spell for half damage.
+
+This spell is more powerful than the burning hands spell.
+
+See also: "BURNING HANDS"
+#0
+"SENSE LIFE"
+
+Usage       : cast 'sense life'
+Accumulative: Yes (Duration)
+Duration    : Level hours.
+Level       : Cleric level 7, Mage level 7.
+
+Allows the caster to sense the presence of a player or monster in the
+room which is hiding.  The true identity will remain hidden however.
+Invisible persons are also considered hidden.
+
+See also: HIDE
+#0
+STRENGTH
+
+Usage       : cast 'strength' <victim>
+Accumulative: Yes
+Duration    : Level/2 + 4
+Level       : Mage level 6.
+
+A person will gain 1 strength point per spell (2 points if level of
+caster is greater than 18).  Maximum strength is 18/100.
+#0
+SUMMON
+
+Usage       : cast 'summon' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Cleric level 10.
+
+Will summon a person of the name spoken.  It is not possible to
+summon someone of three or more levels above yourself.
+If you attempt to summon a monster, it will get a saving throw.
+
+See also: NOSUMMON
+#0
+VENTRILOQUATE
+
+Usage       : cast 'ventriloquate' <victim | object> <text>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Mage level 1.
+Save        : Versus spell victim only sees attempted cast.
+
+For all people in the same room as the caster that fail a saving throw, the
+spell will make the object or victim appear to say the text written.
+
+Example:
+
+  > cast 'vent' Mirlen I got 399,823 coins, don't even consider killing me!
+#0
+"WORD OF RECALL"
+
+Usage       : cast 'word of recall' 
+Accumulative: -
+Duration    : Instantaneous
+Level       : Cleric level 12.
+
+The caster will be transferred back to his hometown sanctuary (usually the
+Temple of Midgaard).
+#0
+CLONE
+Usage       : cast 'clone' <victim or object>
+Accumulative: -
+Duration    : Instantaneous
+
+Due to the ever changing data-structures of DikuMUD, clone is not
+yet ready.
+
+Clone cast on a victim or object, will make a 'nearly' perfect copy.
+Clone has its limitations.
+
+See Also: -
+#0
+MANA
+
+Mana is used when casting spells.  You must have a certain amount of mana
+in order to cast any particular spell.  If you do not have enough mana to
+cast the spell you must rest until you gain enough points to cast.
+
+See also: SPELLS
+#0
+HEADBUTT
+
+Speed:  8
+
+When all else fails, use your head!  The headbutt move is an attempt to damage
+and stun the opponent by bashing one's skull against them.  Damage is enhanced
+by wearing a sturdy helmet, and enhanced further by spiked helms.
+
+However, should much damage be done with a headbutt, the target and victim
+will both have to make constitution rolls to avoid being stunned by the
+pounding headache that will ensue!  The rolls are modified by the damage
+resistance of armor and hides involved.
+#0
+HIDE
+
+When you type hide there is a chance that you hide in the room. If hidden
+you can only be "sensed" by the "sense life" spell. Even if sensed your
+identity will remain hidden. Hide is broken by pressing return, regardless
+of whether you typed a command or not.
+
+Hide can also be used to hide objects in rooms.  The object must start in
+your inventory, and must be able to be dropped.  The object can then only be
+found by someone who knows it's there or has found it by searching the room.
+
+Example:
+
+  > hide
+  Ok.
+  >  (you wait for ex. 5 mins and remain hidden for 5 mins)
+
+  >  (You pressed enter and no longer hide)
+
+or
+
+  > hide note
+#0
+IRONFIST, "IRON FIST"
+
+Speed:  4
+
+The iron fist is a punching move employed by the warrior monks.  The damage is
+greatly increased over the regular punch.
+
+Because it belongs to a barehanded fighting form, wielding a weapon greatly
+reduces the chance of success.  The higher the skill, the higher the damage
+done.
+#0
+PRACTICE PRACTISE
+
+Usage: practice [skill or spell name]
+
+Practice is the way you improve your spells and skills.  You can only do
+so in your guild, where your guildmaster can help you train.  Type
+"practice <skill>" to improve your abilities while in your guild.  You can
+only practice a certain amount for each level you gain.  Unused practice
+sessions will accumulate for use in future levels.
+
+If you type practice anywhere other than in your guild, you will get a list
+of all of the spells and skills you know and your level of proficiency at
+each.
+
+The practice screen displays skills in the format:
+
+&cWSkill                        Base             Pts Mod  Proficiency
+&cL-------------------------------------------------------------------
+&cckick                         &cB[STR DEX       ]&cG   2  -1 &cy[&cm********&cb--&cy]&c0
+
+This display, for example, shows that kick is rolled versus the average of the
+character's strength and dexterity, that the character has invested two
+practice sessions in the skill, that the skill roll has a modifier of -1
+(actually an improvement over the default of -3), and finally, the overall
+proficiency is rated by the bar graph.
+
+When a guildmaster is in the room, the bar graph does not appear; instead,
+your actual skill as it would be rolled on three six-sided dice and the cost
+in gold of further improvement are displayed instead.
+
+See also:  SKILLINFO, SPELLS
+#0
+SPELLS
+
+This command shows a list of the magical spells and clerical prayers that the
+character knows.  It is displayed in the following format:
+
+&cWSpell                        Base                    Mod  Proficiency
+&cL----------------------------------------------------------------------
+&ccburning hands                &cBfire                     &cG-1  &cy[&cm**********&cy]
+&cccharm                        &cBpsyche                   &cG-2  &cy[&cm********&cb--&cy]
+&ccchill touch                  &cBwater                    &cG-2  &cy[&cm********&cb--&cy]
+&ccportal                       &cBvim                      &cG-4  &cy[&cm********&cb--&cy]&c0
+
+The Base is the skill that is rolled for success, and the Mod is the modifier
+applied to reflect the difficulty of the spell.  The character's actual
+proficiency is rated on the bar graph.
+#0
+SKILLS
+
+Skills are the rating of what your character knows and is capable of.  Next to
+stats, they are the most important attribute of a character.  Both players and
+computer-controlled characters gain skills over time through usage.
+
+Because Tower of the Lost Order does not rely strictly on class or level to
+define a character's abilities, skills and the attributes they rely on are the
+most definitive aspects of a character.
+
+Skills are gained by studying their prerequisites.  There are various branching
+hierarchies that encompass the skills of archetypical classes such as warriors,
+mages, and clerics.
+
+See also:  SKILLINFO, "SKILL DETAILS"
+#0
+SKILLINFO
+
+Usage:  skillinfo <skill name>
+
+This command displays basic information on a given skill or spell.  The
+skill's prerequisites and defaults are displayed, along with a graph showing
+how proficiency will rise with practice.
+
+Example:  > skillinfo broadsword
+
+&ccSkill : '&cGbroadsword&cc'  Base: &cYDEX
+&ccDefault1: &cYdexterity   &ccMod: &cY-5
+&ccDefault2: &cYshortsword  &ccMod: &cY-2
+&ccDefault3: &cYbeamsword   &ccMod: &cY-3
+&ccCost  Modifier  Chance
+&cC    1       -2     11
+    2       -1     12
+    4        0     13
+    8	     1     14
+   16	     2     15
+   24	     3     16
+   32	     4     17
+   40	     5     18&c0
+
+The cost represents the total amount of practice points required to attain the
+level of proficiency, the modifier shows the adjustment to the base, and the
+chance shows the number that must be rolled at or under on three six-sided dice
+to succeed.
+
+See also:  SKILLS, "SKILL DETAILS"
+#0
+"SKILL DETAILS"
+
+To actually determine a character's success at a skill, three six-sided dice
+are rolled.  The character must roll a number at or under their level of
+proficiency, so higher numbers mean higher chances.
+
+Because Tower of the Lost Order does not rely on levels or classes to actually
+define the character's potential skills, skills are defined by their
+relationships to other skills instead.  A skill has several important
+attributes:  a base, a modifier, prerequisites, and defaults.  The definitions
+of these terms follow:
+
+&cWBase&c0:  Each skill rolls versus a character's statistic, or an average of
+several statistics.  Most combat skills are determined by dexterity, although
+the average of strength and dexterity is also common.  Most intellectual and
+magic skills have intelligence as their base.  Other skills rely on wisdom,
+constitution, or charisma, as appropriate.
+
+&cWModifier&c0:  The modifier is added to the base, determining the actual
+chance of success, and usually reflecting both the difficulty of the skill and
+the character's proficiency at it.
+
+&cWPrerequisites&c0:  Some skills require a certain level of mastery in other
+skills or possibly a certain score in statistic before they can be learned and
+used.  All prerequisites must be satisfied in order to use the skill.
+
+&cWDefaults&c0:  Once the skill's prerequisites are satisfied, the skill may
+be used.  Defaults represent related skills that may give some knowledge about
+the skill being rolled; i.e. knowing how to fight with a broadsword gives the
+player some idea of how to use a shortsword.  Defaults have an additional
+modifier, usually reflecting how much the default skill aids the present
+skill.  
+
+A typical roll would go like this:
+
+Jalastra has an intelligence score of 12, and wishes to search.  She has three
+practice points invested in her search skill, which gives her a modifier of -1.
+Hence, she must actually roll 11 or less on three six-sided dice to succeed.
+
+The character does not need to invest any points in the skill in order to
+take advantage of default rolls.  When the skill is rolled, the MUD picks
+the best case out of the possible rolls.  If one has 30 points invested in
+one's shortsword skill and only 2 in one's broadsword skill, the MUD will
+use their shortsword skill as a default when using a broadsword rather than
+the broadsword skill because of sheer aptitude, even after the -2 modifier
+is applied to the shortsword roll.
+#0
+FLIP
+
+Usage:  flip <target>,
+        flip
+
+Speed: 10
+
+The flip move attempts to land a foe on their back on the ground.  It will
+stun them briefly, preventing them from fighting.  If it fails, the attacker
+will be vulnerable for nearly two rounds of combat.
+
+While in combat, the target is assumed to be the character's opponent if not 
+specified.
+#0
+FLY
+
+Usage:  fly
+
+If you happen to have wings, you can fly or walk to get to your destination.
+While flying, fewer movement points are consumed, allowing faster movement;
+however, because of the demands on your metabolism, your food requirements will 
+be much higher than usual.
+
+See also:  LAND
+#0
+CAMOFLAGUE
+
+When you type camoflague there is a chance you can blend in with your
+surroundings. If camoflagued you can only be "sensed" by the "sense life"
+spell.  Even if sensed your identity will remain hidden.  Camoflague is
+broken by pressing return, regardless of whether you typed a command or
+not.
+#0
+FRENCH
+
+Don't you know how they kiss in France?? -- try it!
+#0
+KISS
+
+Well can't you guess?
+#0
+SMILE
+
+Whenever you feel like smiling...
+#0
+SOCIALS
+
+Usage: <social> [<victim>]
+
+Socials are commands used to show your affective state to others.  The
+actor, victim and bystanders may receive different messages.  Generally,
+social commands are used only to express emotion and not to take action,
+but it is possible that some mobs (or players) will take action based on
+the social.  (Slap a dragon lately?)
+
+Example:
+
+  > shake homer
+  > applaud marge
+  > stare
+
+The SOCIALS command generates a canonical listing of all available socials.
+
+  > socials
+
+See also: EMOTE
+#0
+EMOTE :
+
+Show people what you're feeling.  The shorthand is ":".
+
+"emote <string>" will display your name, then the string.  For example,
+if your name is "Quifael",
+
+> emote is feeling very sad today.
+
+will display:
+
+Quifael is feeling very sad today.
+
+See also:  SOCIALS, EMOTE CODES, ALIAS
+#0
+"EMOTE CODES"
+
+You can also tailor your emotes for more detail with ` codes, followed
+by the intended person's name, as follows:
+
+                     Target       Bystanders         
+Code     Example     sees         see
+------------------------------------------------
+`t       `tsomeone   you          someone 
+`z       `zsomeone   your	  someone's
+`r       `rsomeone   your         his/her/its
+`a       `asomeone   you are      someone is
+`s       `ssomeone   yours        his/hers/its
+`e       `esomeone   you          he/she/it
+`m       `esomeone   you          him/her/it
+
+Some examples:
+
+emote thinks `tMourn should give `zZhoern sword back to `mZhoern.
+
+Mourn sees:  Tuathra thinks you should give Zhoern's sword back to him.
+Zhoern sees:  Tuathra thinks Mourn should give your sword back to you.
+Bystanders see:  Tuathra thinks Mourn should give Zhoern's sword back to him.
+
+You can also refer to objects with # codes:
+
+                     Bystanders 	
+Code     Example     see
+-----------------------------------
+&c0#o	 #olantern   lantern
+&c0#p       #plantern   a brass lantern
+
+See also:  EMOTE, SOCIALS, ALIAS
+#0
+UTILITY
+
+Utility commands list
+
+!              : Repeats the last command typed
+BUG IDEA TYPO  : Ways to leave feedback to the implementors
+PREF           : A menu of personal preferences that you can customize
+DISPLAY PROMPT : Ways to customize your prompt for more information
+TITLE          : Change your title on the "who" screen
+COMMANDS       : A generic list of commands available to your character
+LINK           : Some information on your connection to the MUD
+SAVE QUIT      : Saving your character's stats and leaving the game
+#0
+! ^
+
+Use ! to repeat the last command typed at the keyboard.
+
+Use ^ to replace a string from the last command with a new string.  The
+syntax is the same as in csh: "^old-string^replacement"  For example:
+
+> tell rasmusse Hi there, how are you?
+No-one by that name here.
+
+> ^rasmusse^rasmussen
+You tell Rasmussen, 'Hi there, how are you?'
+
+> ^you^you doing^
+You tell Rasmussen, 'Hi there, how are you doing?'
+
+See also: ALIAS
+#0
+AFK
+
+This command flags you as Away From Keyboard.  This does not protect you
+in any way, it simply lets other players know that you are not there to
+respond.  Typing afk again or any other valid command removes the flag.
+
+#0
+ALIAS ALIASES
+
+An alias is a single command used to represent one or more other commands.
+The ALIAS command can be used to manipulate your character's aliases.  Type
+ALIAS alone to see a list of your currently defined aliases.
+
+> alias
+
+Type ALIAS <alias name> <command> to create a new alias.  The alias name must
+be one word.  The command can be any string.  Aliases may not be nested or
+used recursively.  Any command may be overriden by an alias (other than the
+ALIAS command itself, of course).
+
+> alias gbb get bread bag
+> alias gac get all corpse
+
+Type ALIAS <alias-name> to delete an alias that has already been defined.
+
+> alias gbb
+
+A semicolon (";") can be used to define multiple actions to be taken with
+a single alias.
+
+> alias eat get bread bag; eat bread
+
+Note that the 'eat' contained within the eat alias is interpreted as the MUD's
+internal eat command; aliases may not be nested or used recursively.  The
+variables $1, $2, ... $9 may be used to represent arguments given with
+an alias.  For example:
+
+> alias killem cast 'fireball' $1; cast 'harm' $2
+> killem fido mage
+
+Would cast fireball on fido, followed by casting harm on mage.  Variables
+may be used repeatedly and in any order:
+
+> alias helpem cast 'heal' $1; cast 'bless' $1; cast 'armor' $1
+
+The special variable $* represents the entire input line after an alias:
+
+> alias tr tell rasmussen $*
+> tr hi there, how are you today?
+You tell Rasmussen, 'hi there, how are you today?'
+
+See also:  ! ^
+#0
+ANSI COLOR
+
+If you have a color-capable terminal and wish to see useful color-coding
+of information, use the COLOR command to set the level of coloring you see.
+
+> color off
+This command disables all color.
+
+> color sparse
+> color normal
+> color complete
+
+These three commands turn color on to various levels.  Experiment to see
+which level suits your personal taste.
+
+Using color will slow down the speed at which you see messages VERY slightly.
+The effect is more noticable on slower connections.  Even if you have
+color turned on, non-colorized messages will not be slowed down at all.
+
+See also: COLORSPRAY
+#0
+ASSIST
+
+Usage: ASSIST [ <person in need> ]
+
+If Quifael is being beaten senseless by a warg and you feel brave enough
+to help him, type ASSIST QUIFAEL to hit the warg.  Note that the warg will
+keep hitting Quifael; assist only makes you start to fight whomever is
+attacking the person you're trying to assist.  Assist with no arguments will
+assist the first person (starting with the leader) in your group who is
+fighting.
+
+> assist quifael
+
+See also:  RESCUE, FLEE
+#0
+AUCTION NOAUCTION
+The auction channel is reserved for selling things.  Messages on these
+channels reach everyone who is monitoring them and in the same zone. 
+Noauction toggles whether you can hear the channel or not.
+
+auction <string>
+
+> auction short sword -- minimum bid 100k
+
+See also:  SAY GSAY NOREPEAT
+#0
+BANK WITHDRAW DEPOSIT BALANCE
+
+Commands to take money out of the bank, put money in the bank, or see how
+much money you have in the bank.  These commands can only be used when you
+are at a bank.
+
+> deposit 400
+> withdraw 1000
+> balance
+#0
+"PREF BRIEF"
+Toggle "brief mode".  When in brief mode, you don't see the descriptions of
+the room you are in; only the name of the room and the people and objects
+there.  Unless you're very familiar with the area in which you're travelling,
+however, it is not advisable to use this command.  Frequently, you will find
+small but vital hints in the descriptions of the rooms: An extra peek at your
+surroundings could mean the difference between life and death!
+
+If you explicitly type 'look', you will always see the full room description,
+even in BRIEF mode.
+
+See also: COMPACT, LOOK
+#0
+CLEAR CLS
+
+Clears the screen on many terminals.
+#0
+COMMANDS
+
+The COMMANDS command gives a canonical list of all the known verbs.
+
+> commands
+
+Each command listed should have help available by typing "HELP <command>".
+#0
+COMPACT "PREF COMPACT"
+
+This command toggles the extra blank line output to your screen after each
+command.  Useful if you have a small display.
+
+See also: BRIEF
+#0
+PROMPT
+
+Modify your prompt to show your hit points, mana, and/or movement points.
+
+prompt <text w/ color or codes>
+
+Codes:
+
+   $h = current hitp   $H = max. hitp      $m = current mana
+   $M = max. mana      $v = current move   $V = max. move
+   $p = percent of... {hmvx} ($px = percent of exp to level)
+   $o = opponent cond  $x = current exp    $X = exp to level
+   $g = gold on hand   $G = gold in bank   $t = tank condition
+   $_ = new line       $c = colored based on percent... (tlobased) {hmv}
+   $$ = dollar sign
+
+ex : prompt ($ch:Hit) ($cm:Mana) ($cv:Move) >
+     would show to the user :
+     (85:Hit) (100:Mana) (82:Move) >
+     Note : the numerical values would be colorized based on your Max's.
+
+See also:  DISPLAY
+#0
+DISPLAY
+
+Modify your prompt to various other preset formats
+
+display <preset number>
+
+If no argument is given, it will list the presets that are coded in.  If a
+number is given, it will change your prompt to that preset.
+
+See also:  PROMPT
+#0
+DATE
+
+Shows the current real time.
+#0
+LINK
+
+A lot of players have problems with their links to the game.  This can be
+very hazardous to your health in the middle of a battle, of course.
+
+ I. If your link is broken, you will automatically attempt to flee each
+    time someone attempts to hit you.  If you manage to flee, then you
+    will be saved by divine forces, and put in a safe place until you
+    reconnect to the game.
+
+II. If your link jams (freezes), you have a problem.  The only solution we
+    can give is that you break your link as quickly as possible.  By
+    breaking the link you can hope that the above procedure is initiated.
+
+    Do not try to get out of a fight by breaking link.  You will be not
+    reimbursed for any experience or equipment if you purposefully
+    cut your link.
+#0
+"PREF REPEAT"
+
+This command toggles whether or not you see your communication echoed
+back to you (i.e., from commands such as SAY, SHOUT, HOLLER, etc.)
+Useful if you have a slow connection or if it just annoys you.
+#0
+NORTH SOUTH EAST WEST UP DOWN
+
+To walk in a given direction.
+#0
+"PREF SHOUT"
+
+SHOUT toggles whether or not you hear shouts.  (deaf) will appear after
+your name in the WHO list.
+
+See also: FLAGS SHOUT WHO
+#0
+"PREF SUMMON"
+
+Due to problems we've had with players killing other players by summoning
+them to Bad Places, all characters now have SUMMON PROTECTION turned on by
+default.  This prevents people from summoning you and gives you a warning
+message if someone tries.  If you want to let someone summon you (i.e. if
+someone wants to summon you for a legitamate reason), type NOSUMMON to turn
+off summon protection.  You can then type NOSUMMON again to turn protection
+back on.
+#0
+"PREF TELL"
+
+Use PREF TELL if you wish to prevent other players from using "tell" to
+communicate with you.  (notell) will appear after your name in the WHO
+list if you have notell on.
+
+See also: FLAGS TELL WHO TOGGLE
+#0
+"PREF PAGELENGTH" PAGER
+
+The pager causes a page break and a prompt to continue to be inserted long
+output.  This command allows you to change or see how large the page size is.
+Pagelength followed by a number sets the length of a page to that number of
+lines.  Pagelength default sets the pager to the default number of lines on
+a typical screen.  Pagelength off disables the pager.  Typing pagelength by
+itself will display the current setting. 
+#0
+QUEST
+
+This simple toggle command merely informs the Powers that Be that you
+wish to particpate in the currently running Quest.  If an immortal
+is running a Quest and needs to know who wishes to participate, he/she
+will ask players to turn on their Quest flags using this QUEST command
+if they are interested in the Quest.  It also allows you to listen in on
+the quest channel and receive information specific to the quest.
+
+> quest
+
+See also:  QSAY
+#0
+QUIT
+
+When you get tired of playing, you can leave the game by typing 'quit'.
+Note that quitting this way causes any items you might be carrying to
+simply be left on the ground.  If you wish to have your equipment stored,
+you'll have to find an inn and pay rent.
+
+See also: INN
+#0
+SAVE
+
+Save your persona.  This includes experience points, strength, gold, etc.
+Your equipment is also saved in the (unlikely?) event of a crash.  The
+game periodically auto-saves you and your equipment, so it is not necessary
+to have your client auto-save you as well.
+
+You CANNOT load a saved version if you die -- your persona still exists,
+but you will lose experience, and all your objects stay in the game, with
+your corpse.
+
+Note that the SAVE command only saves your equipment in the event of a
+crash.  If you are leaving the game normally, SAVE will NOT save your
+equipment -- you must find an Inn to store your belongings.
+
+> save
+
+See also:  INN RENT
+#0
+TIME
+
+Gives you the current game time.  Your initial reaction to the output of
+this command may be one of surprise, but you'll get used to it.  You'll
+have to, at any rate, since certain things in the game depend on this
+particular notion of time; the opening hours of the shops, for example.
+#0
+TOGGLE
+
+TOGGLE shows you the current values of various toggles available on the MUD.
+This command CAN NOT be used to change these values (see related commands.)
+All of these toggles remain the same until you change them; i.e. they are
+saved when you quit or rent.
+
+See Also:  PREF DISPLAY BRIEF COMPACT QUEST WIMP
+#0
+combat
+COMBAT
+
+Combat Help Menu
+
+HIT KILL          : Engage someone in combat
+AIM SHOOT THROW   : Use ranged weapons to attack
+FLEE ASSIST TRACK :
+RESCUE            :
+BACKSTAB          :
+CONSIDER          : Check and doublecheck before you get in trouble.
+Combat Moves:
+
+PUNCH KICK BASH SHIELDBASH CIRCLE DISARM HEADBUTT IRONFIST FLIP BLADESONG
+
+See also:  COMBAT POSTURE, COMBAT PROFILE, COMBAT SYSTEM, DAMAGE
+#0
+web page
+Struggle For Nyrilis has a web page that you may visit to learn more about
+the story, background, individual races, and more.  Please visit us at:
+   http://24.4.155.122/sfn/
+#0
+miscellaneous
+Miscellaneous truths, quotes, and stuff by the SFN Administration
+
+Cole slaw is truly the spam of the vegetable food group.
+#0
+$

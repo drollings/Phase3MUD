@@ -1,0 +1,353 @@
+Board File
+19
+#22
+1
+993051697
+No doubt!
+I hear you man.  I've gone in between dealing with real life and burning out
+while trying to get the MUD squared away where it can deal with all the
+demands of its builders.  Coding technicalities aside, the two things I'm most
+concerned with are getting the gaming system nailed down and streamlining the
+building process.  
+
+I'm still studying what it would take to get us switched to a Python core that
+glues together our C++ code with SQL and XML elements.  I've not figured it
+all out yet, but the outlook is good.  Python should finally free me from
+having to redo the guts of the MUD to make the big ideas we have supported at
+the core.  It should take over a lot from the DGScripts we have going that are
+doing things that should be hardcoded.  
+
+As for gameplay, we need to tune the skill learning process, and this has been
+discussed.  Combat needs to be more interactive and flexible, and this has
+been discussed.  We need more detailed zones and quests.  I don't mind that
+magic is difficult, but it is a bit kludgy right now and needs a little
+refinement.  I think it's a few steps shy of real greatness.  And then there
+are the clerics and the in-depth skills for ranger/thief types; we've plans.
+My big thing is making the environment more detailed and interactive, and what
+we need to be able to do this is IMHO an object-oriented structure that allows
+us to concentrate efforts on a few base rooms and objects and let the benefits
+carry over to the rest of the MUD.  
+
+I'm not really concerned by the criticism.  I know there are breaks in the
+gameplay and that it's been an imm-only thing for a while.  I'm ready to do
+my part to address this.
+
+~
+#21
+66
+993027607
+my appeal...
+I love this mud
+
+I have turned to it because my best friends are here and I had no better way
+of finding them.  
+
+But it needs improvement in order to become more appealing.  The mortals who I
+play with are not impressed.  The immortals barely log in as a mort to enjoy
+it's content.  
+
+I am trying to do what I can to create a stimulating environment.  I have
+created pictures to spark peoples imaginations.  There is also my work as a
+builder.  But that alone is not enough to satisfy the players.  
+
+The players say that the system is too difficult.  Magic is too hard to do,
+experience is unrewarding, and skills are unfulfilling.  
+
+I am posting this because I hope my observations and opinions count.  I want
+to work on this Mud as much as anyone else, to the extent of my abilities.  
+
+We need to re-ignite the mud of old in order to bring back the life this mud
+once had.  I want to work for it, is anyone else with me?  
+
+Siddhatima-I'm serious, I'd go to everyone's house to listen to them if I
+could.  I know I'm not the best imm here but I want to work.    
+~
+#20
+5
+984820275
+Where'd that come from?
+n/m
+~
+#19
+2
+984702498
+No Subject
+You recently moved into our community and we at Ivy Memorial wanted to be among 
+the first to welcome you in your new home.  God led our body to the coliseum 
+central area many years ago to be a good neighbor as the area grew and today we 
+stand ready to assist you in any way possible.
+Blah
+blah blah
+blah blah blah
+God bless you and yours as you put Him first and love Him best.  Remeber Matthew
+ 6:33 - But seek first the kingdom of God and his righteousness, and all these 
+things shall be added to you, and Proverbs 3:4-5 And so find favor and high 
+esteem in the sight of God and man.  Trust in the Lord with all your heart, and 
+lean not on your own understanding.
+~
+#18
+47
+976128306
+Me
+My phone number is:
+(208)524-7002
+Email: deusin@ida.net
+Address
+1146 Country Rd.  Idaho Falls, ID  83402
+~
+#17
+1
+961268643
+Todo list:  1st draft
+- Clerics.
+- Spell casting methods.
+- Skilledit
+- Lore
+- Language
+- Coldbloodedness
+- Lucky/Unlucky
+- Corpses and cooking
+- Skills that are learned too slow:
+  - First aid
+  - Bow
+- Camoflauge should be sector-type specific.
+- FIX:  Usage of 3d6 roll numbers instead of differences being passed to
+  RollToLearn().
+
+~
+#16
+2
+961055325
+Starscape questions, sugguestions, and double checks.
+Starscape Ships
+So far it is my understanding that the ships will be mostly modular
+in construction.  In this manner, when a ship is constructed, its hull type
+would be the first thing decided.  Various hulls will allow for various
+amounts of cago space, require different amounts of crew, contain no to many
+fighters, allow for craft planet fall or require landing craft for planet
+fall.  Each hull type would allow for varying armor ratings, engine ratings,
+and have various numbers of hard and or firm points.  After construction,
+players would be able to change their engine types, armor ratings, weapons
+loadout, and sensors.  These changes should be reflected in the physical 
+appearance of the ship, and should require a "dry dock" to do.
+Starscape Planets
+These should be presented as 2D height maps covered in a texture
+appropriet for the overall conditions for the planet.  Things to consider,
+weather, tectonics, oceans, indiginous life.  If the space combat engine 
+makes use of a 2D plane, I highly recommend using almost the exact same 
+system for surface combat, just with different vehicles.  Ideas for planets:
+mines for a perpetual source of miners, colonies for tax income, forts for
+political boundries, hubs for intersteller travel.
+Starscape Intersteller Travel
+Things to decide, medium of travel.  Worm holes, Hyperspace, Warp,
+Solar sails?  Is IST instantaneous, does it take time, can it be interrupted?
+If steller travel uses 2D can intersteller still use 3D?  What are means of
+navigation, pulsars, black holes?  Reference points, up spin, down spin, 
+coreward, outward?
+Starscape ETs
+Are there other intelligent races?  If so, can players be those races?
+Are the races mixed, as in, would you find multiple races working on the same
+ship, or would you only find races of like type on a given ship.  Is their tech
+better, is it worse?  Are they hostile, are they friendly?  Is there just one
+other race, or are there several?
+Starflight Life
+Are all players in starflight ship captains?  Are all these ships
+merchants or pirates?  Can players be privateers or pirate hunters?  Can
+players actually captain military vessels?  If there is a military, who are
+they fighting, pirates, factions, other races?  Would an AI automaticly create
+and distribute orders for these captains to go out and follow, giving them a
+dead line to compleate their mission?
+~
+#15
+24
+960025887
+StarScape Project Guidelines v0.1
+Starscape Project Guidelines
+----------------------------
+ 
+This document details my opinions (as of this writing) on the goals
+of Starscape.  While I do not want to be a dictator and force my views
+on the others participating int he development project, I do want to
+lay down some rules for the game:
+ 
+* Starscape is based on Elite, Star Control 2, Starflight, Trade Wars,
+and other games of the genre.
+    It it a slower paced game of strategy, planning, investment, and
+diplomacy.  It is not a 'twitch' game.  Thus, reflexes should not
+matter nearly as much as other games (such as Wing Commander, Quake,
+Ultima Online).  Failure to act may have it's consequences, but a
+lttle lag shouldn't hurt anyone.
+ 
+Those rules said, let us continue with the plans!
+ 
+ 
+1. Game Universe
+   It is still relatively undecided as to how to handle the space
+flight model.
+    A fully 3D flight system would provide for realism at the
+expense of controlability - it becomes harder to maneuver, control,
+and navigate the ship.
+   A 2D (flat plane of movement) system, whether with limited 3D
+(ala Home World) or not, allows for much more concise control and
+navigation.  It sacrifices realism in part; most planets lie on the
+same plane, with occasional deviation, thus travel between locations
+would essentially lie on the same plane anyways.
+ 
+   Other things to consider: in a 3D world, collision is harder to
+do (read: more CPU intensive).  It also becomes necessary.  However,
+in a 2D plane of movement, anything but large ships could be made
+to collide (smaller ships would assume to veer (up/down)... thus
+newbies can't do damage ith new ships by collision.  Simple ordering
+of drawing or changing the offsets could fix it.  Or, the ship could
+be forced to adjust it's offset automatically.
+~
+#14
+1
+959121047
+Quick note...
+I have successfully implemented safe pointers within the code of Phase 3.5.
+It was based upon, but not directly copied from, code FearItself showed
+me.  I felt, however, that we needed to have our own implementation.
+
+What does this mean?  A safe pointer is automatically cleared when whatever
+it points to is extracted from the game.  By converting such things as a 
+character's pointer to the person they're fighting to safe pointers, we
+eliminate many, many bugs.  We also make it much easier to have delayed
+actions involving multiple characters and objects.
+
+Chances are that this will eliminate any last vestige we have of the
+shadowboxing bug.  It might miss bad handling of people being removed from 
+rooms - but not from the game.
+
+I like this kind of code. :)
+
+       Garadon
+~
+#13
+47
+957459798
+I agree with no reservations
+n/m
+~
+#12
+2
+957311820
+Read Me
+------Reznor's Proposed Management Policy/Plan/Procedure/etc------
+1.  Givens:
+    a.  Change is inherently destructive.
+    b.  Change is necessary to advance.
+    c.  Stagnance is inherently destructive.
+    d.  Stagnance allows comfort.
+    e.  In the middle is the best place to be.
+2.  History
+    a.  In the past changes have been applied but not implemented.
+    b.  Implementation requires application of the change and management to minimize impact.
+    c.  Agendas have been made in an arbitrary fasion.
+    d.  Many small changes are applied resulting in a constant state of change.
+3.  Future
+    a.  Changes need to be planed in full before coding, let alone compiling.
+    b.  Agendas need to be made WITH A TIME FRAME.
+    c.  Changes need to be weighed based on destruction vs construction.
+    d.  As such, changes need to be manages to minimize impact and maximize effect.
+4.  Proposition
+    a.  Collect changes for a period of one month before application.  *While* awaiting
+        these changes, impliment them.  Prepare builders/players for them.
+    b.  Limit "phase" changing things to one a year.  These are the big hitters, and should
+        incorporate multiple things.
+5.  Effects
+    a.  Using the above propositions, we have time to fully think out a change, code the change
+        prepare people for the change, apply the change, and debug the change, before moving on
+        to the next one.
+    b.  Limiting "phase" changes to once a year will prevent things such as the huge impact of
+        the Phase 2 move and subsequent large changes that resulted in re-building of things or
+        neccessitated pearl scripts or such to alter existing information.
+    c.  By preparing builders for these changes before hand, we can prevent the "shock" of
+        having something they're used to using change.  It also allows for training in the use
+        of new tools.
+6.  Conclusion
+    a.  This develops harmony between homiostasis and transiostasis.  Change with comfort.
+Questions/comments/suggestions/complaints?
+~
+#11
+2
+950039548
+Stuff
+The whole coordinate system should have been discussed more...  Covertly.  
+It's a huge change and everyone thinks they know the best way to do it.  Too
+many cooks in the kitchen.  There's a difference between brain storm and brain
+flood.  The latter is bad.    
+~
+#10
+47
+947014301
+Sounds good to me
+n/m
+~
+#6
+2
+944854633
+Ultimately
+After the email verification is in use, we will be able to list characters by
+email address and we may even be able to record a history of IP addresses for
+each email address.  Either way we'll be much more informed than we ever were
+before.    
+~
+#5
+1
+944591326
+Re: user database
+Here's the story on it...
+
+We have the email validation coded, but disabled.  We know that it works,
+but this MUD's server needs to be reconfigured for it to be able to mail
+the passwords to about 80% of the servers out there.
+
+Beyond that, I haven't been pressed to develop this thing further.
+You know me. :)
+
+         Daniel
+~
+#4
+47
+944582952
+User Database
+What ever happened to that project we were working on to
+keep track of who logs in from where, who else they play
+and who they are in real life?  We kinda did something
+with it, but I'd like to keep working with it.
+~
+#3
+48
+943571114
+No Subject
+Hello.
+~
+#2
+4
+943467976
+Interesting
+When you load a player such as:
+load player spam
+then you bring into the game a linkless player
+You can do all sorts of things with him that help us run the game.
+What's the method that we're supposed to get rid of that player now?
+We have a linkless player hanging about.
+Do we force him to quit?  Purge him?
+The interesting part was, I purged spam, as such, and all his eq
+was lying in the room.  I thought, "Uh oh", and reloaded him.
+When I loaded him again, he still had all his stuff on him, and now
+a copy of all that stuff in the room.  Interesting.
+My big question then is:  What's the best method for getting rid
+of the loaded character and saving all the changes we've made to them?
+force them to save and quit?
+~
+#1
+1
+942902007
+Hey Kenny!
+I need your number.  I've apparently got an outdated one in my list.
+Thanks!
+
+         Daniel
+~

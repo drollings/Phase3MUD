@@ -1,0 +1,217 @@
+#1 = {
+	keyw = "Puff dragon fractal";
+	name = "Puff";
+	short = "Puff the Fractal Dragon is here, contemplating a higher reality.\n";
+	long = "No plain fanfold paper could hold that fractal Puff --\n
+He grew so fast no plotting pack could shrink him far enough.\n
+Compiles and simulations grew so quickly tame\n
+And swapped out all their data space when Puff pushed his stack frame.\n
+CHORUS:\n
+        Puff the fractal dragon was written in C,\n
+        And frolicked while processes switched in mainframe memory.\n
+        Puff the fractal dragon was written in C,\n
+        And frolicked while processes switched in mainframe memory.\n
+Puff, he grew so quickly, while others moved like snails\n
+And mini-Puffs would perch themselves on his gigantic tail.\n
+All the student hackers loved that fractal Puff\n
+But DCS did not like Puff, and finally said, \"Enough!\"\n
+                (chorus)\n
+Puff used more resources than DCS could spare.\n
+The operator killed Puff's job -- he didn't seem to care.\n
+A gloom fell on the hackers; it seemed to be the end,\n
+But Puff trapped the exception, and grew from naught again!\n
+                (chorus)\n";
+	sex = Male;
+	mort = Mortal;
+	race = HyuMann;
+	class = Magician;
+	extended = 1;
+	level = 26;
+	align = 1000;
+	gold = 10000;
+	material = "flesh";
+	hp = 5d10+132;
+	damage = 4d6+3;
+	attack = hit;
+	hitroll = 19;
+	position = standing;
+	defposition = standing;
+	flags = { ISNPC !CHARM !SUMMON !SLEEP !BASH !BLIND APPROVED };
+	affects = { DET-INVIS INFRA };
+};
+#10 = {
+	keyw = "clone";
+	name = "the clone";
+	short = "A boring old clone is standing here.\n";
+	long = "This clone is nothing to look at.  No, really, it is quite boring.\n";
+	sex = Neutral;
+	mort = Mortal;
+	race = HyuMann;
+	class = Magician;
+	extended = 1;
+	level = 1;
+	material = "flesh";
+	hp = 1d1+1104;
+	damage = 1d1+1;
+	attack = hit;
+	hitroll = 20;
+	position = standing;
+	defposition = standing;
+	flags = { SENTINEL ISNPC APPROVED };
+	affects = { CHARM };
+};
+#11 = {
+	keyw = "zombie undead humanoid";
+	name = "the zombie";
+	short = "A strange humanoid is here.  How odd, its flesh seems to be falling off!\n";
+	long = "This strange humanoid is moving rather slowly, and appears to be\n
+a corpse, a walking corpse!  It must be a zombie or something of\n
+the sort.\n";
+	sex = Neutral;
+	mort = Mortal;
+	race = HyuMann;
+	class = Warrior;
+	pts = 40;
+	level = 4;
+	material = "flesh";
+	hp = 1d9+110;
+	damage = 1d1+0;
+	attack = hit;
+	position = standing;
+	defposition = standing;
+	flags = { SENTINEL ISNPC APPROVED };
+	points = {
+		str = 13;
+		int = 8;
+		wis = 7;
+		dex = 13;
+		con = 11;
+		cha = 9;
+	};
+};
+#19 = {
+	keyw = "aerial servant shape";
+	name = "the aerial servant";
+	short = "An amorphous shape is floating in the air.\n";
+	long = "As you stare at this amorphous shape, it begins to appear to take\n
+the shape of a cloud-like humanoid.\n";
+	sex = Neutral;
+	mort = Mortal;
+	race = HyuMann;
+	class = Magician;
+	extended = 1;
+	level = 1;
+	material = "flesh";
+	hp = 1d1+1;
+	damage = 1d1+1;
+	attack = hit;
+	hitroll = 20;
+	position = standing;
+	defposition = standing;
+	flags = { SENTINEL ISNPC APPROVED };
+};
+#20 = {
+	keyw = "elemental";
+	name = "the elemental";
+	short = "An elemental is standing patiently here.\n";
+	long = "This creature is the essence of the elements, and appears to be\n
+waiting patiently for something to occur.\n";
+	sex = Neutral;
+	mort = Mortal;
+	race = HyuMann;
+	class = Warrior;
+	pts = 20;
+	level = 5;
+	material = "flesh";
+	hp = 1d9+100;
+	damage = 1d1+0;
+	attack = hit;
+	position = standing;
+	defposition = standing;
+	flags = { SENTINEL ISNPC APPROVED };
+	points = {
+		str = 13;
+		int = 7;
+		wis = 7;
+		dex = 12;
+		cha = 9;
+	};
+};
+#50 = {
+	keyw = "mob unfinished";
+	name = "an unfinished mob";
+	short = "an unfinished mob stands here.\n";
+	long = "This is an unfinished mob.\n";
+	sex = Neutral;
+	mort = Mortal;
+	race = HyuMann;
+	class = Warrior;
+	extended = 1;
+	level = 1;
+	material = "flesh";
+	hp = 0d0+100;
+	damage = 1d2+0;
+	attack = hit;
+	position = standing;
+	defposition = standing;
+	flags = { ISNPC };
+	skills = {
+		sphere_of_healing = 50;
+	};
+};
+#60 = {
+	keyw = "watch guard newhaven popeye";
+	name = "the watch guard";
+	short = "A watch guard stands here, watching.\n";
+	long = "The Newhaven Watch is proud, even under their makeshift armor.  Many of them\n
+are humans, veterans of the many wars that rent this land before NewHaven\n
+was declared a free, neutral city.  This guard is determined to help keep\n
+it that way.\n";
+	sex = Male;
+	mort = Mortal;
+	race = HyuMann;
+	class = Warrior;
+	pts = 800;
+	level = 83;
+	align = 600;
+	gold = 500;
+	material = "flesh";
+	hp = 1d9+160;
+	damage = 1d8+0;
+	attack = hit;
+	position = standing;
+	defposition = standing;
+	flags = { ISNPC STAY-ZONE MEMORY !CHARM HELPRACE HELPALIGN APPROVED };
+	affects = { DET-INVIS };
+	points = {
+		str = 18;
+		int = 12;
+		wis = 12;
+		dex = 17;
+		con = 16;
+		cha = 14;
+	};
+	triggers = { 3062 3065 3061 50 51 43 3063 };
+};
+#99 = {
+	keyw = "death reaper";
+	name = "Death";
+	short = "Death the Grim Reaper is observing you silently from empty eye sockets.\n";
+	long = "The dark-robed skeletal figure radiates an unendurable coldness.\n";
+	sex = Neutral;
+	mort = Mortal;
+	race = HyuMann;
+	class = Magician;
+	extended = 1;
+	level = 100;
+	material = "flesh";
+	hp = 10d1000+1354;
+	damage = 10d15+20;
+	attack = hit;
+	hitroll = 20;
+	position = standing;
+	defposition = standing;
+	flags = { SENTINEL ISNPC AWARE MEMORY !CHARM !SUMMON !SLEEP !BASH !BLIND APPROVED };
+	affects = { DET-INVIS SENSELIFE SANCT INFRA };
+};
+$

@@ -1,0 +1,308 @@
+Board File
+7
+#7
+2
+984099446
+Check it
+*VARIABLES
+home = home room vnum
+eat = food room vnum
+work = work room vnum
+schedual = string of tasks for the day
+doing = current task from schedual
+subdoing = number value indicating condition of "doing"
+subpoint = Waypoints pertaining to current "doing"
+*TESTING
+eat  3101
+home 3028
+work 3027
+*LOAD
+setglobal home %self.room%
+setglobal eat 3101
+setglobal work 3027
+setglobal schedual wake eat work eat home sleep
+popfront schedual doing
+%doing%
+global doing
+signal room cycle
+*CYCLE
+If %actor% != %self%
+  halt
+else
+  pushback schedual doing
+  popfront schedual doing
+  switch %doing%
+    case wake
+      %doing%
+      cycle
+    case work
+      roomseek %work%
+      setglobal waypoint %work%
+    break
+    case eat
+      roomseek %eat%
+      setglobal waypoint %eat%
+    break
+    case home
+      roomseek %home%
+      setglobal waypoint %home%
+    break
+    case sleep
+      %doing%
+      wait 8h
+      cycle
+    break
+  done
+end
+*ENTRY
+if %waypoint%
+  if %self.room% == %waypoint%
+    waypoint
+    unset waypoint
+  end
+elseif %subpoint%
+  if %self.room% == %subpoint%
+    subpoint
+    unset subpoint
+  end
+end
+*WAYPOINT
+if %actor% != %self%
+  halt
+else
+  switch %doing%
+    case work
+      work
+    break
+    case eat
+      eat
+    break
+    default
+      cycle
+    break
+  done
+end
+*SUBPOINT
+if %actor% != %self%
+  halt
+else
+  eval subdoing %subdoing% + 1
+  %doing%
+end
+*EXAMPLE WORK SUB SCHED
+if %actor% != %self%
+  halt
+else
+  switch %subdoing%
+    case 1
+      say I have been at work
+      subpoint
+    break
+    case 2
+      say I have been at work longer
+      subpoint
+    break
+    case 3
+      say I am now done with work.
+      unset subpoint
+      cycle
+    break
+    default
+      say I have arrived at work
+      setglobal subdoing 1
+      subpoint
+    break
+  done
+end
+if %actor% != %self%
+  halt
+else
+  switch %subdoing%
+    case 1
+      say I have waited for food
+      subpoint
+
+    break
+    case 2
+      say I am done with food
+      subpoint
+    break
+    case 3
+      say I have paid the bill.
+      unset subpoint
+      cycle
+    break
+    default
+      say I have arrived for food
+      setglobal subdoing 1
+      subpoint
+    break
+  done
+end
+~
+#6
+2
+983865149
+Simplified
+*LOAD
+setglobal home %self.room%
+setglobal eat *eatroom*
+setglobal work *workroom*
+setglobal schedual wake eat work eat home sleep
+popfront schedual doing
+pushback schedual doing
+%doing%
+cycle
+*CYCLE
+popfront schedual doing
+pushback schedual doing
+switch %doing%
+  case wake
+    %doing%
+    cycle
+  case work
+    roomseek %work%
+  break
+  case eat
+    roomseek %eat%
+  break
+  case home
+    roomseek %home%
+  break
+  case sleep
+    %doing%
+    wait 8h
+    cycle
+  break
+end
+*ENTRY
+if %self.room% == %self.roomseeking%
+  cycle
+end
+~
+#5
+1
+974446282
+An abstract base class
+class OLCDispatcher
+{
+private:
+OLCDispatcher(void);
+ OLCDispatcher(void);
+public:
+virtual boolFindTarget(Character *ch, String &input, Editable &*target) = 0;
+virtual const char *What(void) = 0;
+virtual intEditorType(void) = 0;
+virtual boolSaveDisk(Character *ch, String &input) = 0;
+virtual voidNew(Character *ch, String &input);
+virtual voidCopyFrom(Character *ch, String &input);
+virtual boolLaunchEditor(Character *ch, Editable &*target) = 0;
+};
+voidOLCDispatcher::New(Character *ch, String &input)
+{ch->Send("You needn't use new, just enter an unused vnum.\r\n");}
+voidOLCDispatcher::CopyFrom(Character *ch, String &input, VNum &target)
+{ch->Send("Sorry, this form of copying is unsupported.\r\n");}
+
+~
+#4
+1
+974445764
+Does this not rock?
+ACMD(do_olc)
+{
+StringtargetString, input;
+Editable*target;
+OLCDispatcher*dispatcher = NULL;
+
+if (IS_NPC(ch) || !ch->desc) {
+ch->Send("Sorry, OLC is limited to carbon based life forms.\r\n");
+return;
+}
+if (!subcmd) {
+olc_saveinfo(ch);
+return;
+} else {
+switch (subcmd) {
+case SCMD_OLC_AEDIT:dispatcher = AEditDispatcher::dispatcher;break;
+case SCMD_OLC_CEDIT:dispatcher = CEditDispatcher::dispatcher;break;
+case SCMD_OLC_MEDIT:dispatcher = MEditDispatcher::dispatcher;break;
+case SCMD_OLC_OEDIT:dispatcher = OEditDispatcher::dispatcher;break;
+case SCMD_OLC_REDIT:dispatcher = REditDispatcher::dispatcher;break;
+case SCMD_OLC_SCRIPTEDIT:dispatcher = ScriptEditDispatcher::dispatcher;break;
+case SCMD_OLC_SEDIT:dispatcher = SEditDispatcher::dispatcher;break;
+case SCMD_OLC_SKILLEDIT:dispatcher = SkillEditDispatcher::dispatcher;break;
+case SCMD_OLC_ZEDIT:dispatcher = ZEditDispatcher::dispatcher;break;
+default:
+}
+}
+if (!dispatcher) {
+ch->Sendf("ERROR:  Undefined OLC dispatcher for %s.  Warn the coders!\r\n", argument);
+return;
+}
+
+input = argument;
+
+if (!input.size()) {
+dispatcher->Edit(ch, input);
+}
+
+input = OneArgument(targetString, input);
+if (!input.size()) {
+if (FindTarget(ch, targetString, target)) {
+LaunchEditor(ch, target);
+}
+}
+else if (IsAbbrev(input, "copy")dispatcher->Copy(ch, input);
+else if (IsAbbrev(input, "new")dispatcher->New(ch, input);
+else if (IsAbbrev(input, "save")dispatcher->SaveDisk(ch, input);
+else {
+ch->Sendf("Usage:  %s <target>\r\n"
+"        %s copy <from> <target>\r\n"
+"        %s save [ <zonenum> ]\r\n", cmd(), cmd(), cmd());
+}
+}
+
+~
+#3
+1
+954098061
+Location class
+class Location : public GameData {
+public:
+                        Location(void);
+    virtual                 Location(void) = 0;
+
+    RoomDirection *        Direction(int dir);    //    Directions
+    virtual UInt8        Light(void) = 0;
+    virtual Flags        RoomFlags(void) = 0;
+    virtual Sector::Sector    SectorType(void) = 0;
+
+    virtual    list<Object *> &        Contents() = 0;
+    virtual    list<Character *> &        People() = 0;
+    virtual    list<ExtraDesc *> &        ExtraDescs(void) = 0;
+};
+
+~
+#2
+1
+947361772
+AWESOME.
+We can now make the MUD dump core at will, without crashing.  Do this the next
+time you see any really odd behavior.  
+
+The command is coredump.  Believe me, it'll help much in tracking any future
+bugs that do not directly cause crashes.  
+  
+      Garadon
+~
+#1
+1
+946919875
+Woohoo!
+I'm pleased to report that as of our upgrade to the server, we have core
+dumps again.
+
+I as a debugger am no longer half-blind.
+
+        Garadon
+~

@@ -1,0 +1,105 @@
+#0 = {
+	name = "The Void";
+	desc = "   You don't think that you are not floating in nothing.  You can see\n
+a strange portal located above you.\n";
+	sector = "City";
+	flags = { !MOB INDOORS };
+	exits = {
+		up = {
+			key = -1;
+			room = 3039;
+		};
+	};
+};
+#1 = {
+	name = "Limbo";
+	desc = "   You are floating in a formless void, detached from all sensation of physical\n
+matter, surrounded by swirling glowing light, which fades into the relative\n
+darkness around you without any trace of edges or shadow.\n
+   There is a \"No Tipping\" notice pinned to the darkness.\n";
+	sector = "City";
+	flags = { INDOORS };
+	exits = {
+		up = {
+		};
+	};
+};
+#2 = {
+	name = "Null Space";
+	desc = "As if worn away like an old carpet, space and time abdicate their places\n
+here.  This is nothingness, a shadow without a source.\n";
+	sector = "Inside";
+	flags = { INDOORS PEACEFUL };
+	exits = {
+		south = {
+			flags = { CLOSEABLE };
+			room = 21247;
+		};
+	};
+};
+#3 = {
+	name = "A Totally Empty Room";
+	desc = "   The walls are completely bare... nothing at all in the room.\n
+How... utterly bizarre and completely weird.  There is a strange\n
+portal just above you, and it almost looks as if there is some\n
+sort of room above you.\n";
+	sector = "Inside";
+	flags = { INDOORS PRIVATE };
+	exits = {
+		up = {
+			desc = "You notice that the portal above you looks almost like glass,\n
+albeit very dirty glass.\n";
+			key = -1;
+			room = 0;
+		};
+	};
+};
+#50 = {
+	name = "A Small Room";
+	desc = "   Except for the drops of water slowly trickling down the western wall and the\n
+small cot over in the corner, the room is quite plain.  No sounds can be heard\n
+except for your own breathing, and the floor feels as cold as ice under your\n
+feet.\n";
+	sector = "Inside";
+	flags = { !MOB INDOORS PEACEFUL !MAGIC JAIL };
+	exits = {
+	};
+};
+#74 = {
+	name = "Nowhere";
+	desc = "An empty room.\n";
+	sector = "Inside";
+	exits = {
+	};
+};
+#99 = {
+	name = "The Realm Of The Dead";
+	desc = "   You are standing on an immense, grey stone floor that stretches as far\n
+as you can see in all directions.  Rough winds plunging from the dark,\n
+starless sky tear savagely at your fragile body.\n";
+	sector = "Inside";
+	flags = { INDOORS PRIVATE };
+	exits = {
+		north = {
+			desc = "The hard floor seems to go on forever.\n";
+			key = -1;
+			room = 99;
+		};
+		east = {
+			desc = "The hard floor seems to go on forever.\n";
+			key = -1;
+			room = 99;
+		};
+		south = {
+			desc = "The hard floor seems to go on forever.\n";
+			key = -1;
+			room = 99;
+		};
+		west = {
+			desc = "The hard floor seems to go on forever.\n";
+			key = -1;
+			room = 99;
+		};
+	};
+};
+$

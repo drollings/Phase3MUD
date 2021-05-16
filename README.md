@@ -24,3 +24,19 @@ mad to run this online in the same container as anything important
 whatsoever.
 
 CVS history omitted.
+
+Oasis OLC was a notable snippet popular for CircleMUD at the time.  It was
+incorporated, and vastly rewritten until its interface was all that appeared
+the same, as you'd expected for a change from a heavily refactored C to a
+C++ codebase.  It relied heavily on a new Editor class which used a vastly
+deprecated way to use memory offsets and casting to easily reuse code,
+determined by data in compiled literal structs.
+
+After major rewrites from C to C++ and a vast amount of refactoring and
+added features, there are still pieces of code recognizably belonging to
+Jeremy Elson's CircleMUD, which falls under the DikuMUD license.  The
+CircleMUD FAQ and README have been included to respect this.
+
+All code contributed by Daniel Rollings (AKA Daniel Houghton) is under the
+MIT license.
+

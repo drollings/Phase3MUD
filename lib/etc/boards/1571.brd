@@ -1,0 +1,658 @@
+Board File
+25
+#31
+66
+997609379
+shops
+fill each shopkeeper with items already made
+apply all applicable items
+compare similar shopkeepers sharing items and arbitrate
+examine shopkeepers inventorys
+those with too many items either delete or reassign retailer
+those with too few make more
+filter down items as much as possible
+
+complete remaining items
+compare relative pricing and attributes
+create scripts for items, test scripts for bugs
+
+
+remaining triggers use on mobs and ambiance for rooms
+~
+#30
+66
+994219471
+jeb
+Yo nobody else who's a mort should have this board.  Imms can always come and
+write on my board but none have.    
+~
+#29
+413
+994205761
+Hmmm...
+Ok, how many people have this portable board? and if I write stuff in it, others can view it right? Well, info on my zmud map, I have all the roads, most of the mountains, and all the towns. I also color coded the paths to some of the zones
+that do not have roads. I was thinking of color mapping the whole thing, green for the forests and grass, but feel the whole thing would be cluttered and might mess up the speedwalker setup.
+~
+#28
+361
+992993170
+stup-o
+I'm a stup-o
+~
+#27
+66
+991960548
+code questions
+here's some scripting questions I need to figure out
+1.how to check if someone is sneaking or not
+2. how to make a modified ability score roll
+3.how to check if someone is flying or swimming or walking
+4. how to echo noises such as trampling over gravel
+5. how to leave virtual tracks, old campsite, blood, tracks in mud
+6. how to create a random mob with random skills and rand eq
+7.how to transform one mob into another, and retain enemies 
+8.how to create a temporary cave in, and how to remove one
+9.how to make a gust of wind or surge of water
+10.how to use the mining skill to excavate a hole
+
+~
+#26
+66
+988642128
+subterranean lake brainstorm 2
+colonies of different creatures
+1.for the peak, nonhumanoid flyers like griffons
+2.for the caverns, myconids, goblinoid, and low int creature dens
+3. the water, low int predators such as those shark/mudskipper dudes
+4.small group if individual laori, dwomax, and shastick(isolated)
+
+~
+#25
+66
+988550648
+subterranean lake brainstorm
+need reason to go into zone
+1.underground caverns contain an ancient city that is inhabited
+2.serves as a gateway to underdark area or shastick colony
+3. dangers serve to protect laori settlement
+
+need variety in creature ecology
+1. create nomadic groups of different races to travel areas
+2.create stationary creatures such as fungi and trapping creatures
+3. creatures react to adventurers, plant infestations, attracting attention, capture and escape
+
+4. attractors and repellants of creatures appear in environment.
+6.creatures like rats, bats, lizards, that move around but do nothing
+
+5.random loading, numbers, equipment and scripts
+
+
+need activity in the environment
+1.random sounds, lists based on area, on proximity to creatures
+2.noises made by players, echoes, spashes rocks 
+3. currents and winds
+4.random events, falling rocks, scurrying animals
+5. natural vehicles, logs on water, vines, clouds even
+6.natural disasters, scalding geysers, acidic water, poison gas, wind induced falls
+
+combat details
+1.ranged combat included
+2.dousing a light source
+3. dropping boulders
+4.isolation-trip doors, goo on floor, bridge removal
+5.predatory-hunt, attack, hide,  attacking sleepers
+6.kidnapping, subdual, removing possessions
+
+
+room descriptions
+1.simple with details in extended view
+2. natural light is noted, 
+3. streams and moss and such have corresponding objects in room
+4.winds and heat sources have appropriate scripts
+
+~
+#24
+66
+963288704
+virtual room templates
+A single room formation can be duplicated in many different places.  If there
+is a tabulator which keeps track of location of individuals in respective
+template duplicate rooms.  The tabulator must also moderate the actions of the
+virtual inhabitants.  
+
+Combat, commands and socials are going to get complicated.  
+
+The benifits of this are duplication of ships, houses, tunnels trees natural
+formations, If the virtual room becomes streamlined, the entire world map can
+be generated in high detail, or restricted to individual zones needing them.
+  
+sid
+~
+#23
+66
+963288174
+conversation tree for mud
+Following in the footsteps of the Ctree program for the opensource project of
+Starcontrol TimeWarp found on the Free Starcontrol Webpage.  
+
+I'm going to attempt to include conversation dialogues, dialects, and social
+responses.  
+
+Conversation dialogues follow a certian branching pattern, a single
+postulation, followed by a selection of PC responses, each response can have
+it's own new branch in the conversation, the progression can be detailed or
+simple.  Dialect filters search the NPC lists and replace key words with the
+local slang.  
+
+Social responses, a large cross section of the population can be gathered.  
+With a combination of actors and subjects.  When applied to an NPC it attaches
+only certian triggers which apply to that individual.    
+
+Sid
+~
+#22
+66
+961165444
+orcas inlet
+additional ideas.
+remove mass of venders and trader's market idea,
+instead go with drunken duck and sawtooth dock
+create dunes area and cliffside fir grove, use dungeon like terrain to simulate terrain.
+or rather outdoors navigation.
+
+have toll for horses, small amount to exit with a horse, equal amount to return with same type of horse
+look to Gurps for horse variations, donkey etc
+
+instead of gold have objects with weight and worth, ie furs
+have an actual campsite with lightable fire and bedding
+have rooms in tavern that all can access for free to encourage use
+beds etc
+
+have tavern at top of cliffs and if you bring things from the dock to the top you get paid to drop it off
+stolen the objects are worthless, unless sold to other merchant.
+
+~
+#21
+66
+958201173
+journal
+take advantage of zreset
+sundew to drink in morning
+birds chirping
+
+nighttime changes
+single mob lights lamps
+bats catching insects
+lamps attracting insects (all echoes)
+bell chiming the hours
+
+
+elaborate on law-enforcement script
+hand over weapons or remove weapons
+or guard towers
+would be interesting to have the town get attacked by orcs and worgs and goblins occaisionally
+
+need to get shopkeepers in first
+law enforcement next
+details of town events next
+anything next
+
+~
+#20
+66
+957417690
+journal
+the source taht the coder named ORZ is using is at  ftp://orz.res.wpi.net/full/cur_.zip
+~
+#19
+66
+956473324
+continued
+
+Normally, the scope of a character's Influence is limited to their locale (e.g., the domain).
+Thus, a character using Politics 8 to declare a state of emergency in a region could only do
+so in their home domain. If a character has traveled to another domain and their Influences
+have been checked in by the local Storyteller, then that character may use their Influences in
+their present locale at 1.5 their normal cost (meaning that a Politics 8 action would require 12
+unopposed actions from a non-local character). 
+Characters can use their Influences to affect things outside of their home domain or even
+outside of their home region. To affect domains outside of the character's current domain but
+in the domain's region, the character must inform their home DST of their intent and spend
+two times the normal cost to reach outside of their home domain. (Note this influence use as:
+Reach beyond Domain in Region). Similarly, a character can affect areas outside their region
+by spending five times the number of actions after informing their DST. The most serious
+drawback of acting outside of your home domain or locale is time. The spent actions are
+recorded by the character's home DST and reported to the RST. The RST then inform the
+appropriate DST in the region or RST of a different region of the Influence expenditures by a
+player outside their respective domains or regions. Thus, an action from one domain to
+another in the same region will most likely take a full month. Actions between regions will most
+likely take two full months. Clever players may be able to use this delay to their advantage. 
+Characters may even be allowed to use their Influences to affect an entire region or a nation
+all at once. With the appropriate approval via storyteller reports (Regional Storyteller for
+regional, National Storyteller for national), a character may expend a great deal of Influence
+to manifest their Influence regionally or nationally. Since region-wide and nation-wide
+Influence attempts are made through the Domain storyteller (to the Regional Storyteller or
+Master Storyteller via reports), the Domain Storyteller should act as a gate to help players
+realize what actions are likely to be accepted region-wide or nation-wide. If the request to use
+the influences region-wide or nation-wide is denied by the Storyteller in charge, the actions
+spent are still lost. Characters with a 8-9 influence rating will have superior access to
+region-wide resources and may be able to affect things inside the region or region-wide more
+easily (e.g., at half cost for magnified actions listed in Laws of the Night: Revised pg
+96-104, and half cost to affect the entire region). Characters with a rating of 10 may enjoy
+this same privilege nationwide. These are at the discretion of the Regional Storyteller and
+Master Storyteller respectively. 
+Moving and Influence Location (4.5)
+A character's Influences are located in their home Chapter or Domain. If that Chapter is
+located say in San Francisco, then that character's influences are located in that area as
+well. You may not have multiple influences of the same type located in different locations.
+Example: Gary has a character that has Police 4 in San Francisco (his home Domain) and
+wants Police in Fresno. He is politely informed by the Storyteller that he may not have a
+separate Influence located in Fresno. 
+With permission of the Storytellers, a Player may have his characters Influence in a different
+geographical location. It requires the permission of the far away Chapter and Domain
+Storytellers and both of the player's home Chapter and Domain Storyteller. 
+If a player moves to another city, we do not want to penalize that player for using or having
+influences. A player may have his character transfer his influences to that new location. It
+takes one month to make the transfer at no loss of level or Growth banked. Have your old
+Chapter Storyteller contact your new Chapter Storyteller with the character's Influence levels.
+
+~
+#18
+66
+956473280
+continued
+
+Analyze
+Analyze actions give information about what general occurrences. Trace is about a specific
+character's Influence; Analyze is about all characters' actions. This is a general expenditure
+against everyone. You learn details first concerning yourself, such as if someone is Tracing
+you or trying to Steal your influences. You must have expended a greater number of
+Analyze actions than the number of Conceal actions to notice any attempts. Generally, it is
+easier to learn about bigger actions than smaller ones. You may specify your Analyze to
+narrow down what you wish to know. This will give you greater effect depending on your
+Storyteller. 
+Combine
+Combine in used when two or more characters use their Influence together in order to
+achieve a common goal. Working similar to Loan, the characters declare the primary action
+and how many Combined actions are being applied to that action. For each individual
+Combining their influences beyond the first character, there is a five action penalty cost.
+Combining does not reveal Influences between characters, unlike Loan, which gives the
+character to whom Influences are loaned an automatic Trace. 
+Loan
+Loan splits your Influences. When Loaning another player your Influences, only half of the
+normal amount of actions you give them are available to the temporary owner. For example, if
+Sandra Setite were to loan her Media 4 (10 actions) to Tina Toreador, Tina would only be
+able to utilize 5 actions (10/2 = 5). In addition, this gives an automatic Trace from the loaner
+to the recipient. In our above example, Tina would have a Trace on Sandra's Media
+influences. 
+The Scope of Influences; Cost Multipliers (4.4)
+          Use while in home domain (Standard Cost) 
+          Use while in another domain (1.5x Standard) 
+          Influence another domain, in region (2x Standard) 
+          Influence another domain, outside region (4x Standard) 
+          Influence home region (5x Standard) 
+          Influence another region (7x Standard) 
+          Influence nation (10x Standard)
+
+~
+#17
+66
+956473262
+continued
+
+Block
+Block actions prevent everyone from making specified Influence actions. It reduces all actions
+of the type specified by the amount of actions invested in Block. For example: Clarice invests
+3 actions to Block "get a Blood Trait" (as listed in the Health Influence). Now anyone that
+month attempting to get blood has three actions subtracted from their action. If the adjusted
+total is less than what is needed to achieve the effect, the effect fails. If more than one
+character is investing in the same Block effect, the result is the effect of the highest Block
+spent. To clarify, Block actions are not cumulative. Block is very powerful but specific. You
+may not Block the following types of Actions: Expansion (STEAL and GIVE), Protection
+(BLOCK, PROTECT and CONCEAL), Transformation (DESTROY, COMBINE and LOAN), and
+Informative (TRACE and ANALYZE.) 
+Protect
+Protect actions maintain your assets. It prevents other characters from Destroying,
+Traceing or Stealing your Influences. It protects all Influence of that type. For example,
+placing 2 actions of Protection on your media influence protects all of your Media but does
+nothing to protect your Health. Characters whose influences are between levels 1-3 are
+automatically covered by the small-fry clause. This clause states that they are so small as to
+have an automatic three actions of Protection. 
+Protection reduces Steal, Destroyand Trace actions by twice the amount of Protection
+actions. In the Media example above, the character who is defending placed 2 actions into
+Protection. To successfully begin acquiring the Media Influence, the offensive player would
+have to spend at least 5 actions (2X2=4, so 4 action penalty) toward Steal (assuming they
+have the influence Traced. Since the offending character spent 6 actions toward Steal, it
+would net her 1 Steal success out of the 15 needed. The next month, she still needs to
+overcome any Protection actions (if the defending player kept it up). For her to Steal the
+Influence in one month, she would need to invest 19 actions (4 + 15). 
+Conceal
+Conceal actions prevents Analyze from showing what actions you took. The minimum cost to
+Conceal is the of the action being concealed. For example, Concealing a three point action
+(like acquiring an SMG with Underworld) costs a minimum of three actions devoted to
+Conceal as well as the three actions to merely accomplish the stated action. Conceal beats
+Analyze if it is of a value equal to or greater than the Analyze. 
+Trace
+Trace actions are used to hunt down another character's Influence. You must Trace a
+character's Influence before you can Steal or Destroy it. The character must spend a
+number of unopposed Trace actions as the target has actions with the Influence (the larger
+the Influence of the player you are Tracing, the more effort required). If you wanted to Trace
+a character with Health 7, it would require 28 unopposed actions to map their little Influence
+empire. This is not exact, but it gives you an idea of their Influence. Protect blocks Trace on
+a one for two basis. Once another character's Influence has been Traced, it is easier to
+Analyze that character's actions. A Trace may be lost at the Storyteller's discretion. 
+~
+#16
+66
+956473160
+continued
+
+Special Actions (4.3)
+Growth
+Growth is used for increasing an Influence rating. A character must spend two times as
+many unopposed actions of Growth as the new level of influence would allow. For example, if
+a character with Media level 6 were using Growth to reach level 7, that character would have
+to accumulate 56 Growth actions ((1 + 2 + ... + 7) * 2 = 56). This will usually take more than
+one month, but Influence actions are banked. This allows characters to gradually work
+towards higher levels. There may be additional requirements for achieving levels 8 - 10. 
+Domain Storytellers can award Influence levels up to 7, Regional Storytellers can award
+Influence levels 8 and 9, and the National Storyteller can award an Influence level of 10. You
+may not bank growth past the level you need approved, once approved you may then
+continue to grow. In addition, there is only one level 10 in any one influence per nation. The
+RST may restrict no more than one level 9 per Influence in his/her region. If you want the top
+spot, fight for it. 
+Steal
+Only the top-most rating of a target's Influence may be taken with Steal. To Steal an
+Influence rating from another target, the character must spend 1.5 times the number of
+unopposed actions as the target could have made with the influence. For example, a
+character trying to Steal a target's Media of 4 would have to spend 15 unopposed actions of
+Steal ((1 + 2 + 3 + 4) * 1.5 = 15). When enough Steal actions are accumulated, the target's
+Influence drops one level. A number of Growth actions equal to twice the number of actions
+that could have been made with the lost level are applied to the Influence of the character
+using Steal.Using the above example, the victim's Influence drops to level three, and the
+character using Steal gains 20 Growth actions into her own Media Influence. Steal is
+cumulative over time and banks like Growth. 
+Destroy
+
+Only the top level of a character's Influence may be affected by Destroy. To Destroy
+another target's Influence rating, the character must spend a number of unopposed Destroy
+actions as the target could have made with the influence. For example, to Destroy a level 6
+Health Influence requires 21 unopposed Destroy actions (1 + 2 + 3 + 4 + 5 + 6 = 21). Unlike
+Growth and Steal, Destroy actions are not banked and carried over from month to month. If
+the target Influence is being guarded by Protect actions, your endeavor will not be
+successful without additional actions(see Protect below). 
+Give
+Give actions allow one character to give another character their top level of an Influence.
+This action costs the character twice the number of actions that the top level of their
+Influence allows in a month (ignoring the levels below it). Thus, to Give a Police Influence of
+4, the player must spend 8 actions (4 * 2 = 8). When these actions are successfully spent,
+the Influence of the character using Give drops one level, and a number of Growth actions
+are applied to the Influence of the receiving character equal to twice the number of actions of
+the Influence level. In our Police example, the Influence of the character using Give drops to
+level three, and the receiving character gains 20 Growth actions into her own Police
+Influence. Only one level may be affected with Give per category per month per character. 
+Block
+Block actions prevent everyone from making specified Influence actions. It reduces all actions
+of the type specified by the amount of actions invested in Block. For example: Clarice invests
+3 actions to Block "get a Blood Trait" (as listed in the Health Influence). Now anyone that
+month attempting to get blood has three actions subtracted from their action. If the adjusted
+total is less than what is needed to achieve the effect, the effect fails. If more than one
+character is investing in the same Block effect, the result is the effect of the highest Block
+spent. To clarify, Block actions are not cumulative. Block is very powerful but specific. You
+Informative (TRACE and ANALYZE.) 
+Protect
+Trace
+~
+#15
+66
+956473134
+continued
+
+Bob Example (John Doe) 1/1/95 
+          Health Level 6 
+          (21 Actions - 2 actions taken in Thursday's LARP for getting Medical records =
+          19 actions) 
+          3 = Get 3 Blood Traits 
+          3 = CONCEAL (the above action) 
+          5 = ANALYZE 
+          4 = PROTECT Assets 
+          4 = BLOCK others getting Blood 
+          Media Level 2 
+          (3 Actions) 
+          3 = GROWTH
+Clarice Example (Jane Doe) 1/1/95 
+          Health Level 4 
+
+          (10 Actions) 
+          1 = Block others getting blood 
+          1 = CONCEAL 
+          2 = GROWTH 
+          3 = TRACE who's getting all of my blood!?! 
+          3 = Alter Medical records of the Malkavian Lula at Child's Memorial
+The Storyteller tracking Influence will be looking at the actions of all the characters in the
+domain, and the Influence being used in the domain while accounting for all that happens. 
+In the case of getting blood, Bob gets 2 blood because Clarice blocked one of his actions.
+Clarice will not know who is still stealing from the blood banks around the city but may get a
+clue towards it. Bob is going to find out about Lula's files being changed but not who. He may
+also learn that his opponent is growing. If Bob next time decides to Trace both the blocking of
+getting his blood and the Altering of Lula's medical records, he will meet with resistance on
+the block (because of Conceal) but the medical record change (no Conceal) will bring him
+closer to the core of Clarice's Influence. Perhaps this would even set him up to Steal. 
+
+~
+#14
+66
+956472989
+chapter 4 special actions supp 5.0
+Prime Chapter Four
+Influence (4.0)
+The rules for Influence in the Mind's Eye Theatre source books are too static to make their
+use intriguing in a national or global chronicle. For the purpose of The Camarilla's
+Sanctioned games, use the following rules instead. If these rules prove too cumbersome, a
+Domain Storyteller may decide to only use what is in the Mind's Eye Theatre source books,
+and keep Influence levels in her domain under seven (7). 
+For the Camarilla sanctioned game, we are not using the Military or Espionage influence
+that was introduced in Laws of the Hunt. 
+Resources and influence are not interchangeable. Players cannot utilize influences to gain
+vast sums of money for their characters to spend. Any financial dealings using influences is
+represented by the influence actions as detailed below and cannot be converted into useable
+funds. All cash acquisitions from influences are detailed in the Minds Eye Theatre books. To
+gain high monthly incomes and spending money, characters need to purchase the
+Resources background. 
+There is an Influence Program that can track and run Influences for a 100+ member
+domain. The Program works only upon PCs. It is a self extracting executable. It is located at:
+http://www.greatbasin.net/ kindred/vamp_v100.exe 
+Characters buy starting influences as outlined in the source book(s) appropriate to the
+character's venue (see Introduction). Characters are limited to starting with an initial rating of
+5 in any given influence although they can acquire more influence in the game, to an
+absolute maximum of 10 in any one influence. Characters may use experience to purchase
+additional levels of Influences, but are still subject to the less than level six in a category cap. 
+All characters are limited to having no more levels of total Influence than the sum of their
+maximum base Physical, Social and Mental Traits. Example: Gary Glasswalker, a Garou, has
+8 Phys, 9 Social, 12 Mental Traits and maximum of 13 Traits in a category. His total number
+of Influences he may have is 39. He decides to spend experience to get his Influence to
+Church 5, Finance 4, Industry 5, Transportation 5, Police 5, Bureacracy 5, Underworld 5 and
+Street 5. For Gary to get a Street 6, he will need to lose a level in one of the other Influences.
+A character's rating in an Influence allows the character a certain number of actions per
+month, in accordance with the chart below. 
+  
+ Rating
+       Actions
+               Cost to Next
+ 0
+       0
+               2
+ 1
+       1
+               6
+ 2
+       3
+               12
+ 3
+       6
+               20
+ 4
+       10
+               30
+ 5
+       15
+               42
+ 6
+       21
+               56
+ 7
+       28
+               72
+ 8
+       36
+               90
+ 9
+       45
+               110
+ 10
+       55
+               -
+Rating is the level that the character has at the beginning of the month. Actions is the
+number of Influence actions that level gives the character in a single month. Cost to Next is
+the number of Influence actions required to grow that Influence to its next level (see
+GROWTH). 
+Using Influence (4.1)
+A character may attempt any of the actions in the Mind's Eye Theatre source books by
+informing the Storyteller tracking Influences of the number of actions spent. You may only
+attempt actions listed in the Mind's Eye Theatre book if you have that level of Influence
+necessary. Example: Bob has Level 2 Underworld which gives him 3 actions in a month. Bob
+wants to Obtain an SMG (a 3 point action.) Though Bob has 3 actions he may not take that
+action until he has Level 3 Underworld. Example 2: Bob has Underworld 5 now. (He is slick
+that way.) Bob wants to attempt a Health action (Get a Blood Trait) but finds that he must
+have Health Level 1 to take that action. 
+A character or group of characters may not invest more than 50 actions in total toward any
+one influence action. Additionally, the character may also attempt any of the following types
+ANALYZE). 
+          Health Level 6 
+
+~
+#13
+66
+953709496
+objects
+I'd like to create several variants of the crossbow of speed.
+one includes a generic crossbow, not of accuracy.
+another is a heavy twohanded version I would like extended range on
+the third is a repeating crossbow, with decreased accuracy(range can be reduced)
+which contains more than one bolt.
+
+~
+#11
+66
+952755560
+skills and object creation
+The skill would be the center of the whole setup.  As each level progresses
+higher and higher so to will the possible quality of the creation.  
+
+There will be prototype objects of each level of quality corresponding to each
+level of the skill.  The player should have a list of possible prototype
+objects that can be created, possibly with the materials they carry only.  
+
+Perhaps with the tools, facilities, and materials present, the player can type
+their appropriate skill and recieve a list of objects producable, with the
+appropriate time and materials needed.  
+
+Variables would be final quality (ie value or quality level improved or
+reduced depending on the resultant skillroll) and approximated time required
+working to complete the task.  
+
+The player can halt a project, but only be able to work on one project at once
+or only one per skill level.    
+
+Siddhatima
+~
+#10
+66
+952036911
+psionics origin
+perhaps there is a biological factor to psionics
+some sort of micro-organism which acts as a symbiot
+and empowers the individial with psionics
+this would result in more psionicist vs psionicist powers which
+are although powerful are restricted from affecting non-psionicsts
+
+
+~
+#9
+66
+952036564
+psionic powers
+Push
+This power is akin to force except no magical powers or psionic powers
+restricted to physical actions.
+
+projection
+enables character to meditate and leave their body in a pseudo spirit form
+
+lend ability score
+psionicist can increase or decrease stat of another
+must be able to perform ability with the penalty they recieve before it occurs
+
+variation is steal ability, character can hang on to an ability while expending power 
+
+~
+#6
+66
+951196894
+gheckos
+camoflauging
+climbing
+snakelike body
+prehensile tale 
+funky vision? thermal?
+mebbe fangs?
+
+great thieves,
+poor spellcasting due to poor thumbs(think chameleon)
+3by 2
+can do certian things while using improved version of camoflauge
+like look different directions
+silence is also easy
+climbing up walls is a 3 set of limb task
+
+funky.....
+
+develope analyze incorporate
+Luke
+~
+#3
+66
+951196328
+archetypes
+make some examples of races and religions and spellcasters
+
+also get some quick glimpse stories for showing how they act.
+the examples should be mobs and have skills and junk
+mebbe a player character and stuff.
+LOTS of player characters
+
+would that be spam?
+would making a mob be too difficult?
+I would like to be able to switch into a mob, improve it's level and choose
+skills, then save it to disk as an extended or edited form of that mob
+much the same way garadon describes editing mobs by not starting from scratch but editing a previous mob.
+
+siddhatima
+~
+#2
+66
+949838565
+spell idea-ressurrection variant
+ok cast a spell on a corpse to keep it from decaying. and cast a variant of
+ressurrection and put a different spirit into the body.
+
+spell might need to be restricted to PC corpses only and is not a very 
+pure and untainted thing to switch spirits and bodies around.
+
+if any mob was used people would like to kill divas and dragons and take their corpse to capture it and then there would be a virtual invasion of the body snatchers.
+
+or people messing with spirits and capturing them to use as slaves in the body
+of a friggin treewee or something.
+
+sid
+~

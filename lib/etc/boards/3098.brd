@@ -1,0 +1,950 @@
+Board File
+57
+#740
+5
+1044083885
+Test
+This really is the 7th sign.
+
+I'mma be hunkering down, waiting for the apoclaypse.
+~
+#739
+47
+999541955
+Bastardization
+*chuckle* Find me if you have questions about my zones, I'm on from time to
+time and one of those times I'll have time to spare.    
+~
+#738
+66
+999375803
+builders
+Unless you want me bastardizing an interpretation of your precious zones then
+respond somehow.  
+
+I am simply asking for info from the horses mouth, what you think is important
+for RP with YOUR zone.  
+
+Spiralus is going to make books, and if I don't have info, I'm just going to
+poke fun at the wacky junk in a zone that's been left for dead.    
+
+
+Siddhatima 
+~
+#733
+1
+994436115
+This is it.
+I think I've seen an irresistable reason to go largely Python.  ZODB is
+the underlying object namespace underlying Zope, a popular web programming 
+framework, and it very transparently manages SQL storage of Python objects.
+
+It's stunningly cool.  If you want, check out some docs at 
+
+http://www.zope.org/Documentation/Articles/ZODB1
+~
+#732
+298
+994387488
+Going away for a week or so...
+Hey guys just wanted to let you know ill be gone untill around friday next week, gonna go cruse around the contry for a couple days *grins*. Later guys
+~
+#731
+66
+994378967
+player database
+now would be a good time to have a player database.
+~
+#730
+66
+994378314
+Mort Board 
+anyone can remove anyone's messages, this is bad.
+morts can remove imm messages, this too is bad.
+
+I was going to mail pictures, but address was formerly on board, bad.
+Whomever wishes to be responsible for pictures put mail address up.
+
+Siddhatima
+~
+#729
+298
+994292331
+Need CS player!
+Ok, on July 20-22 (i'm pretty sure those are the dates) in Bloomington MN (near the twin citys) there is going to be a big CS lan party.
+The teams are either 5-5 or 6-6. We have 3 players and another trying to come, we need a fith person who can get down there and we need one BAD. There are $2,500 in cash money and if we are lucky enough to take First place we will qualify for the CPL. 
+The cpl is some huge lan party down in florida a friend told me like all expences payed and stuff (really nice, lots of babes to).
+Anyway, even if you cant ask around I really need another player.
+~
+#728
+1
+994291408
+A small step codewise...
+I've gotten SFN Phase 3 running inside of a Python script.  It's not much.
+The Python script is only a step beyond being an autorun script, merely
+loading up the MUD as a shared library and handing control to it.  Now I've
+got to design all the "wrappers" to allow Python and C++ to communicate
+with each other.  Ugh.  It's not as easy as I thought it would be to 
+get the languages in sync, especially as many of the routines that belong in
+C++ access information that I'd rather keep in Python.  Ah well.  We'll
+be doing good just to get Python worked in as a layer below the DGScripts
+and usable for command tables, spells, and skills.
+
+It would be better to get Phase 3.5 running with Python, but it's not 
+running of itself yet.  Phase 3.5 has layers of abstraction that would
+make it easier to get working with Python, but until then...
+~
+#727
+66
+994124315
+re:re:matt
+Yeah he isn't the brightest penny on the street, and I can see why he is not
+the best choice.  I asked him if he'd be my apprentice.  Not because he's the
+best RPer in the world but because he is really motivated about his own mud
+he's been working on, and he's got the same thing in him that let tim build
+like a meth user.  
+
+  
+no dramatics or drachor dolls here
+~
+#726
+1
+994115649
+On a lighter note...
+On July 20, 1969, as commander of the Apollo 11 Lunar Module, Neil Armstrong
+was the first person to set foot on the moon.  His first words after stepping
+on the moon, "That's one small step for man, one giant leap for mankind," were
+televised to Earth and heard by millions.  But just before he reentered the
+lander, he made the enigmatic remark: "Good luck, Mr.  Gorsky.  " Many people
+at NASA thought it was a casual remark concerning some rival Soviet Cosmonaut.
+However, upon checking, there was no Gorsky in either the Russian or American
+space programs.  Over the years many people questioned Armstrong as to what
+the "Good luck Mr.  Gorsky" statement meant, but Armstrong always just smiled.
+On July 5,1995, in Tampa Bay, Florida while answering questions following a
+speech, a reporter brought up the 26 year old question to Armstrong.  This
+time he finally responded.  Mr.  Gorsky had died and so Neil Armstrong felt he
+could answer the question.  
+
+In 1938 when he was a kid in a small midwest town, he was playing baseball
+with a friend in the backyard.  His friend hit a fly ball, which landed in his
+neighbor's yard by the bedroom windows.  His neighbors were Mr.  And Mrs.  
+Gorsky.  As he leaned down to pick up the ball, young Armstrong heard Mrs.  
+Gorsky shouting at Mr.  Gorsky.  "Sex!  You want sex?!  You'll get sex when
+the kid next door walks on the moon!  " True story.  
+~
+#725
+1
+994112121
+Now _this_ is dirty.
+The litany of Microsoft's foulness stretches beyond most people's memory
+as it is, but we're getting a refresher.
+
+http://slashdot.org/article.pl?sid=01/06/21/1810258&mode=nested
+
+Essentially, Microsoft branded GPL'ed open source software as 
+"potentially viral" and forbids the use of any of it in the development
+of a product that includes the SDK.
+
+Pinheaded managers everywhere are going to require their developers to
+use Microsoft's SDK.  In turn, those developers will be legally bound not
+to use gcc to compile C and C++ programs that in any way use the SDK, not
+to use StarOffice or <insert text editor here> to edit any files related to
+it, and the list goes on.  Microsoft has misrepresented the GPL to arouse 
+fears that even using a GPL tool to process information makes that information
+subject to the GPL.
+
+If a company ever tried something like this with things the average joe
+understood - for example, if the power company made appliances and legally
+bound you not to use their competitor's appliances in your home - the crack
+down would be swift.
+
+Ignorance is bliss.
+
+We're only talking about control of the communications technology that will
+become more pervasive and essential in coming years.
+~
+#724
+1
+994086719
+Re: Matt
+	------- Quoted message -------
+Could he be my apprentice builder, under my supervision.  We'd both work on
+the same things.    
+	------- End Quote -------
+
+I'd rather not exhume this horse for another beating.  Matt's welcome to
+send you material for input.  Nestor, Reznor, and I have agreed, though,
+that he's not in tune enough with what we want from this MUD to be given
+buildership here.  It's been said before, and please, let's not have any
+drama about it.
+
+         Cheers!
+~
+#723
+66
+993958071
+Matt
+Could he be my apprentice builder, under my supervision.  We'd both work on
+the same things.    
+~
+#722
+1
+993854940
+This!...
+...This is what I go through for you all! =)
+
+http://www.boost.org/libs/python/doc/overriding.html
+~
+#720
+66
+993829610
+occupations
+Okay, I was under the impression that occupations were going to be scripted by
+the builders.  
+
+I'd still like a chance to discuss this idea of mine, I believe it can handle
+several aspects of gameplay in a constructive manner.    
+~
+#719
+1
+993824133
+Keep in mind...
+The occupations are what your character does automatically while you're away.
+In many cases, we'd just be reporting outcome when they log back in by 
+showing their income, expenses, incidents of note (luck rolls and such),
+and possible random penalties based on character flaws.  For example, 
+some characters might have a weakness for wenching and won't have so much
+money left over... :)
+~
+#718
+66
+993775877
+Here's a suggestion
+Instead of the previously mentioned idea of having social RP status given to
+players on an individual basis, Why not have a system that coordinates certian
+RP actions?  
+
+Currently, if someone says they're the sherrif of newhaven, then people have
+to deal with that somehow.  With a system we could have ratings and also a
+means to affect and interact with other people's different ratings.  
+
+The White Wolf influences system for the mind's eye theatre has a great system
+for these RP situations.  Converting it for the Mud would not require creating
+a new system, just the different "influence" abilities for this setting.  
+
+With this system, people can choose a trade like blacksmithing, ranching,
+fishing, merchant, or what have you, and not have to actually repeat the
+process of chopping a tree down and selling it over and over.  More important
+things can be focused on, and yet this aspect of gameplay is not ignored.  
+
+Also within this system there can be order within different heirarchies such
+as religous groups, the ruling court, a city's law or crime aspects.  A
+powerful criminal can try using their skill's rank to arrange for an assassin.
+A member of the law enforcement can arrange to have someone arrested or
+framed.  A beaurocrat can make an attempt at embezzlment.  
+
+If two people have a merchant skill, one can attempt to block the other's
+business deals for a period of time.  Spying and sabotauge are possible, but
+if you are a mere beginner in the scene, and you try taking on an experienced
+player, success isn't likely, and being detected is.  
+
+This system is normally ran once a month, with players learning what their
+characters noticing the current trends in things.  Like a beginning Poacher
+hears that an area has been terrorized by an unknown beast.  And a more
+experienced poacher would learn that the beast is in fact a ranger protecting
+some very valuble griffin eggs which have been orphaned.  
+
+Players all decide what their efforts are going towards later that day.  
+Everyone's actions are compared and the results sometimes emerge sooner than
+the next month.  There is a program called grapevine that can handle hundreds
+of players in the same system.  It is not open source, but the gaming rules
+are very logical and based on a level to number of action points system.  
+With actions being categorized so the whole thing runs smoothly.  
+
+I'm creating a rough draft for possible Influence Abilites, I'm also working
+on what sort of format and code would do the job.  I can see an interface for
+this not being within the game, but at the login menu, with results also being
+display there.    
+
+~
+#716
+1
+993741662
+Another light bulb just went off
+As you can tell, work is slack for me today.  I just had another idea.
+
+Regarding the 3D worldspace that I've yapped about, here's my idea.  The
+licensing of the V12 engine states that any game that you publish that you
+use the V12 source for has to be published through GarageGames.  But what if
+you aren't (yet) releasing clients?
+
+What if the V12 engine here gets stripped down to maintaining a 3D worldspace
+and runs just on the server, with hooks for Python to interact with it?  All
+it would maintain then would be placement and movement.  Actual detailed
+scripting would go through Python and C++ extensions.  By stripping out the
+huge part of the engine that we don't need, we can realistically expand it
+in other ways - we could make the world *HUGE*.
+
+To boot, we'd gain all the physics handling we want, and when we do have the
+infrastructure to display the world in 3D, we can release the client through
+GarageGames. 
+
+This sounds SWEET.
+~
+#715
+1
+993738037
+I've done it! (ideas, long)
+I got the event driver wrapped into Python last night.  As a matter of fact,
+I'd had the event driver correctly set up for a couple days, but my script to
+test it was wrong.
+
+Now I'm working on Python Material and DamageType classes, and I'm looking to
+make their interaction as detailed as possible.  I also want to have all
+material types have an object they become when they are "broken", described
+according to their mass and type.  Also, DamageTypes should have very specific
+effects on Materials.
+
+Kenny and I had a discussion a couple days ago and it was highly productive.
+The major thing that we discussed was steering this MUD into the direction of
+a world sim.  We intend to make rooms into named areas placed into an actual
+3D space; everything is going to be using double-precision floating point
+coordinates, which is the key to having a real 3D environment.  Now, the
+representation of it will be (initially) textual.  We're going to retain our
+descriptions, and they will in some cases be shown based on proximity.
+Certain things on the landscape become landmarks, seen from a distance, and
+you can just type "go landmark" to set your character walking there.
+Maps have a role in this as well; they can place certain landmarks effectively
+for you to follow, given good direction sense or maybe a compass or a sextant.
+Cartography will be a valuable profession.
+
+Speaking of professions, we're going to start where "rent" and "inns" left off
+and create all kinds of places where you can quit, and effectively leave your
+character occupied doing something.  You could find employment, allowing for a
+source of income based on some kind of trade skill; you can check in at a
+guild hall to train or be trained (money flowing accordingly), or you could
+hitch a ride with a caravan or a ship and go somewhere.  Some professions
+might require that your character remain present in the world; we need to
+address possible lethality in these cases.
+
+I think that this is a good, realistic target for us.  Having a world that is
+represented in 3D is a good idea; it's where we're headed anyway.  My guess is
+that given proper design, both graphical and textual interfaces can be
+supported on the client side; you are, after all, directing a character, not
+One final thing: persistence.  No more zone resets, unless you really want
+them.  We're going to store the state of things in a SQL database that gets
+updated in real time; see moebius.bofh.net.au for an outline of this.
+We're going to redesign around actual systems that generate mobiles, rather
+than spontaneously dropping them in, as appropriate.
+
+I think we've got a vision here that we can work towards.  I'm seeing some
+big payoff ahead from the decision to work with Python and SQL.  Let's put
+it this way; I can make a whole new material type right now with the simple
+statement Mithril = Metal("Mithril"), and set a few new variables on it
+to set the properties.  This could be done from inside the MUD or outside,
+and no reboot would be required.  The new material type would register
+itself and automatically become available in OLC.  It's damn cool. ;)
+
+Thoughts?
+~
+#713
+66
+993275471
+Building Blocks
+If anyone knows where I can find some toy building blocks, I'd pay real money
+for em.  I'm talking about 6 sided cubes that join together face to face like
+The rooms do in this mud.  
+
+I hope there's a hobby shop in town with some.  
+
+I have some isometric paper, but with these gnarly caves I'm making there's
+too much distracting overlapping lines.    
+
+Anyhow 
+~
+#712
+1
+993069047
+Python MUDs: findings thus far
+While there's a lot a talk of Python usage in MUD programming, I've only found
+a few Python engines as of yet.  
+
+The first one I spotted, Moebius, certainly has some potential.  I got it
+working last night after a while, but it's definitely in early beta.  It isn't
+using the latest libraries for Python, and crashes presently.  Also, in my
+mind it relies too heavily on the SQL database.  SQL may be fast for data
+retrieval, but it's still slow compared to accessing things already in memory.
+I forsee timed snapshots of the MUD's state to a "live" database, but not what
+I saw.  
+
+Ah well, that can all be changed.  I also took a quick look at POO and PUB.  
+The quirkily-named POO is a MOO implementation in Python.  This is
+interesting, but not what we want.  MOO's are extremely hands on with the code
+and each builder is essentially a programmer.  POO is more redeemable in that
+you all would be using a language you could use for general purposes, but
+we're not going to go there.  
+
+PUB?  It was a simple MUD, and I do mean simple.  Nothing to write home about.
+
+What I did see, however, was efficient socket coding where it is needed.  I
+can see myself turning our present engine into a "World" module that can be
+stopped and restarted without dropping connections, possible without even
+disturbing the placement of creatures and objects.  Depending on how
+close-knit we want to make Python and the DGScripts, we could even save script
+variables to give DGScripts a lifespan hitherto impossible.  
+
+There are a lot of possibilities here.  We'll be breaking new ground in MUD
+development, though, by the looks of things.  
+
+I like this trend.  ;)
+~
+#711
+1
+993054370
+Python progress
+I'm only one step shy of getting a working Boost extension.  There's an
+unresolved symbol - a subroutine that should be compiled into my shared
+library, but is missing - that is stopping me.  
+
+On the plus side, I've figured out how to make an object fully usable and
+extensible from both the C++ and Python sides, interchangeably.  I still have
+to figure out what to do with data structures, though.  Once something is
+loaded into memory, it is necessary to make it visible to both sides.  For
+example, I should be able to tell which mobiles are in which rooms in either
+context, or else we don't get the speed benefit of C++ where it matters there.
+
+More on this later.    
+~
+#710
+1
+993054128
+Idea
+Really, since we're technically levelless, perhaps we should clear up the
+confusion and replace level with a reputation rating.  I guess those of us
+that play Black and White would understand the context - the reputation can
+be that of heroism or notoriety or just sheer power.
+
+To satisfy Kenny's idea of reputations, we could have staff-written notes
+on players of a given level describing what the general populace would know.
+~
+#709
+1
+993053307
+Re: blackcat
+My concern for what BlackCat said upon visiting our under-construction MUD is
+about nil.  There are those people that rank MUDs by player count.  I think
+that much of what we've developed to date isn't immediately obvious to someone
+who comes looking for more of the same, with a huge player base.  I want a
+sizeable player count some day, but the audience we'll appeal to is the more
+intellectual, in-depth crowd.  The hack and slashers will find themselves more
+drawn to FPS games these days.  
+
+I don't want to say that we'll be an RP-exclusive MUD.  We need to allow for
+less intense, more immediately rewarding forms of play if we're going to get
+the critical mass for the kind of RP and power struggles we want.  I believe
+that we should compromise some of our difficult features (permanent death,
+starvation, etc.  ) at least temporarily towards this end.  
+
+  
+~
+#708
+66
+993028867
+mud revival
+I wrote a post on the Sub-Admin board because it seems that this mud is not
+living up to it's fullest.  
+
+Some folks are building, Some folks are coding,
+
+we need to get together and discuss what is going on with this mud.    
+
+Sid
+~
+#706
+66
+992994205
+blackcat
+is a bitch, said the mud sucked within 5 minutes of being here
+
+said the low number of players was pitiful
+
+~
+#705
+1
+992958176
+Progress!
+As of today, I very nearly have the event driver wrapped up for use in 
+Python.  I've got a few issues with the installation of the Boost libraries,
+but I am presently creating shared libraries (like DLL's) containing what
+we have.
+
+From what I see, we'll probably want to repeat this process for all the 
+classes at least up to the Scriptable (the base class that allows something
+to interface with the DG scripts) that comprise our MUD base, as well as our
+script processor and combat code.  We'll definitely want to keep our present
+string and object stacking code, as well as the color code and the text
+editor.  From there, things are still a little fuzzy in my mind.  However,
+I'm very happy with what the Boost libraries are making possible.  They seem
+to be the best solution I've found, requiring minimal modification to my
+C++ code to work.
+
+I'm still not sure how memory management is going to work yet, and I'm 
+tempted to Pythonize things quite a bit for protoype loading.  I also want
+an easier way to manage bitflags and constants, and that will definitely r
+require some new C++ classes.  However, I expect this to breathe new life 
+into this project.
+
+I'm having fun with this. :)
+
+        Daniel
+~
+#704
+66
+992815059
+congratulations
+Cool beans G, just figured I'd let you know that all this work is appreciated!
+
+
+Keep up the good work!    
+~
+#703
+1
+992810038
+I've found it!
+I have before me the best way yet to implement Python as our glue language,
+here.  The Boost libraries are C++ libraries written largely by members of
+the C++ standard committee, and amongst them is Boost.Python, which is the
+the most comprehensive and flexible framework I've seen yet for this kind
+of work.
+
+I'll use some simplified versions of the Phase 3.5 classes to implement
+an API that Boost.Python can use.  That way, we can take advantage of our
+existing code.  From there, more versatile relationships can be created
+through Python.  
+
+I will, of course, be focusing on the aspect of object behavior and 
+generic interactions that should be equally usable in other frameworks
+such as the V12 engine.
+
+Just thought I'd let you all know. ;)
+~
+#702
+1
+992619469
+Check it.
+Check it: http://moebius.  Bofh.  Net.  Au
+
+This has interesting specs.  Further, we could use our existing code with a
+little modification and processing through SWIG, while gaining all the
+advantages I had proposed for Phase 3.  5 and more.    
+~
+#701
+1
+992454913
+A coding experiment
+Some of you already know of my growing fascination with Python.  Others haven't heard.
+
+Python is a scripting language that is becoming more popular very rapidly.  It is object-oriented
+and very cleanly designed.  A lot of knowledgeable people say that you can expect to code things
+in Python in about a third of the time it would take to code it in C++, owing to the built-in
+memory management.  It can also load modules of code into a running program on the fly easily,
+and those modules can be written in C and C++ where you need the speed of a compiled language.
+
+We're 100% C++ right now.  I'm a single developer.  I keep coming back to this old projec
+because it's still a great outlet for my programming ambitions, but nobody else has been able
+to consistently code for us except Kenny.  I spend a lot of my programming time here debugging,
+and I'd like to make better use of what little time I have here.  This is the reason for my
+current interest.
+
+I'm looking for ways to wrap our present code into discrete modules that can be written into
+Python.  I think it can be done, although I've used some features of C++ that aren't readily
+ported to other languages and will have to insulate Python from parts of the code that use them.
+Still, this is simple enough.
+
+Whatever shape our next project takes, whether it is a continuation of what we're doing here
+or something new, this is valuable research.  A scripting language would be great for gluing
+together components, whether they're bits of code I've already written or readily available 
+modules for SQL and XML.  
+
+Does anyone have any comments?  Other than why the hell I never stop coding? ;)
+
+~
+#700
+1
+992454451
+Re: Problems with zedit
+	------- Quoted message -------
+Okay, recently I have been having some problems with zedit where I shouldn't
+have them.  I have shown few others and they don't know what it is.  The
+problem includes the number of items given to a shopkeeper.  So when someone
+is able to help, please do.    
+	------- End Quote -------
+
+Elaborate for us there.  I know ZEdit is a pain, especially where shopkeepers are concerned.
+~
+#698
+1
+992023626
+If I were starting from scratch...
+I know how I'd do it.  A mean, lean C++ core like what Phase 3.5 has
+shaped up to have, a SQL database which loads zones on demand, 
+an embedded Python machine for processing commands
+and spell effects, our present DGScript system for general purpose
+scripts, and everything linked up through a property system so that
+you could attach and detach things like being an object container just
+like you do scripts.
+
+If we're going to make a transition to a V12-based project, I would
+like to evaluate these technologies for the big move.  
+~
+#697
+1
+992023211
+You know...
+...  I've been thinking about the way we've had triggers set up and I've
+realized that with a little tweaking, it has many of the advantages of an
+object-oriented tree and more.  
+
+Relic has been seeking suggestions for Homeworld 2, as they want to make it
+more moddable and work with the more prominent mod teams.  I suggested that
+they orient ship behavior around triggers, because there's a ton of
+flexibility when you can just drop in a new script and have it work, even when
+there are other scripts of the same trigger type already attached.  You can't
+always get by with this kind of setup in the real world, but it sure works.  
+
+I need a breath of fresh air in this project, or another one similar to it.  
+I miss the advanced design we've done here, the extent of control we've had
+over the design, the innovative approaches we've taken.    
+~
+#696
+2
+992021132
+Test and tweaked
+Okay, I tested the script, and it didn't work like it was, but I tweaked it, and it works now.
+
+set factor 1000000
+set chip 15293
+if %amount% > 4000000
+  delay 5 give %amount% coin %actor%
+  delay 7 say I can't convert this much at once.
+  halt
+else
+load obj 15291
+while %amount%
+  while %amount% > %factor%
+    load obj %chip%
+    if %factor% == 0
+      eval amount %amount% - 1
+    end
+    eval amount %amount% - %factor%
+  done
+  if %amount% == 0
+    unset amount
+  else
+    eval factor %factor% / 10
+    if %factor% == 1
+      set factor 0
+    end
+    eval chip %chip% + 1
+  end
+
+done
+delay 5 emote counts the money very carefully.                                  
+delay 10 emote assembles a stack of chips.                                      
+delay 15 put all.chip bag                                                       
+delay 17 give bag %actor%                                                       
+delay 18 drop all.chip                                                          
+delay 18 drop bag                                                               
+delay 20 say Thank you!                                                         
+end        
+ 
+~
+#695
+2
+992019708
+Making good scripts gooder.
+So once again, boredom in class leads to dumb stuff.  I'd been thinking about
+the script I made to sort a random amount of money into poker chips.  The
+original method I used was rather brute-tastic.  It worked, and worked well,
+but was hardly elegant.  I decided to rewrite and make things a little more
+dynamic.  I'll post both here.  Note that the values of the various chip
+colors were changed to facilitate dynamic chip loading.  I haven't tested the
+new one yet, but you'll see what I'm getting at.    
+
+**** OLD SCRIPT****
+if %amount% > 40000000
+    delay 5 give %amount% coin %actor%
+    delay 7 say I can't convert this much at once.
+    halt
+else
+load obj 15291
+while %amount% >= 1000000
+  load obj 15296
+  eval amount %amount% - 1000000
+done
+while %amount% >= 100000
+  load obj 15297
+  eval amount %amount% - 100000
+done
+while %amount% >= 10000
+  load obj 15298
+  eval amount %amount% - 10000
+done
+while %amount% >= 1000
+  load obj 15293
+  eval amount %amount% - 1000
+done
+while %amount% >= 100
+  load obj 15294
+  eval amount %amount% - 100
+done
+while %amount% >= 10
+  load obj 15295
+  eval amount %amount% - 10
+done
+while %amount% >= 1
+  load obj 15299
+  eval amount %amount% - 1
+done
+delay 5 emote counts the money very carefully.
+delay 10 emote assembles a stack of chips.
+delay 15 put all.chip bag
+delay 17 give bag %actor%
+delay 18 drop all.chip
+delay 18 drop bag
+delay 20 say Thank you!
+end
+**** NEW SCRIPT ****
+set factor 1000000
+set chip 15293
+if %amount% > 4000000
+  delay 5 give %amount% coin %actor%
+  delay 7 say I can't convert this much at once.
+  halt
+else
+load obj 15291
+while %amount%
+  while %amount% > %factor%
+    load obj %chip%
+    eval amount %amount% - %factor%
+  done
+  if %amount% == 0
+    unset amount
+  else
+    eval factor %factor% / 10
+    eval chip %chip% + 1
+  end
+done
+delay 5 emote counts the money very carefully.                                  
+delay 10 emote assembles a stack of chips.                                      
+delay 15 put all.chip bag                                                       
+delay 17 give bag %actor%                                                       
+delay 18 drop all.chip                                                          
+delay 18 drop bag                                                               
+delay 20 say Thank you!                                                         
+end        
+ 
+~
+#693
+1
+989858702
+Re: Guys
+	------- Quoted message -------
+Two logings, four link dead.  *sigh*
+	------- End Quote -------
+
+But that's what "slay" is for! >:)
+
+::sharpens his chopper of doom::
+~
+#692
+2
+989621052
+Guys
+Two logings, four link dead.  *sigh*
+~
+#691
+66
+989376095
+mailing address
+my moscow address is permanent
+
+411 harvest drive
+moscow ID 83843
+
+my Coeur D'Alene address is going away soon
+
+307 1/2 Apt #1 Lakeside Ave.
+Coeur D'Alene ID, 83814
+
+~
+#690
+5
+989282097
+Sid...
+whats your mailing address?
+~
+#688
+8
+989208360
+Here I am
+Hi, I'm still in Front Fucking Royal
+I'm using Marks computer (no, not Hunan) apparently Travis doesnt want
+to be back in Hampton until Monday, so I stayed an extra day, couldnt infor
+you because its a long distance call and havent seen anyone all day, so, you 
+know. I'll be back tomorrow afternooon. Keep the faith and please feed my
+cat.
+~
+#687
+2
+988950893
+Guys...
+please quit out of the mud instead of leaving your link dead bodies all over the place, please.
+~
+#686
+2
+988847151
+You tried to
+delete Tarrist and remake him/her/it didn't you?
+~
+#685
+97
+988846467
+Problem
+I created a character named Tarrist.  I did some work on him in Damara's
+Tomb.  I quit.
+
+I tried to log back in as Tarrist the next day, and it acted as if he didn't
+exist, asking me to create a new character with the name Tarrist.  I figured
+it was a fluke, went ahead and did it, and did the whole Damara's Tomb thing
+again.
+
+Then, on a hunch, I saved and logged out.  I tried logging back in as Tarrist
+and, sure enough, the damn thing had again forgotten that Tarrist existed.
+
+What the hell..?  The MUD isn't saving new characters.  Is it saving changes
+to existing characters?
+
+Just something you guys might want to look into.  :)
+
+&cyCeridwen &cB*&cy The Goddess of Consternation&c0
+~
+#684
+66
+986881326
+underwater stuff
+How should I handle underwater stuff?  
+
+I was considering creating several items to allow breathing for a short
+period.  These Items would be rechargable, in addition it seems like a script
+would be needed for holding one's breath underwater.  
+
+Is there anything else I should consider?  Swimming with a heavy load,
+swimming up with a load, sinking from the surface.    
+
+ideas on breathing equipment?
+~
+#682
+66
+986614699
+ascii and such
+Yeah I've seen them also, there's ascii symbols instead of normal text.  
+
+I don't remember the specific mobs with the ascii in their long descrip,
+Magdalena, if you could put those up then they could see also.  
+
+  
+And how do you intentionally use ascii symbols? they could be usefull.
+
+Sid
+~
+#681
+226
+986509845
+Trouble with extra descriptions
+I have been having trouble with the extra descriptions menu in redit.
+In attempting to write a description for a sign, I am usually disconnected or some sort of symbols are there instead of letters.
+~
+#680
+1
+986341272
+Masada mobs
+Don't forget that, as you change these mobiles, that you have the advantage
+now of being able to use the simple mob generator.  Switch medit to "simple"
+mode and you can just punch in point values, class, and level, and it'll
+generate the stats according to template.  If you're skeptical of the 
+results, you can still use simple mode, save the mob to memory, then edit
+it and switch to extended mode to nitpick to your heart's content.
+~
+#679
+339
+986328070
+masada
+Ive 'fixed' the zedit errors, and havent seen any new problems. Im going to disconnect
+Masada, seeing how the mobs need yet another revamp. Since Ill be focusing on Ryshiga
+for the time being, anyone who wishes to add to Masada is welcome to do so. Sorry for
+the headache rez.
+~
+#677
+2
+986246297
+Alright damn it.
+Before you leave the damn MUD, reset the zone you were working on.  If it
+generates a zone error frigging FIX it before you leave.  I'm sick of having
+my screen spammed every time a zone resets around here.  Zedit is *NOT* that
+difficult.  Anyone who is having a hard time understanding how it works, MUD
+mail me right now and say "I need help," and I'll show you how to use it.    
+~
+#676
+339
+986170304
+death
+Alucard died....again....However this time his corpse automatically disintergated as soon
+as he died. Ive gathered all his items. If anyone would be so kind as to regenerate his
+death-prone ass, Id appreciate it.
+~
+#675
+5
+985928484
+OK....
+so just mail me the pics. check your mud mail for my address.
+~
+#674
+66
+985927519
+mootedness
+I refuse to be mooted.  The mailed pictures would be the newer pictures with
+having not been scanned would nullify the mootness of mailing them in the
+postal manner.  The emailed pictures would also require being emailness due to
+their lack of paper form in my posession.  I could print out the pictures and
+mail them through the post office but that would be self-nullifying due to
+your requiring them in digital copy and not the paper copy-type.  
+
+Siddhatima refuting the mootness of mooteddom by immitating a certian mojo
+jojo who happens to talk similar to how I am typing now.    
+~
+#673
+5
+985924185
+Scanner
+I got access to one...  But wouldn't that point be moot, since you're going to
+try to email me the pictures...  In which case, you'd already have scanned
+them.    
+~
+#672
+66
+985913274
+okeydokey
+I'm in moscow again so I'll send em again
+
+and does anyone have a scanner in virginia beach?  I'd have to send em to
+florida if not.    
+
+Luke
+~
+#671
+5
+985802202
+Instructions for email attachments
+If they're over 5MB, chances are they'll come back. You'll probably need to compress them with a zip file maker, ALONG WITH converting them to a Jpg. If that doesn't work, I'll send you instructions on how to FTP them over to me.
+~

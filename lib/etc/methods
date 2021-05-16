@@ -1,0 +1,85 @@
+#1 = {
+	verb = "chant";
+	hit = 0;
+	mana = 80;
+	move = 0;
+	build = 2;
+	decay = 3;
+	ceiling = 40;
+	skill = "chant";
+        startchar = "You begin chanting the words that convey the greater sight.";
+        startroom = "$n begins murmuring in low tones.";
+	stage = "You repeat the words, focusing on their cadence."
+        	"$n repeats $s words with steady cadence.";
+	stage = "You continue chanting, unifying your will in this new awareness."
+        	"$n's chanting takes on a tone of command.";
+	stage = "You finish the chant, returning to the normal awareness."
+        	"$n finishes chanting.";
+        startvis = 1;
+        stagevis = 1;
+};
+#2 = {
+	verb = "gesture";
+	hit = 0;
+	mana = 100;
+	move = 80;
+	build = 10;
+	decay = 6;
+	ceiling = 20;
+	skill = "somatic";
+	startchar = "You start weaving together the strands of fresh power.";
+	startroom = "$n weaves about, drawing invisible patterns in the air.";
+	stage = "You command with gestures the courses of the energies."
+        	"$n sways and makes sweeping gestures at things that are unseen.";
+	stage = "You complete the weaving."
+        	"$n finishes weaving about.";
+};
+#3 = {
+	verb = "concentrate";
+	hit = 0;
+	mana = 200;
+	move = 10;
+	build = 100;
+	decay = 2;
+	ceiling = 10;
+	skill = "thought";
+	startchar = "You attempt to transcend the illusion of this reality.";
+        stage = "Your mind takes hold of the power."
+        	"";
+};
+#4 = {
+	verb = "etch";
+	hit = 0;
+	mana = 200;
+	move = 30;
+	build = 1;
+	decay = 0;
+	ceiling = 40;
+	skill = "rune";
+	startchar = "You start tracing sigla, joining them together to forge new possibilities.";
+	startroom = "$n starts tracing patterns of interwoven runes.";
+	stage = "You lay hold of the strands, each within its own sigla."
+        	"$n traces separate symbols in an ordered pattern.";
+	stage = "You etch the path of the forward flow of time through the runes."
+        	"$n etches little lines amongst the tracing.";
+	stage = "You trace a second layer of runes for the changed reality."
+        	"$n traces the pattern again, adding minute strokes.";
+	stage = "You complete the sigla, leaving the heart of the pattern ready to command."
+        	"$n completes the runes, leaving a tiny break in the pattern.";
+};
+#5 = {
+	verb = "slay";
+	hit = 0;
+	mana = 80;
+	move = 20;
+	build = 20;
+	decay = 20;
+	ceiling = 30;
+	skill = "necromantic";
+	startchar = "You begin the rite of binding, attempting to subjugate the spirits.";
+	startroom = "$n begins to exert strange, otherworldly power.";
+	stage = "You complete the rite."
+        	"$n completes the rite.";
+        startvis = 1;
+        stagevis = 1;
+};

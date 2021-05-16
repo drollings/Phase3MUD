@@ -1,5 +1,5 @@
-This is a February 2001 snapshot of the Struggle For Nyrilis MUD, a heavily
-rewritten C++ descendant of CircleMUD and common patches for it, after
+This is a February 2001 snapshot of the Struggle For Nyrilis MUD's Phase 3, a 
+heavily rewritten C++ descendant of CircleMUD and common patches for it, after
 importing features and coding techniques from Thrytis' Death's Gate MUD and
 Chris Jacobson's LexiMUD engine.
 

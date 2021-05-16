@@ -1,0 +1,456 @@
+act.comm.o: act.comm.cc mud.base.h types.h conf.h sysdep.h stl.llist.h \
+  stl.map.h affects.h event.h safeptr.h characters.h structs.h \
+  internal.defs.h skills.h skills.defs.h stl.vector.h property.h \
+  scripts.h index.h screen.h character.defs.h room.defs.h find.h combat.h \
+  spells.h spec.h rooms.h redit.h editor.h olc.h descriptors.h \
+  extradesc.h objects.h object.defs.h utils.h strings.h memory.h buffer.h \
+  comm.h interpreter.h db.h weather.h boards.h clans.h constants.h
+act.informative.o: act.informative.cc characters.h types.h conf.h \
+  sysdep.h structs.h internal.defs.h skills.h skills.defs.h stl.vector.h \
+  stl.map.h property.h mud.base.h stl.llist.h affects.h event.h safeptr.h \
+  scripts.h index.h screen.h character.defs.h room.defs.h find.h combat.h \
+  spells.h spec.h objects.h object.defs.h rooms.h redit.h editor.h olc.h \
+  descriptors.h extradesc.h utils.h strings.h memory.h buffer.h comm.h \
+  interpreter.h handler.h db.h weather.h clans.h boards.h help.h \
+  constants.h space.h maputils.h
+act.item.o: act.item.cc characters.h types.h conf.h sysdep.h structs.h \
+  internal.defs.h skills.h skills.defs.h stl.vector.h stl.map.h \
+  property.h mud.base.h stl.llist.h affects.h event.h safeptr.h scripts.h \
+  index.h screen.h character.defs.h room.defs.h find.h combat.h spells.h \
+  spec.h rooms.h redit.h editor.h olc.h descriptors.h extradesc.h \
+  objects.h object.defs.h utils.h strings.h memory.h buffer.h comm.h \
+  interpreter.h handler.h db.h weather.h boards.h constants.h
+act.movement.o: act.movement.cc structs.h types.h conf.h sysdep.h \
+  internal.defs.h utils.h strings.h memory.h buffer.h descriptors.h \
+  screen.h character.defs.h stl.llist.h rooms.h room.defs.h find.h \
+  mud.base.h stl.map.h affects.h event.h safeptr.h redit.h editor.h olc.h \
+  spec.h stl.vector.h skills.h skills.defs.h property.h scripts.h index.h \
+  extradesc.h characters.h combat.h spells.h objects.h object.defs.h \
+  comm.h interpreter.h handler.h db.h weather.h house.h constants.h \
+  eventdefines.h
+act.offensive.o: act.offensive.cc structs.h types.h conf.h sysdep.h \
+  internal.defs.h utils.h strings.h memory.h buffer.h descriptors.h \
+  screen.h character.defs.h stl.llist.h rooms.h room.defs.h find.h \
+  mud.base.h stl.map.h affects.h event.h safeptr.h redit.h editor.h olc.h \
+  spec.h stl.vector.h skills.h skills.defs.h property.h scripts.h index.h \
+  extradesc.h characters.h combat.h spells.h objects.h object.defs.h \
+  comm.h interpreter.h handler.h db.h weather.h help.h constants.h \
+  sound.h
+act.other.o: act.other.cc structs.h types.h conf.h sysdep.h \
+  internal.defs.h utils.h strings.h memory.h buffer.h descriptors.h \
+  screen.h character.defs.h stl.llist.h rooms.h room.defs.h find.h \
+  mud.base.h stl.map.h affects.h event.h safeptr.h redit.h editor.h olc.h \
+  spec.h stl.vector.h skills.h skills.defs.h property.h scripts.h index.h \
+  extradesc.h characters.h combat.h spells.h objects.h object.defs.h \
+  comm.h interpreter.h handler.h help.h db.h weather.h house.h \
+  constants.h
+act.social.o: act.social.cc characters.h types.h conf.h sysdep.h \
+  structs.h internal.defs.h skills.h skills.defs.h stl.vector.h stl.map.h \
+  property.h mud.base.h stl.llist.h affects.h event.h safeptr.h scripts.h \
+  index.h screen.h character.defs.h room.defs.h find.h combat.h spells.h \
+  spec.h descriptors.h socials.h rooms.h redit.h editor.h olc.h \
+  extradesc.h objects.h object.defs.h utils.h strings.h memory.h buffer.h \
+  comm.h interpreter.h db.h weather.h
+act.wizard.o: act.wizard.cc structs.h types.h conf.h sysdep.h \
+  internal.defs.h opinion.h utils.h strings.h memory.h stl.llist.h \
+  scripts.h mud.base.h stl.map.h affects.h event.h safeptr.h index.h \
+  stl.vector.h buffer.h descriptors.h screen.h character.defs.h rooms.h \
+  room.defs.h find.h redit.h editor.h olc.h spec.h skills.h skills.defs.h \
+  property.h extradesc.h characters.h combat.h spells.h objects.h \
+  object.defs.h comm.h interpreter.h handler.h db.h weather.h house.h \
+  track.h ident.h constants.h
+aedit.o: aedit.cc characters.h types.h conf.h sysdep.h structs.h \
+  internal.defs.h skills.h skills.defs.h stl.vector.h stl.map.h \
+  property.h mud.base.h stl.llist.h affects.h event.h safeptr.h scripts.h \
+  index.h screen.h character.defs.h room.defs.h find.h combat.h spells.h \
+  spec.h descriptors.h interpreter.h utils.h strings.h memory.h db.h \
+  weather.h aedit.h editor.h olc.h socials.h constants.h object.defs.h \
+  buffer.h
+affects.o: affects.cc types.h conf.h sysdep.h mud.base.h stl.llist.h \
+  stl.map.h affects.h event.h safeptr.h characters.h structs.h \
+  internal.defs.h skills.h skills.defs.h stl.vector.h property.h \
+  scripts.h index.h screen.h character.defs.h room.defs.h find.h combat.h \
+  spells.h spec.h objects.h object.defs.h utils.h strings.h memory.h \
+  comm.h
+ban.o: ban.cc types.h conf.h sysdep.h ban.h character.defs.h stl.vector.h \
+  characters.h structs.h internal.defs.h skills.h skills.defs.h stl.map.h \
+  property.h mud.base.h stl.llist.h affects.h event.h safeptr.h scripts.h \
+  index.h screen.h room.defs.h find.h combat.h spells.h spec.h \
+  descriptors.h utils.h strings.h memory.h buffer.h comm.h interpreter.h \
+  db.h weather.h
+boards.o: boards.cc types.h conf.h sysdep.h objects.h structs.h \
+  internal.defs.h index.h stl.map.h stl.vector.h stl.llist.h \
+  object.defs.h mud.base.h affects.h event.h safeptr.h find.h spec.h \
+  descriptors.h screen.h character.defs.h characters.h skills.h \
+  skills.defs.h property.h scripts.h room.defs.h combat.h spells.h \
+  rooms.h redit.h editor.h olc.h extradesc.h utils.h strings.h memory.h \
+  buffer.h comm.h db.h weather.h boards.h interpreter.h handler.h files.h
+buffer.o: buffer.cc structs.h types.h conf.h sysdep.h internal.defs.h \
+  utils.h strings.h memory.h buffer.h interpreter.h character.defs.h \
+  characters.h skills.h skills.defs.h stl.vector.h stl.map.h property.h \
+  mud.base.h stl.llist.h affects.h event.h safeptr.h scripts.h index.h \
+  screen.h room.defs.h find.h combat.h spells.h spec.h comm.h
+cedit.o: cedit.cc clans.h index.h types.h conf.h sysdep.h internal.defs.h \
+  stl.map.h stl.vector.h stl.llist.h cedit.h editor.h olc.h descriptors.h \
+  screen.h character.defs.h mud.base.h affects.h event.h safeptr.h spec.h \
+  skills.h skills.defs.h property.h scripts.h characters.h structs.h \
+  room.defs.h find.h combat.h spells.h utils.h strings.h memory.h comm.h \
+  buffer.h rooms.h redit.h extradesc.h db.h weather.h
+characters.o: characters.cc structs.h types.h conf.h sysdep.h \
+  internal.defs.h screen.h combat.h skills.h skills.defs.h stl.vector.h \
+  stl.map.h property.h mud.base.h stl.llist.h affects.h event.h safeptr.h \
+  scripts.h index.h descriptors.h character.defs.h rooms.h room.defs.h \
+  find.h redit.h editor.h olc.h spec.h extradesc.h characters.h spells.h \
+  objects.h object.defs.h comm.h buffer.h files.h interpreter.h db.h \
+  weather.h clans.h opinion.h utils.h strings.h memory.h alias.h \
+  handler.h track.h constants.h eventdefines.h queue.h
+clans.o: clans.cc clans.h index.h types.h conf.h sysdep.h internal.defs.h \
+  stl.map.h stl.vector.h stl.llist.h characters.h structs.h skills.h \
+  skills.defs.h property.h mud.base.h affects.h event.h safeptr.h \
+  scripts.h screen.h character.defs.h room.defs.h find.h combat.h \
+  spells.h spec.h objects.h object.defs.h interpreter.h descriptors.h \
+  db.h weather.h utils.h strings.h memory.h olc.h files.h comm.h rooms.h \
+  redit.h editor.h extradesc.h buffer.h
+cmdtab.o: cmdtab.cc structs.h types.h conf.h sysdep.h internal.defs.h \
+  olc.h interpreter.h character.defs.h combat.h skills.h skills.defs.h \
+  stl.vector.h stl.map.h property.h mud.base.h stl.llist.h affects.h \
+  event.h safeptr.h scripts.h index.h
+combat.o: combat.cc types.h conf.h sysdep.h combat.h skills.h \
+  skills.defs.h stl.vector.h stl.map.h property.h mud.base.h stl.llist.h \
+  affects.h event.h safeptr.h scripts.h index.h internal.defs.h \
+  characters.h structs.h screen.h character.defs.h room.defs.h find.h \
+  spells.h spec.h rooms.h redit.h editor.h olc.h descriptors.h \
+  extradesc.h objects.h object.defs.h constants.h config.h comm.h \
+  buffer.h utils.h strings.h memory.h interpreter.h handler.h track.h \
+  db.h weather.h
+comm.o: comm.cc types.h conf.h sysdep.h structs.h internal.defs.h \
+  screen.h db.h mud.base.h stl.llist.h stl.map.h affects.h event.h \
+  safeptr.h room.defs.h weather.h utils.h strings.h memory.h buffer.h \
+  descriptors.h character.defs.h rooms.h find.h redit.h editor.h olc.h \
+  spec.h stl.vector.h skills.h skills.defs.h property.h scripts.h index.h \
+  extradesc.h characters.h combat.h spells.h objects.h object.defs.h \
+  comm.h interpreter.h handler.h house.h ban.h ident.h constants.h \
+  space.h
+config.o: config.cc types.h conf.h sysdep.h structs.h internal.defs.h
+constants.o: constants.cc structs.h types.h conf.h sysdep.h \
+  internal.defs.h constants.h character.defs.h object.defs.h room.defs.h \
+  skills.defs.h
+db.o: db.cc structs.h types.h conf.h sysdep.h internal.defs.h utils.h \
+  strings.h memory.h buffer.h scripts.h mud.base.h stl.llist.h stl.map.h \
+  affects.h event.h safeptr.h index.h stl.vector.h db.h room.defs.h \
+  weather.h rooms.h find.h redit.h editor.h olc.h descriptors.h screen.h \
+  character.defs.h spec.h skills.h skills.defs.h property.h extradesc.h \
+  characters.h combat.h spells.h objects.h object.defs.h comm.h handler.h \
+  mail.h interpreter.h house.h boards.h files.h clans.h ban.h help.h \
+  constants.h shop.h worldparser.h socials.h
+descriptors.o: descriptors.cc types.h conf.h sysdep.h screen.h \
+  descriptors.h internal.defs.h character.defs.h stl.llist.h buffer.h \
+  utils.h strings.h memory.h editor.h olc.h mud.base.h stl.map.h \
+  affects.h event.h safeptr.h spec.h stl.vector.h skills.h skills.defs.h \
+  property.h scripts.h index.h
+editor.o: editor.cc structs.h types.h conf.h sysdep.h internal.defs.h \
+  utils.h strings.h memory.h editor.h olc.h descriptors.h screen.h \
+  character.defs.h stl.llist.h mud.base.h stl.map.h affects.h event.h \
+  safeptr.h spec.h stl.vector.h skills.h skills.defs.h property.h \
+  scripts.h index.h buffer.h interpreter.h characters.h room.defs.h \
+  find.h combat.h spells.h objects.h object.defs.h handler.h db.h \
+  weather.h comm.h mail.h boards.h
+event.o: event.cc types.h conf.h sysdep.h event.h queue.h utils.h \
+  strings.h memory.h mud.base.h stl.llist.h stl.map.h affects.h safeptr.h
+events.o: events.cc structs.h types.h conf.h sysdep.h internal.defs.h \
+  mud.base.h stl.llist.h stl.map.h affects.h event.h safeptr.h utils.h \
+  strings.h memory.h find.h comm.h screen.h handler.h constants.h \
+  character.defs.h object.defs.h room.defs.h combat.h skills.h \
+  skills.defs.h stl.vector.h property.h scripts.h index.h eventdefines.h
+files.o: files.cc types.h conf.h sysdep.h utils.h strings.h memory.h \
+  buffer.h internal.defs.h character.defs.h files.h
+find.o: find.cc structs.h types.h conf.h sysdep.h internal.defs.h utils.h \
+  strings.h memory.h find.h stl.llist.h handler.h db.h mud.base.h \
+  stl.map.h affects.h event.h safeptr.h room.defs.h weather.h \
+  interpreter.h character.defs.h buffer.h descriptors.h screen.h rooms.h \
+  redit.h editor.h olc.h spec.h stl.vector.h skills.h skills.defs.h \
+  property.h scripts.h index.h extradesc.h characters.h combat.h spells.h \
+  objects.h object.defs.h
+handler.o: handler.cc structs.h types.h conf.h sysdep.h internal.defs.h \
+  utils.h strings.h memory.h scripts.h mud.base.h stl.llist.h stl.map.h \
+  affects.h event.h safeptr.h index.h stl.vector.h buffer.h characters.h \
+  skills.h skills.defs.h property.h screen.h character.defs.h room.defs.h \
+  find.h combat.h spells.h spec.h objects.h object.defs.h comm.h db.h \
+  weather.h handler.h interpreter.h
+hedit.o: hedit.cc characters.h types.h conf.h sysdep.h structs.h \
+  internal.defs.h skills.h skills.defs.h stl.vector.h stl.map.h \
+  property.h mud.base.h stl.llist.h affects.h event.h safeptr.h scripts.h \
+  index.h screen.h character.defs.h room.defs.h find.h combat.h spells.h \
+  spec.h descriptors.h utils.h strings.h memory.h db.h weather.h olc.h \
+  buffer.h handler.h hedit.h editor.h help.h
+help.o: help.cc help.h types.h conf.h sysdep.h character.defs.h buffer.h \
+  internal.defs.h utils.h strings.h memory.h handler.h
+house.o: house.cc house.h types.h conf.h sysdep.h stl.llist.h \
+  stl.vector.h structs.h internal.defs.h utils.h strings.h memory.h \
+  scripts.h mud.base.h stl.map.h affects.h event.h safeptr.h index.h \
+  buffer.h rooms.h room.defs.h find.h redit.h editor.h olc.h \
+  descriptors.h screen.h character.defs.h spec.h skills.h skills.defs.h \
+  property.h extradesc.h characters.h combat.h spells.h objects.h \
+  object.defs.h comm.h handler.h db.h weather.h interpreter.h constants.h \
+  worldparser.h files.h
+ident.o: ident.cc types.h conf.h sysdep.h ident.h descriptors.h screen.h \
+  internal.defs.h character.defs.h stl.llist.h ban.h stl.vector.h utils.h \
+  strings.h memory.h buffer.h
+index.o: index.cc index.h types.h conf.h sysdep.h internal.defs.h \
+  stl.map.h stl.vector.h stl.llist.h
+interpreter.o: interpreter.cc structs.h types.h conf.h sysdep.h \
+  internal.defs.h alias.h utils.h strings.h memory.h descriptors.h \
+  screen.h character.defs.h stl.llist.h rooms.h room.defs.h find.h \
+  mud.base.h stl.map.h affects.h event.h safeptr.h redit.h editor.h olc.h \
+  spec.h stl.vector.h skills.h skills.defs.h property.h scripts.h index.h \
+  extradesc.h characters.h combat.h spells.h objects.h object.defs.h \
+  comm.h interpreter.h db.h weather.h handler.h mail.h ban.h buffer.h \
+  constants.h
+limits.o: limits.cc structs.h types.h conf.h sysdep.h internal.defs.h \
+  utils.h strings.h memory.h buffer.h descriptors.h screen.h \
+  character.defs.h stl.llist.h characters.h skills.h skills.defs.h \
+  stl.vector.h stl.map.h property.h mud.base.h affects.h event.h \
+  safeptr.h scripts.h index.h room.defs.h find.h combat.h spells.h spec.h \
+  objects.h object.defs.h rooms.h redit.h editor.h olc.h extradesc.h \
+  comm.h db.h weather.h handler.h
+log.o: log.cc descriptors.h types.h conf.h sysdep.h screen.h \
+  internal.defs.h character.defs.h stl.llist.h characters.h structs.h \
+  skills.h skills.defs.h stl.vector.h stl.map.h property.h mud.base.h \
+  affects.h event.h safeptr.h scripts.h index.h room.defs.h find.h \
+  combat.h spells.h spec.h utils.h strings.h memory.h comm.h
+magic.o: magic.cc structs.h types.h conf.h sysdep.h internal.defs.h \
+  mud.base.h stl.llist.h stl.map.h affects.h event.h safeptr.h objects.h \
+  index.h stl.vector.h object.defs.h find.h spec.h rooms.h room.defs.h \
+  redit.h editor.h olc.h descriptors.h screen.h character.defs.h skills.h \
+  skills.defs.h property.h scripts.h extradesc.h characters.h combat.h \
+  spells.h config.h utils.h strings.h memory.h comm.h handler.h db.h \
+  weather.h constants.h buffer.h
+mail.o: mail.cc characters.h types.h conf.h sysdep.h structs.h \
+  internal.defs.h skills.h skills.defs.h stl.vector.h stl.map.h \
+  property.h mud.base.h stl.llist.h affects.h event.h safeptr.h scripts.h \
+  index.h screen.h character.defs.h room.defs.h find.h combat.h spells.h \
+  spec.h descriptors.h objects.h object.defs.h utils.h strings.h memory.h \
+  comm.h db.h weather.h interpreter.h mail.h buffer.h editor.h olc.h
+maputils.o: maputils.cc structs.h types.h conf.h sysdep.h internal.defs.h \
+  buffer.h characters.h skills.h skills.defs.h stl.vector.h stl.map.h \
+  property.h mud.base.h stl.llist.h affects.h event.h safeptr.h scripts.h \
+  index.h screen.h character.defs.h room.defs.h find.h combat.h spells.h \
+  spec.h rooms.h redit.h editor.h olc.h descriptors.h extradesc.h utils.h \
+  strings.h memory.h maputils.h
+medit.o: medit.cc characters.h types.h conf.h sysdep.h structs.h \
+  internal.defs.h skills.h skills.defs.h stl.vector.h stl.map.h \
+  property.h mud.base.h stl.llist.h affects.h event.h safeptr.h scripts.h \
+  index.h screen.h character.defs.h room.defs.h find.h combat.h spells.h \
+  spec.h descriptors.h comm.h utils.h strings.h memory.h db.h weather.h \
+  shop.h olc.h interpreter.h clans.h buffer.h opinion.h constants.h \
+  object.defs.h medit.h editor.h
+mobact.o: mobact.cc characters.h types.h conf.h sysdep.h structs.h \
+  internal.defs.h skills.h skills.defs.h stl.vector.h stl.map.h \
+  property.h mud.base.h stl.llist.h affects.h event.h safeptr.h scripts.h \
+  index.h screen.h character.defs.h room.defs.h find.h combat.h spells.h \
+  spec.h descriptors.h objects.h object.defs.h opinion.h utils.h \
+  strings.h memory.h rooms.h redit.h editor.h olc.h extradesc.h comm.h \
+  handler.h interpreter.h track.h buffer.h
+objects.o: objects.cc types.h conf.h sysdep.h objects.h structs.h \
+  internal.defs.h index.h stl.map.h stl.vector.h stl.llist.h \
+  object.defs.h mud.base.h affects.h event.h safeptr.h find.h spec.h \
+  rooms.h room.defs.h redit.h editor.h olc.h descriptors.h screen.h \
+  character.defs.h skills.h skills.defs.h property.h scripts.h \
+  extradesc.h characters.h combat.h spells.h utils.h strings.h memory.h \
+  comm.h buffer.h files.h db.h weather.h handler.h interpreter.h \
+  constants.h eventdefines.h
+objsave.o: objsave.cc structs.h types.h conf.h sysdep.h internal.defs.h \
+  buffer.h descriptors.h screen.h character.defs.h stl.llist.h \
+  characters.h skills.h skills.defs.h stl.vector.h stl.map.h property.h \
+  mud.base.h affects.h event.h safeptr.h scripts.h index.h room.defs.h \
+  find.h combat.h spells.h spec.h objects.h object.defs.h comm.h \
+  handler.h db.h weather.h interpreter.h utils.h strings.h memory.h \
+  files.h
+oedit.o: oedit.cc characters.h types.h conf.h sysdep.h structs.h \
+  internal.defs.h skills.h skills.defs.h stl.vector.h stl.map.h \
+  property.h mud.base.h stl.llist.h affects.h event.h safeptr.h scripts.h \
+  index.h screen.h character.defs.h room.defs.h find.h combat.h spells.h \
+  spec.h descriptors.h objects.h object.defs.h rooms.h redit.h editor.h \
+  olc.h extradesc.h comm.h utils.h strings.h memory.h db.h weather.h \
+  boards.h shop.h interpreter.h buffer.h constants.h oedit.h
+olc.o: olc.cc structs.h types.h conf.h sysdep.h internal.defs.h \
+  characters.h skills.h skills.defs.h stl.vector.h stl.map.h property.h \
+  mud.base.h stl.llist.h affects.h event.h safeptr.h scripts.h index.h \
+  screen.h character.defs.h room.defs.h find.h combat.h spells.h spec.h \
+  interpreter.h comm.h utils.h strings.h memory.h db.h weather.h \
+  handler.h olc.h clans.h shop.h help.h buffer.h socials.h constants.h \
+  object.defs.h editor.h descriptors.h aedit.h cedit.h hedit.h medit.h \
+  oedit.h objects.h extradesc.h redit.h rooms.h sedit.h scriptedit.h \
+  zedit.h
+opinion.o: opinion.cc types.h conf.h sysdep.h opinion.h utils.h strings.h \
+  memory.h stl.llist.h characters.h structs.h internal.defs.h skills.h \
+  skills.defs.h stl.vector.h stl.map.h property.h mud.base.h affects.h \
+  event.h safeptr.h scripts.h index.h screen.h character.defs.h \
+  room.defs.h find.h combat.h spells.h spec.h descriptors.h rooms.h \
+  redit.h editor.h olc.h extradesc.h
+parser.o: parser.cc structs.h types.h conf.h sysdep.h internal.defs.h \
+  utils.h strings.h memory.h buffer.h characters.h skills.h skills.defs.h \
+  stl.vector.h stl.map.h property.h mud.base.h stl.llist.h affects.h \
+  event.h safeptr.h scripts.h index.h screen.h character.defs.h \
+  room.defs.h find.h combat.h spells.h spec.h
+property.o: property.cc types.h conf.h sysdep.h mud.base.h stl.llist.h \
+  stl.map.h affects.h event.h safeptr.h buffer.h internal.defs.h \
+  property.h scripts.h index.h stl.vector.h find.h strings.h olc.h \
+  constants.h character.defs.h object.defs.h room.defs.h skills.defs.h
+queue.o: queue.cc conf.h sysdep.h queue.h types.h
+races.o: races.cc structs.h types.h conf.h sysdep.h internal.defs.h \
+  characters.h skills.h skills.defs.h stl.vector.h stl.map.h property.h \
+  mud.base.h stl.llist.h affects.h event.h safeptr.h scripts.h index.h \
+  screen.h character.defs.h room.defs.h find.h combat.h spells.h spec.h \
+  utils.h strings.h memory.h constants.h object.defs.h
+random.o: random.cc
+redit.o: redit.cc structs.h types.h conf.h sysdep.h internal.defs.h \
+  objects.h index.h stl.map.h stl.vector.h stl.llist.h object.defs.h \
+  mud.base.h affects.h event.h safeptr.h find.h spec.h characters.h \
+  skills.h skills.defs.h property.h scripts.h screen.h character.defs.h \
+  room.defs.h combat.h spells.h comm.h utils.h strings.h memory.h db.h \
+  weather.h boards.h olc.h buffer.h extradesc.h constants.h redit.h \
+  editor.h descriptors.h rooms.h
+rooms.o: rooms.cc rooms.h types.h conf.h sysdep.h structs.h \
+  internal.defs.h room.defs.h find.h stl.llist.h mud.base.h stl.map.h \
+  affects.h event.h safeptr.h redit.h editor.h olc.h descriptors.h \
+  screen.h character.defs.h spec.h stl.vector.h skills.h skills.defs.h \
+  property.h scripts.h index.h extradesc.h characters.h combat.h spells.h \
+  objects.h object.defs.h utils.h strings.h memory.h buffer.h db.h \
+  weather.h files.h interpreter.h constants.h
+safeptr.o: safeptr.cc safeptr.h
+scriptcmd.o: scriptcmd.cc structs.h types.h conf.h sysdep.h \
+  internal.defs.h scripts.h mud.base.h stl.llist.h stl.map.h affects.h \
+  event.h safeptr.h index.h stl.vector.h utils.h strings.h memory.h \
+  rooms.h room.defs.h find.h redit.h editor.h olc.h descriptors.h \
+  screen.h character.defs.h spec.h skills.h skills.defs.h property.h \
+  extradesc.h characters.h combat.h spells.h objects.h object.defs.h \
+  comm.h interpreter.h handler.h buffer.h db.h weather.h track.h \
+  opinion.h constants.h
+scriptedit.o: scriptedit.cc types.h conf.h sysdep.h scripts.h mud.base.h \
+  stl.llist.h stl.map.h affects.h event.h safeptr.h index.h \
+  internal.defs.h stl.vector.h characters.h structs.h skills.h \
+  skills.defs.h property.h screen.h character.defs.h room.defs.h find.h \
+  combat.h spells.h spec.h descriptors.h buffer.h comm.h utils.h \
+  strings.h memory.h db.h weather.h olc.h constants.h object.defs.h \
+  scriptedit.h editor.h
+scriptengine.o: scriptengine.cc structs.h types.h conf.h sysdep.h \
+  internal.defs.h scripts.h mud.base.h stl.llist.h stl.map.h affects.h \
+  event.h safeptr.h index.h stl.vector.h utils.h strings.h memory.h \
+  descriptors.h screen.h character.defs.h rooms.h room.defs.h find.h \
+  redit.h editor.h olc.h spec.h skills.h skills.defs.h property.h \
+  extradesc.h characters.h combat.h spells.h objects.h object.defs.h \
+  comm.h interpreter.h handler.h clans.h buffer.h constants.h db.h \
+  weather.h scriptedit.h
+scripts.o: scripts.cc scripts.h types.h conf.h sysdep.h mud.base.h \
+  stl.llist.h stl.map.h affects.h event.h safeptr.h index.h \
+  internal.defs.h stl.vector.h interpreter.h character.defs.h buffer.h \
+  utils.h strings.h memory.h files.h
+sedit.o: sedit.cc utils.h types.h conf.h sysdep.h strings.h memory.h db.h \
+  mud.base.h stl.llist.h stl.map.h affects.h event.h safeptr.h \
+  room.defs.h weather.h internal.defs.h olc.h buffer.h constants.h \
+  character.defs.h object.defs.h interpreter.h characters.h structs.h \
+  skills.h skills.defs.h stl.vector.h property.h scripts.h index.h \
+  screen.h find.h combat.h spells.h spec.h rooms.h redit.h editor.h \
+  descriptors.h extradesc.h objects.h sedit.h shop.h
+shop.o: shop.cc structs.h types.h conf.h sysdep.h internal.defs.h \
+  buffer.h descriptors.h screen.h character.defs.h stl.llist.h rooms.h \
+  room.defs.h find.h mud.base.h stl.map.h affects.h event.h safeptr.h \
+  redit.h editor.h olc.h spec.h stl.vector.h skills.h skills.defs.h \
+  property.h scripts.h index.h extradesc.h characters.h combat.h spells.h \
+  objects.h object.defs.h comm.h handler.h db.h weather.h interpreter.h \
+  utils.h strings.h memory.h shop.h files.h constants.h
+skills.o: skills.cc types.h conf.h sysdep.h structs.h internal.defs.h \
+  skills.h skills.defs.h stl.vector.h stl.map.h property.h mud.base.h \
+  stl.llist.h affects.h event.h safeptr.h scripts.h index.h characters.h \
+  screen.h character.defs.h room.defs.h find.h combat.h spells.h spec.h \
+  utils.h strings.h memory.h buffer.h interpreter.h rooms.h redit.h \
+  editor.h olc.h descriptors.h extradesc.h comm.h constants.h \
+  object.defs.h
+sound.o: sound.cc descriptors.h types.h conf.h sysdep.h screen.h \
+  internal.defs.h character.defs.h stl.llist.h characters.h structs.h \
+  skills.h skills.defs.h stl.vector.h stl.map.h property.h mud.base.h \
+  affects.h event.h safeptr.h scripts.h index.h room.defs.h find.h \
+  combat.h spells.h spec.h rooms.h redit.h editor.h olc.h extradesc.h \
+  buffer.h comm.h interpreter.h utils.h strings.h memory.h handler.h \
+  sound.h
+spec_assign.o: spec_assign.cc structs.h types.h conf.h sysdep.h \
+  internal.defs.h spec.h rooms.h room.defs.h find.h stl.llist.h \
+  mud.base.h stl.map.h affects.h event.h safeptr.h redit.h editor.h olc.h \
+  descriptors.h screen.h character.defs.h stl.vector.h skills.h \
+  skills.defs.h property.h scripts.h index.h extradesc.h characters.h \
+  combat.h spells.h objects.h object.defs.h buffer.h db.h weather.h \
+  interpreter.h utils.h strings.h memory.h
+spec_procs.o: spec_procs.cc structs.h types.h conf.h sysdep.h \
+  internal.defs.h utils.h strings.h memory.h buffer.h rooms.h room.defs.h \
+  find.h stl.llist.h mud.base.h stl.map.h affects.h event.h safeptr.h \
+  redit.h editor.h olc.h descriptors.h screen.h character.defs.h spec.h \
+  stl.vector.h skills.h skills.defs.h property.h scripts.h index.h \
+  extradesc.h characters.h combat.h spells.h objects.h object.defs.h \
+  comm.h interpreter.h handler.h db.h weather.h
+spell_parser.o: spell_parser.cc structs.h types.h conf.h sysdep.h \
+  internal.defs.h mud.base.h stl.llist.h stl.map.h affects.h event.h \
+  safeptr.h characters.h skills.h skills.defs.h stl.vector.h property.h \
+  scripts.h index.h screen.h character.defs.h room.defs.h find.h combat.h \
+  spells.h spec.h objects.h object.defs.h rooms.h redit.h editor.h olc.h \
+  descriptors.h extradesc.h utils.h strings.h memory.h interpreter.h \
+  handler.h comm.h db.h weather.h buffer.h
+spells.o: spells.cc structs.h types.h conf.h sysdep.h internal.defs.h \
+  mud.base.h stl.llist.h stl.map.h affects.h event.h safeptr.h \
+  characters.h skills.h skills.defs.h stl.vector.h property.h scripts.h \
+  index.h screen.h character.defs.h room.defs.h find.h combat.h spells.h \
+  spec.h objects.h object.defs.h rooms.h redit.h editor.h olc.h \
+  descriptors.h extradesc.h utils.h strings.h memory.h comm.h handler.h \
+  db.h weather.h interpreter.h constants.h config.h buffer.h
+sstring.o: sstring.cc types.h conf.h sysdep.h utils.h strings.h memory.h \
+  files.h stl.llist.h
+string.o: string.cc string.h types.h conf.h sysdep.h utils.h strings.h \
+  memory.h
+track.o: track.cc types.h conf.h sysdep.h track.h room.defs.h structs.h \
+  internal.defs.h interpreter.h character.defs.h handler.h utils.h \
+  strings.h memory.h buffer.h characters.h skills.h skills.defs.h \
+  stl.vector.h stl.map.h property.h mud.base.h stl.llist.h affects.h \
+  event.h safeptr.h scripts.h index.h screen.h find.h combat.h spells.h \
+  spec.h comm.h constants.h object.defs.h rooms.h redit.h editor.h olc.h \
+  descriptors.h extradesc.h
+triggers.o: triggers.cc structs.h types.h conf.h sysdep.h internal.defs.h \
+  scripts.h mud.base.h stl.llist.h stl.map.h affects.h event.h safeptr.h \
+  index.h stl.vector.h utils.h strings.h memory.h rooms.h room.defs.h \
+  find.h redit.h editor.h olc.h descriptors.h screen.h character.defs.h \
+  spec.h skills.h skills.defs.h property.h extradesc.h characters.h \
+  combat.h spells.h objects.h object.defs.h comm.h interpreter.h \
+  handler.h db.h weather.h buffer.h constants.h
+utils.o: utils.cc structs.h types.h conf.h sysdep.h internal.defs.h \
+  utils.h strings.h memory.h buffer.h rooms.h room.defs.h find.h \
+  stl.llist.h mud.base.h stl.map.h affects.h event.h safeptr.h redit.h \
+  editor.h olc.h descriptors.h screen.h character.defs.h spec.h \
+  stl.vector.h skills.h skills.defs.h property.h scripts.h index.h \
+  extradesc.h characters.h combat.h spells.h objects.h object.defs.h \
+  comm.h db.h weather.h
+vehicles.o: vehicles.cc characters.h types.h conf.h sysdep.h structs.h \
+  internal.defs.h skills.h skills.defs.h stl.vector.h stl.map.h \
+  property.h mud.base.h stl.llist.h affects.h event.h safeptr.h scripts.h \
+  index.h screen.h character.defs.h room.defs.h find.h combat.h spells.h \
+  spec.h objects.h object.defs.h rooms.h redit.h editor.h olc.h \
+  descriptors.h extradesc.h utils.h strings.h memory.h buffer.h comm.h \
+  interpreter.h handler.h constants.h
+weather.o: weather.cc weather.h types.h conf.h sysdep.h internal.defs.h \
+  descriptors.h screen.h character.defs.h stl.llist.h characters.h \
+  structs.h skills.h skills.defs.h stl.vector.h stl.map.h property.h \
+  mud.base.h affects.h event.h safeptr.h scripts.h index.h room.defs.h \
+  find.h combat.h spells.h spec.h rooms.h redit.h editor.h olc.h \
+  extradesc.h utils.h strings.h memory.h comm.h db.h
+worldparser.o: worldparser.cc worldparser.h types.h conf.h sysdep.h \
+  stl.llist.h index.h internal.defs.h stl.map.h stl.vector.h rooms.h \
+  structs.h room.defs.h find.h mud.base.h affects.h event.h safeptr.h \
+  redit.h editor.h olc.h descriptors.h screen.h character.defs.h spec.h \
+  skills.h skills.defs.h property.h scripts.h extradesc.h characters.h \
+  combat.h spells.h objects.h object.defs.h strings.h utils.h memory.h \
+  buffer.h db.h weather.h constants.h opinion.h shop.h maputils.h
+zedit.o: zedit.cc characters.h types.h conf.h sysdep.h structs.h \
+  internal.defs.h skills.h skills.defs.h stl.vector.h stl.map.h \
+  property.h mud.base.h stl.llist.h affects.h event.h safeptr.h scripts.h \
+  index.h screen.h character.defs.h room.defs.h find.h combat.h spells.h \
+  spec.h descriptors.h objects.h object.defs.h rooms.h redit.h editor.h \
+  olc.h extradesc.h comm.h utils.h strings.h memory.h db.h weather.h \
+  buffer.h constants.h zedit.h

@@ -1,7 +1,7 @@
 This is a February 2001 snapshot of the Struggle For Nyrilis MUD's Phase 3, a 
-heavily rewritten C++ descendant of CircleMUD and common patches for it, after
-importing features and coding techniques from Thrytis' Death's Gate MUD and
-Chris Jacobson's LexiMUD engine.
+heavily rewritten C++ descendant of Jeremy Elson's CircleMUD, a cousin of 
+Chris Jacobson's LexiMUD engine, with heavily rewritten and extended pieces 
+from Thrytis' Death's Gate MUD.  Ultimately this goes back to DIKU.
 
 This is ancient C++, meant for gcc 2.95.  The STL data structures are
 courtesy of Chris Jacobson.  Safe pointers were implemented by Daniel
@@ -38,5 +38,5 @@ Jeremy Elson's CircleMUD, which falls under the DikuMUD license.  The
 CircleMUD FAQ and README have been included to respect this.
 
 All code contributed by Daniel Rollings (AKA Daniel Houghton) is under the
-MIT license.
+MIT license.  Lacking commit history, it will take a while to part this out.
 

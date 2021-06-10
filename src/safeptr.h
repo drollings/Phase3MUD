@@ -9,7 +9,8 @@
 #endif
 
 
-// A reference-counted safe pointer implementation by Daniel Rollings AKA Daniel Houghton
+// An ancient reference-counted safe pointer implementation by Daniel Rollings AKA Daniel Houghton
+// UPDATED:  yes, the terminology around this later clarified to call this a weak reference.
 
 class SafePtrHandle;
 class SafePtrList;

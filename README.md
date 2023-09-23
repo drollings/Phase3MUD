@@ -3,12 +3,11 @@ heavily rewritten C++ descendant of Jeremy Elson's CircleMUD, a cousin of
 Chris Jacobson's LexiMUD engine, with heavily rewritten and extended pieces 
 from Thrytis' Death's Gate MUD.  Ultimately this goes back to DIKU.
 
-This is ancient C++, meant for gcc 2.95.  The STL data structures are
-courtesy of Chris Jacobson.  Safe pointers were implemented by Daniel
-Rollings AKA Daniel Houghton.  Modern compilers will likely flag a lot of
-buffer size errors that were simply not a concern at the time; 8192 byte
-shared buffers being cleared and flushed were apparently enough for a few
-dozen user's screenfuls of text and entered commands.
+This is ancient C++, meant for gcc 2.95.  Most of the STL-like data 
+structures are courtesy of Chris Jacobson.  Those based on safe pointers were 
+implemented by Daniel Rollings AKA Daniel Houghton.  Unfortunately, comments
+are sparse; extensive diff'ing will be needed to show the extent of divergence
+from its LexiMUD cousins.
 
 LexiMUD and SFN shared snippets and rewrites of the scripting engine, though
 they diverged particularly in that SFN used pre-parsed function pointers to
@@ -18,6 +17,11 @@ JIT engine.
 Of particular note was a fusion of AD&D features with a GURPS-like skill
 system which made character levels more of a visible score than any
 determination of skill.
+
+Modern compilers will likely flag  a lot of buffer size errors that were 
+simply not a concern at the time;  8192 byte shared buffers being cleared 
+and flushed were apparently enough for a few dozen user's screenfuls of text 
+and entered commands.
 
 Crypto support was broken at the time of this snapshot.  You'd have to be
 mad to run this online in the same container as anything important
@@ -39,4 +43,6 @@ CircleMUD FAQ and README have been included to respect this.
 
 All code contributed by Daniel Rollings (AKA Daniel Houghton) is under the
 MIT license.  Lacking commit history, it will take a while to part this out.
+
+This is for curiosity only.  You'd be crazy to run this on the modern internet.
 
